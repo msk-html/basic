@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="w3-container xw3-light-grey">
+        <div class="w3-row w3-container">
+            <div class="w3-col m2 w3-container w3-center">
+            </div>
+            <div class="w3-col m8 w3-container w3-center">
+                <div id="rgbresult" style="line-height: 80px; background-color: rgb(255, 183, 71);">
+                    <p id="rgbresulttext" style="text-align: center;">
+                        rgb(255, 183, 71)</p>
+                </div>
+            </div>
+            <div class="w3-col m2 w3-container w3-center">
+            </div>
+        </div>
+        <div class="w3-row w3-container">
+            <div class="w3-col m4 w3-container w3-center">
+                <p>RED</p>
+                <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideRed" name="slideRed"
+                    value="255" min="0" max="255">
+                <div id="valRed2" xstyle="background-color:red;border-radius:5px;color:white;opacity:0.8">255</div>
+            </div>
+            <div class="w3-col m4 w3-container w3-center">
+                <p>GREEN</p>
+                <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideGreen" name="slideGreen"
+                    value="99" min="0" max="255">
+                <div id="valGreen2" xstyle="background-color:#00ff00;border-radius:5px;opacity:0.8">183</div>
+            </div>
+            <div class="w3-col m4 w3-container w3-center">
+                <p>BLUE</p>
+                <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideBlue" name="slideBlue"
+                    value="71" min="0" max="255">
+                <div id="valBlue2" xstyle="background-color:blue;border-radius:5px;color:white;opacity:0.8">71</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeRGB() {
+            // Get the values of red, green, and blue sliders
+            var redValue = document.getElementById('slideRed').value;
+            var greenValue = document.getElementById('slideGreen').value;
+            var blueValue = document.getElementById('slideBlue').value;
+
+            // Update the RGB result text and background color
+            var rgbResultText = 'rgb(' + redValue + ', ' + greenValue + ', ' + blueValue + ')';
+            document.getElementById('rgbresult').style.backgroundColor = rgbResultText;
+            document.getElementById('rgbresulttext').innerText = rgbResultText;
+
+            // Update the red, green, and blue value displays
+            document.getElementById('valRed2').innerText = redValue;
+            document.getElementById('valGreen2').innerText = greenValue;
+            document.getElementById('valBlue2').innerText = blueValue;
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online HTML Editor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #454545;
+            color: #fff;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+        .left,
+        .right {
+            flex-basis: 50%;
+        }
+        #editor {
+            position: relative;
+            height: 98vh;
+            width: 100%;
+        }
+
+        #live-preview {
+            width: 100%;
+            height: 98vh;
+            background: #fff;
+            border-left: 4px solid black;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="toolbar">
+        <label for="word-wrap">Word Wrap:</label>
+        <input type="checkbox" id="word-wrap" onchange="toggleWordWrap()">
+        <button onclick="runCode()">Run Code</button>
+        <button onclick="clearEditor()">Clear Editor</button>
+        <button class="feature-button" onclick="toggleFullScreen()">Fullscreen</button>
+        <select id="theme" onchange="changeTheme()" value="monokai">
+            <optgroup label="Bright">
+                <option value="chrome">Chrome</option>
+                <option value="clouds">Clouds</option>
+                <option value="crimson_editor">Crimson Editor</option>
+                <option value="dawn">Dawn</option>
+                <option value="dreamweaver">Dreamweaver</option>
+                <option value="eclipse">Eclipse</option>
+                <option value="github">GitHub</option>
+                <option value="iplastic">IPlastic</option>
+                <option value="solarized_light">Solarized Light</option>
+                <option value="textmate">TextMate</option>
+                <option value="tomorrow">Tomorrow</option>
+                <option value="xcode">XCode</option>
+                <option value="kuroir">Kuroir</option>
+                <option value="katzenmilch">KatzenMilch</option>
+                <option value="sqlserver">SQL Server</option>
+                <option value="cloud_editor">CloudEditor</option>
+            </optgroup>
+            <optgroup label="Dark">
+                <option value="ambiance">Ambiance</option>
+                <option value="chaos">Chaos</option>
+                <option value="clouds_midnight">Clouds Midnight</option>
+                <option value="dracula">Dracula</option>
+                <option value="cobalt">Cobalt</option>
+                <option value="gruvbox">Gruvbox</option>
+                <option value="gob">Green on Black</option>
+                <option value="idle_fingers">idle Fingers</option>
+                <option value="kr_theme">krTheme</option>
+                <option value="merbivore">Merbivore</option>
+                <option value="merbivore_soft">Merbivore Soft</option>
+                <option value="mono_industrial">Mono Industrial</option>
+                <option value="monokai">Monokai</option>
+                <option value="nord_dark">Nord Dark</option>
+                <option value="one_dark">One Dark</option>
+                <option value="pastel_on_dark">Pastel on dark</option>
+                <option value="solarized_dark">Solarized Dark</option>
+                <option value="terminal">Terminal</option>
+                <option value="tomorrow_night">Tomorrow Night</option>
+                <option value="tomorrow_night_blue">Tomorrow Night Blue</option>
+                <option value="tomorrow_night_bright">Tomorrow Night Bright</option>
+                <option value="tomorrow_night_eighties">Tomorrow Night 80s</option>
+                <option value="twilight">Twilight</option>
+                <option value="vibrant_ink">Vibrant Ink</option>
+                <option value="github_dark">GitHub Dark</option>
+                <option value="cloud_editor_dark">CloudEditor Dark</option>
+            </optgroup>
+        </select>
+        <label for="filename">File Name:</label>
+        <input type="text" id="filename" placeholder="Enter file name">
+        <button onclick="saveHTML()">Download</button>
+
+        <label>
+            <input type="range" id="Range" min="12" max="50" value="15">
+        </label>
+    </div>
+
+    <div class="container">
+        <div class="left" id="left" onmouseenter="editorWidth()">
+            <div id="editor"></div>
+        </div>
+        <div class="right" id="right" onmouseenter="outputWidth()">
+            <div id="live-preview-container">
+                <iframe id="live-preview" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const updateFontSize = document.querySelector('#Range');
+        updateFontSize.addEventListener('input', updateFontsize);
+        function updateFontsize() {
+            let Value = updateFontSize.value;
+            document.querySelector('#editor').style.fontSize = Value + "px";
+        }
+
+        var editor = ace.edit("editor", {
+            mode: "ace/mode/html",
+            theme: "ace/theme/monokai",
+            autoScrollEditorIntoView: true,
+            hasCssTransforms: true,
+            highlightSelectedWord: true,
+            enableAutoIndent: true,
+            enableSnippets: true,
+        });
+        editor.setOption("foldStyle", "markbeginend");
+        // editor.setReadOnly(true);
+        editor.renderer.setShowGutter(true);
+        editor.setOptions({
+            fontSize: "14px",
+            enableBasicAutocompletion: true,
+            enableSnippets: true,
+            enableLiveAutocompletion: true
+        });
+
+        // Live Preview
+        editor.getSession().on("change", function () {
+            var livePreview = document.getElementById("live-preview");
+            var livePreviewContainer = document.getElementById("live-preview-container");
+            var code = editor.getValue();
+            var blob = new Blob([code], { type: "text/html" });
+            livePreview.srcdoc = code;
+            livePreviewContainer.style.height = livePreview.contentWindow.document.body.scrollHeight + "px";
+        });
+
+        // Word Wrap Toggle
+        function toggleWordWrap() {
+            var wordWrapCheckbox = document.getElementById("word-wrap");
+            editor.getSession().setUseWrapMode(wordWrapCheckbox.checked);
+        }
+
+        function runCode() {
+            var code = editor.getValue();
+            var output = document.getElementById("output");
+            output.innerHTML = code;
+        }
+        function editorWidth() {
+            document.getElementById("left").style.flexBasis = "60%";
+            document.getElementById("right").style.flexBasis = "40%";
+        }
+        function outputWidth() {
+            document.getElementById("left").style.flexBasis = "20%";
+            document.getElementById("right").style.flexBasis = "80%";
+        }
+        function clearEditor() {
+            editor.setValue("");
+        }
+        function changeTheme() {
+            var theme = document.getElementById("theme").value;
+            editor.setTheme("ace/theme/" + theme);
+        }
+        function saveHTML() {
+            var fileName = document.getElementById("filename").value;
+            var code = editor.getValue();
+            var blob = new Blob([code], { type: "text/html" });
+            var link = document.createElement("a");
+            link.href = window.URL.createObjectURL(blob);
+
+            if (!fileName) {
+                link.download = "index.html";
+                link.click();
+            }
+            
+            link.download = fileName + ".html";
+            link.click();
+        }
+
+
+        function toggleFullScreen() {
+            var elem = document.documentElement;
+            if (!document.fullscreenElement) {
+                elem.requestFullscreen().catch(err => {
+                    console.log(err.message);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

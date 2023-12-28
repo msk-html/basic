@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEX Colors</title>
+</head>
+
+<body>
+    <div class="w3-container xw3-light-grey">
+        <div class="w3-row w3-container">
+            <div class="w3-col m2 w3-container w3-center">
+            </div>
+            <div class="w3-col m8 w3-container w3-center">
+                <div id="hexresult" style="text-align: center; background-color: #00ff00;">#00ff00</p>
+                </div>
+            </div>
+            <div class="w3-col m2 w3-container w3-center">
+            </div>
+        </div>
+        <div class="w3-row w3-container">
+            <div class="w3-col m4 w3-container w3-center">
+                <p>RED</p>
+                <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideRedHex" name="slideRedHex"
+                    value="00" min="0" max="255">
+                <div id="valRed2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">00
+                </div>
+            </div>
+            <div class="w3-col m4 w3-container w3-center">
+                <p>GREEN</p>
+                <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideGreenHex" name="slideGreenHex"
+                    value="255" min="0" max="255">
+                <div id="valGreen2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">ff</div>
+            </div>
+            <div class="w3-col m4 w3-container w3-center">
+                <p>BLUE</p>
+                <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideBlueHex" name="slideBlueHex"
+                    value="00" min="0" max="255">
+                <div id="valBlue2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">00
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeHex() {
+            // Get the values of red, green, and blue sliders
+            var redValue = document.getElementById("slideRedHex").value;
+            var greenValue = document.getElementById("slideGreenHex").value;
+            var blueValue = document.getElementById("slideBlueHex").value;
+
+            // Convert the decimal values to hexadecimal
+            var redHex = decToHex(redValue);
+            var greenHex = decToHex(greenValue);
+            var blueHex = decToHex(blueValue);
+
+            // Display the hexadecimal color code
+            var hexColor = "#" + redHex + greenHex + blueHex;
+            document.getElementById("hexresult").innerText = hexColor;
+            // Update the background color of the #hexresult element
+            document.getElementById("hexresult").style.backgroundColor = hexColor;
+
+            // Update the displayed hexadecimal values for red, green, and blue
+            document.getElementById("valRed2Hex").innerText = redHex;
+            document.getElementById("valGreen2Hex").innerText = greenHex;
+            document.getElementById("valBlue2Hex").innerText = blueHex;
+        }
+
+        function decToHex(decimalValue) {
+            var hex = Number(decimalValue).toString(16);
+            return hex.length == 1 ? "0" + hex : hex;
+        }
+    </script>
+</body>
+
+</html>
