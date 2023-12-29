@@ -103,6 +103,24 @@ You can have a header that spans over two or more columns.
 
 
 To do this, use the colspan attribute on the `<th>` element:
+
+<table border>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Sumit</td>
+    <td>Kumar</td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td>Amit</td>
+    <td>Yadav</td>
+    <td>18</td>
+  </tr>
+</table>
+
 ```html
 <table>
   <tr>
@@ -110,14 +128,14 @@ To do this, use the colspan attribute on the `<th>` element:
     <th>Age</th>
   </tr>
   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
+    <td>Sumit</td>
+    <td>Kumar</td>
+    <td>21</td>
   </tr>
   <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
+    <td>Amit</td>
+    <td>Yadav</td>
+    <td>18</td>
   </tr>
 </table>
 ```

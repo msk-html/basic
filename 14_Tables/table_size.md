@@ -48,14 +48,14 @@ Set the width of the first column to 70%:
     <th>Age</th>
   </tr>
   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
+    <td>Sumit</td>
+    <td>Kumar</td>
+    <td>20</td>
   </tr>
   <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
+    <td>Amit</td>
+    <td>Yadav</td>
+    <td>18</td>
   </tr>
 </table>
 ```
@@ -75,14 +75,14 @@ Set the height of the second row to 200 pixels:
     <th>Age</th>
   </tr>
   <tr style="height:200px">
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
+    <td>Sumit</td>
+    <td>Kumar</td>
+    <td>20</td>
   </tr>
   <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
+    <td>Amit</td>
+    <td>Yadav</td>
+    <td>18</td>
   </tr>
 </table>
 ```
@@ -103,3 +103,63 @@ Use CSS styles to make the table 300 pixels wide.
   </tr>
 </table>
 ```
+
+
+## `Rowspan` and `Colspan` Attributes
+
+`Rowspan`: If you want a table cell to span multiple rows, you can use the rowspan attribute.
+```html
+<td rowspan="2">
+```
+`Colspan`: If you want a table cell to span multiple columns, you can use the colspan attribute.
+```html
+<td colspan="2">
+```
+
+## Rowspan and Colspan in HTML tables
+
+### Example for Colspan:
+```html
+<table border="1">
+  <tr>
+    <td colspan="2">Merged Columns</td>
+  </tr>
+  <tr>
+    <td>Column 1</td>
+    <td>Column 2</td>
+  </tr>
+</table>
+```
+
+<table border="1">
+  <tr>
+    <td colspan="2">Merged Columns</td>
+  </tr>
+  <tr>
+    <td>Column 1</td>
+    <td>Column 2</td>
+  </tr>
+</table>
+
+
+### Example for Rowspan:
+```html
+<table border="1">
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td rowspan="2">Merged Rows</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+  </tr>
+</table>
+```
+<table border="1">
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td rowspan="2">Merged Rows</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+  </tr>
+</table>

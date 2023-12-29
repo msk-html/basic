@@ -105,7 +105,7 @@ The `title` attribute specifies extra information about an element. The informat
 
 ### Example
 ```html
-<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+<a href="mskinstitute.github.io/html/" title="Go to MSK Institute HTML section">Visit our HTML Tutorial</a>
 ```
 
 ## More on Absolute URLs and Relative URLs
@@ -113,7 +113,7 @@ The `title` attribute specifies extra information about an element. The informat
 
 Use a full URL to link to a web page: 
 ```html
-<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+<a href="mskinstitute.github.io">MSK Institute</a>
 ```
 Link to a page located in the html folder on the current web site: 
 ```html

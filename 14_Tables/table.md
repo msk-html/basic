@@ -52,20 +52,20 @@ Everything between `<td>` and `</td>` are the content of the table cell.
 ## Table Rows
 Each table row starts with a `<tr>` and ends with a `</tr>` tag.
 
-tr stands for table row.
+`tr` stands for table row.
 
 ### Example
 ```html
 <table>
   <tr>
-    <td>Emil</td>
-    <td>Tobias</td>
-    <td>Linus</td>
+    <td>Sumit</td>
+    <td>Amit</td>
+    <td>Aryan</td>
   </tr>
   <tr>
-    <td>16</td>
-    <td>14</td>
-    <td>10</td>
+    <td>21</td>
+    <td>18</td>
+    <td>7</td>
   </tr>
 </table>
 ```
@@ -76,7 +76,7 @@ You can have as many rows as you like in a table; just make sure that the number
 ## Table Headers
 Sometimes you want your cells to be table header cells. In those cases use the `<th>` tag instead of the `<td>` tag:
 
-th stands for table header.
+`th` stands for table header.
 
 ### Example
 Let the first row be table header cells:
@@ -88,14 +88,14 @@ Let the first row be table header cells:
     <th>Person 3</th>
   </tr>
   <tr>
-    <td>Emil</td>
-    <td>Tobias</td>
-    <td>Linus</td>
+    <td>Sumit</td>
+    <td>Amit</td>
+    <td>Aryan</td>
   </tr>
   <tr>
-    <td>16</td>
-    <td>14</td>
-    <td>10</td>
+    <td>21</td>
+    <td>18</td>
+    <td>7</td>
   </tr>
 </table>
 ```
@@ -113,8 +113,123 @@ The two table headers should have the value "Name" and "Age".
   ______
   __
   <tr>
-    <td>Jill Smith</td>
-    <td>50</td>
+    <td>Sumit</td>
+    <td>21</td>
   </tr>
+</table>
+```
+# More on Tables
+Let's take a closer look at HTML tables and delve into some more aspects of using tables in HTML.
+
+## Adding a `Caption`
+To add a title to your table, you can use the <caption> element. This element helps both in terms of SEO and accessibility.
+```html
+<table>
+  <caption>Student Details</caption>
+    <tr>
+      <td>Sumit</td>
+      <td>Amit</td>
+      <td>Aryan</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>18</td>
+      <td>7</td>
+    </tr>
+</table>
+```
+
+<table border>
+  <caption>Student Details</caption>
+    <tr>
+      <td>Sumit</td>
+      <td>Amit</td>
+      <td>Aryan</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>18</td>
+      <td>7</td>
+    </tr>
+</table>
+
+## Table `Headers` and `Footers`
+Besides `<th>` for individual header cells, HTML tables allow you to group header or footer content using `<thead>` and `<tfoot>`.
+```html
+<table>
+  <thead>
+     <!--  header content -->
+  </thead>
+  <tfoot>
+  <!-- footer content -->
+  </tfoot>
+  <tbody>
+  <!-- body content -->
+  </tbody>
+</table>
+```
+
+## Column Groups
+You can use the `<colgroup>` and `<col>` elements to apply styles to an entire column in an HTML table.
+```html
+<table>
+  <colgroup>
+    <col style="background-color:yellow">
+  </colgroup>
+  <!-- rest of the table -->
+</table>
+```
+### Accessibility in Tables
+To make your tables more accessible, you can use the scope attribute in `<th>` elements to specify if they are headers for columns, rows, or groups of columns or rows.
+```html
+<th scope="col">Name</th>
+<th scope="col">Age</th>
+```
+## Sample HTML Table
+Here is an example HTML table with all the important elements:
+```html
+<table border="1">
+    <!-- Caption -->
+    <caption>Employee Information</caption>
+
+    <!-- Table Header -->
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+
+    <!-- Table Body -->
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Sumit</td>
+            <td>Developer</td>
+            <td>$80,000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Amit</td>
+            <td>Designer</td>
+            <td>$70,000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Aryan</td>
+            <td>Manager</td>
+            <td>$90,000</td>
+        </tr>
+    </tbody>
+
+    <!-- Table Footer -->
+    <tfoot>
+        <tr>
+            <td colspan="3">Total Employees</td>
+            <td>3</td>
+        </tr>
+    </tfoot>
 </table>
 ```

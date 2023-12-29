@@ -190,6 +190,38 @@ This example links to a style sheet located in the same folder as the current pa
 ```
 You can read more about file paths in the chapter HTML File Paths.
 
+# Link & Script Tags
+
+The `<link>` and `<script>` tags are essential elements within an HTML document's `<head>` section. They serve various purposes, like linking external stylesheets or including JavaScript files.
+
+## The `<link>` Tag
+
+The `<link>` tag is commonly used to link external stylesheets to an HTML document. It's a self-closing tag, meaning it doesn't require a closing tag.
+
+Below is an example HTML code snippet that includes a `<link>` tag to link an external stylesheet:
+
+```html
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+```
+<video autoplay="autoplay" loop="loop" muted="" controls="controls" width="630" height="296"> <source src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-link-script-tags/css-added-link.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+
+## The `<script>` Tag
+
+The `<script>` tag is used to include JavaScript code or files in an HTML document. Unlike the `<link>` tag, the `<script>` tag must be closed with a `</script>` tag.
+
+Below is an example HTML code snippet that includes a `<script>` tag to link an external JavaScript file:
+
+```html
+<script src="script.js" type="text/javascript"></script>
+```
+
+<video autoplay="autoplay" loop="loop" muted="" controls="controls" width="630" height="296"> <source src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-link-script-tags/script-tag.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+
+## Conclusion
+
+The `<link>` and `<script>` tags are crucial for linking external resources like stylesheets and JavaScript files, enhancing the functionality and presentation of your HTML documents.
+
+
 ## Chapter Summary
 
 - Use the HTML style attribute for inline styling
