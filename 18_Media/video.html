@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420" controls>
+    <source src="https://player.vimeo.com/external/308149228.sd.mp4?s=a1b9a1901b5cc3cf671ae37b684a112a17c654f1&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 980; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 240; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 540; 
+} 
+</script> 
+
+</body> 
+</html>
+
