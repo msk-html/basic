@@ -204,6 +204,8 @@ SVG defines vector-based graphics in XML format.
 -   SVG is used to define graphics for the Web
 -   SVG is a W3C recommendation
 
+## Examples: [svg](photo_svg.svg) v/s [jpg](svg_Photo.jpg)
+
 ## The HTML `<svg>` Element
 
 The HTML `<svg>` element is a container for SVG graphics.
