@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>Div Box</title>
+
+    <style>
+        .mainBox{
+            border: 5px solid yellow;
+            height: 260px;
+            width: 260px;
+            padding: 10px;
+        }
+        .topBox{
+            border: 5px solid red;
+            height: 120px;
+            display: flex;
+        }
+        .bottomBox{
+            border: 5px solid red;
+            height: 120px;
+            display: flex;
+
+        }
+
+        .left{
+            border: 5px solid green;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+        }
+        .right{
+            border: 5px solid blue;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <form>
+        Name: <input type="text" /> <br />
+        Country:
+
+        <!-- This select tag with optgroup tag -->
+        <select>
+            <optgroup label="first">
+                <option>US</option>
+                <option>India</option>
+            </optgroup>
+            <optgroup label="Sec">
+                <option>US1</option>
+                <option>India2</option>
+            </optgroup>
+        </select>
+
+        <!-- This select tag without optgroup tag -->
+        <select>
+            <option>US</option>
+            <option>India</option>
+            <option>US1</option>
+            <option>India2</option>
+        </select>
+
+        <br> <br>
+
+        <div class="mainBox">
+            <div class="topBox">
+                <div class="left"> Div 1</div>
+                <div class="right"> Div 2</div>
+            </div>
+            <div class="bottomBox">
+                <div class="left"> Div 3</div>
+                <div class="right"> Div 4 </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
