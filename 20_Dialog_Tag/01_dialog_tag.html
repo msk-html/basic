@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .previewModal {
+            margin: auto;
+            padding: 0;
+            height: 80vh;
+            width: 80vw;
+            color: aliceblue;
+            background: blue;
+            border-radius: 10px;
+            /* z-index: 10;S */
+        }
+
+        .Login {
+            margin: auto;
+            padding: 0;
+            height: 70vh;
+            width: 70vw;
+            background: greenyellow;
+            border-radius: 10px;
+            /* z-index: 10;S */
+        }
+
+        dialog::backdrop {
+            background-color: hsl(250, 100%, 50%, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+
+    <button open-modal-preview onclick='document.querySelector("[data-modal-preview]").showModal()'>Preview</button>
+    <dialog data-modal-preview class="previewModal">
+        <span>Preview here</span>
+    </dialog>
+
+    <button open-modal-Login>Login</button>
+    <dialog data-modal-Login class="Login">
+        <form>
+            <input type="text" />
+            <button formmethod="dialog" type="submit">Cancel</button>
+            <button type="submit">Submit</button>
+        </form>
+    </dialog>
+
+
+    <script>
+        const openDialogpreview = document.querySelector("[open-modal-preview]")
+        const previewModal = document.querySelector("[data-modal-preview]")
+        // openDialogpreview.addEventListener("click", () => {
+        //     previewModal.showModal() // Opens a modal
+        // })
+
+        const openDialogLogin = document.querySelector("[open-modal-Login]")
+        const LoginModal = document.querySelector("[data-modal-Login]")
+        openDialogLogin.addEventListener("click", () => {
+            LoginModal.showModal() // Opens a modal
+        })
+
+        previewModal.addEventListener("click", e => {
+            const dialogDimensions = previewModal.getBoundingClientRect()
+            if (
+                e.clientX < dialogDimensions.left ||
+                e.clientX > dialogDimensions.right ||
+                e.clientY < dialogDimensions.top ||
+                e.clientY > dialogDimensions.bottom
+            ) {
+                previewModal.close()
+            }
+        })
+
+
+        // dialog.show() // Opens a non-modal dialog
+
+        // dialog.close() // Closes the dialog
+
+    </script>
+</body>
+
+</html>
