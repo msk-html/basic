@@ -151,31 +151,3 @@ Lists can be nested (list inside list):
 </ol>
 ```
 >Note: A list item (`<li>`) can contain a new list, and other HTML elements, like images and links, etc.
-
-## Chapter Summary
-- Use the HTML `<ol>` element to define an ordered list
-- Use the HTML type attribute to define the numbering type
-- Use the HTML `<li>` element to define a list item
-- Lists can be nested
-- List items can contain other HTML elements
-
-
-### Exercise:
-Finish the HTML code to make an ordered list.
-
-```html
-<li>Coffee</li>
-<li>Tea</li>
-<li>Milk</li>
-```
-
-### HTML List Tags
-
-### Tag	Description
-
-- `<ul>`	Defines an unordered list
-- `<ol>`	Defines an ordered list
-- `<li>`	Defines a list item
-- `<dl>`	Defines a description list
-- `<dt>`	Defines a term in a description list
-- `<dd>`	Describes the term in a description list

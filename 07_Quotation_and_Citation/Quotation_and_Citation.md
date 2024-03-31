@@ -4,9 +4,9 @@ In this chapter we will go through the `<blockquote>,<q>, <abbr>, <address>, <ci
 
 Here is a quote from WWF's website:
 
-## HTML `<blockquote>` for Quotations
+## `<blockquote>` for Quotations
 
-The HTML `<blockquote>` element defines a section that is quoted from another source.
+The `<blockquote>` element defines a section that is quoted from another source.
 
 Browsers usually indent `<blockquote>` elements.
 ### [Example](example1.html)
@@ -22,7 +22,7 @@ close to 5 million globally.
 </blockquote>
 ```
 
-## HTML `<q>` for Short Quotations
+## `<q>` for Short Quotations
 
 The HTML `<q>` tag defines a short quotation.
 Browsers normally insert quotation marks around the quotation.
@@ -32,7 +32,7 @@ Browsers normally insert quotation marks around the quotation.
 <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
 ```
 
-## HTML `<abbr>` for Abbreviations
+## `<abbr>` for Abbreviations
 
 The HTML `<abbr>` tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
 Marking abbreviations can give useful information to browsers, translation systems and search-engines.
@@ -43,7 +43,7 @@ Tip: Use the global title attribute to show the description for the abbreviation
 <p>The <abbr title="Mr Sumit Kumar">MSK</abbr> was founded in 2023.</p>
 ```
 
-## HTML `<address>` for Contact Information
+## `<address>` for Contact Information
 The HTML `<address>` tag defines the contact information for the author/owner of a document or an article.
 
 The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
@@ -62,7 +62,7 @@ USA
 </address>
 ```
 
-## HTML <cite> for Work Title
+## `<cite>` for Work Title
 
 The HTML `<cite>` tag defines the title of a creative work (e.ga book, a poem, a song, a movie, a painting, a sculpture, etc.).
 
@@ -75,7 +75,7 @@ The text in the `<cite>` element usually renders in italic.
 <p><cite>The Scream</cite> by Edvard MunchPainted in 1893.</p>
 ```
 
-## HTML `<bdo>` for Bi-Directional Override
+## `<bdo>` for Bi-Directional Override
 
 BDO stands for Bi-Directional Override.
 The HTML `<bdo>` tag is used to override the current text direction:
@@ -84,13 +84,4 @@ The HTML `<bdo>` tag is used to override the current text direction:
 ```html
 <bdo dir="rtl">This text will be written from right to left</bdo>
 ```
-
-## Test Yourself With Exercises
-### Exercise:
-
-Use an HTML element to add quotation marks around the letters "cool".
-```html
-<p>
-I am so __cool__.
-</p>
-```
+# [<<<Back](../06_Text_Formatting/Text_Formatting.md) : [Next>>>](../08_Comments/comment.md)

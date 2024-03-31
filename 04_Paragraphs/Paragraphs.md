@@ -2,7 +2,7 @@
 ___
 A paragraph always starts on a new line, and is usually a block of text.
 
-## HTML Paragraphs
+## `<p>` Tag
 The HTML `<p>` element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
 
 ## [Example](paragraph.html)
@@ -58,33 +58,62 @@ Use `<br>` if you want a line break (a new line) without starting a new paragrap
 The `<br>` tag is an empty tag, which means that it has no end tag.
 ___
 
-## The Poem Problem
+## The Application Problem
 
-This poem will display on a single line:
+This Application will display on a single line:
 
 ### Example
 ```html
 <p>
-  My Bonnie lies over the ocean.
-  My Bonnie lies over the sea.
+To
+The Manager
+MSK Institute
 
-  My Bonnie lies over the ocean.
-  Oh, bring back my Bonnie to me.
+Date : 18 Jan. 2024
+
+Subject : Leave Application for two Days.
+
+Respected sir/madam
+
+With due Respect, I beg to say that I am a student of class 10th in your school. I am not feeling well today and also have some weakness. Hence I request you to please grant me two days leave.
+
+I hope you will consider my application. I will definitely try to remain present after 2 days.
+
+Thanking you.
+
+Yours obediently
+Name : Sumit Kumar
+Class : 11th
 </p>
 ```
 ___
 
-## Solution - The HTML `<pre>` Element
+## `<pre>` Tag
 The HTML `<pre>` element defines preformatted text.
 The text inside a `<pre>` element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
 
 ### Example
 ```html
 <pre>
-  My Bonnie lies over the ocean.
-  My Bonnie lies over the sea.
+To
+The Manager
+MSK Institute
 
-  My Bonnie lies over the ocean.
-  Oh, bring back my Bonnie to me.
+Date : 18 Jan. 2024
+
+Subject : Leave Application for two Days.
+
+Respected sir/madam
+
+With due Respect, I beg to say that I am a student of class 10th in your school. I am not feeling well today and also have some weakness. Hence I request you to please grant me two days leave.
+
+I hope you will consider my application. I will definitely try to remain present after 2 days.
+
+Thanking you.
+
+Yours obediently
+Name : Sumit Kumar
+Class : 11th
 </pre>
 ```
+# [<<<Back](../03_Heading/heading.md) : [Next>>>](../05_Element_&_Attributes/01_Element.md)

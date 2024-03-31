@@ -1,4 +1,4 @@
-# HTML Installation
+# HTML Installation & Setup
 
 Let's get our hands dirty and start preparing to write some code. In this tutorial, we will install VS Code and some related extensions for faster and more efficient HTML development.
 
@@ -10,7 +10,7 @@ I can safely say that there are **no prerequisites to learning HTML**. HTML is t
 
 1) **HTML Editor:** It's a straightforward tool where every piece of HTML content must be written. You can use any text editor of your choice. In this tutorial, we're using Visual Studio Code because it's lightweight and open-source.
 
-Popular editors for HTML development include text editors like [Notepad++](https://notepad-plus-plus.org/) and [TextEdit](https://support.apple.com/en-in/guide/textedit/welcome/mac), code editors such as [Sublime Text](https://www.sublimetext.com/) and [Visual Studio Code](https://code.visualstudio.com/), and full-fledged IDEs like [WebStorm](https://www.jetbrains.com/webstorm/ "jetbrains webstorm") and [Eclipse](https://www.eclipse.org/downloads/ "Eclipse"). Online platforms like [CodePen](https://codepen.io/ "codepen") and [JSFiddle](https://jsfiddle.net/ "jsfiddle") are also commonly used for quick HTML editing and testing.
+Popular editors for HTML development include text editors like [Notepad++](https://notepad-plus-plus.org/), [Sublime Text](https://www.sublimetext.com/) and [Visual Studio Code](https://code.visualstudio.com/), Online platforms like [MSK Web Editor](https://jsfiddle.net/ "MSK Web Editor") are also commonly used for quick HTML editing and testing.
 
 > **Note: You can write HTML even in a Notepad. Text editors like VS code make these things easier.**
 
@@ -42,3 +42,5 @@ Here is a quick video showing the installation of the VS Code 'Live Server' exte
 Your browser does not support the video tag.
 
 In the next lesson, we will start writing some code and review the document structure of HTML pages.
+
+# [<<<Back](../01_Intro/Introduction.md) : [Next>>>](../03_Heading/heading.md)

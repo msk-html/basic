@@ -31,3 +31,6 @@ Each HTML heading has a default size However, you can specify the size for any h
 <h1 style="font-size:60px;">MSK Institute 60px</h1>
 ```
 ![Alt text](image-1.png)
+
+
+# [<<<Back](../01_Intro/SetUp.md) : [Next>>>](../04_Paragraphs/Paragraphs.md)

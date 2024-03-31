@@ -1,14 +1,13 @@
 # HTML Table Sizes
 HTML tables can have different sizes for each column, row or the entire table.
 
-![Alt text](image-9.png)
+![Alt text](images/image-9.png)
 
 Use the `style` attribute with the `width` or `height` properties to specify the size of a table, row or column.
 
 ## HTML Table Width
 To set the width of a table, add the `style` attribute to the `<table>` element:
 
-### Example : [File](table_size.html)
 Set the width of the table to 100%:
 ```html
 <table style="width:100%">
@@ -34,11 +33,10 @@ Set the width of the table to 100%:
 
 ## HTML Table Column Width
  	 	 
-![Alt text](image-10.png)
+![Alt text](images/image-10.png)
  	 	 
 To set the size of a specific column, add the style attribute on a `<th>` or `<td>` element:
 
-### Example
 Set the width of the first column to 70%:
 ```html
 <table style="width:100%">
@@ -61,11 +59,10 @@ Set the width of the first column to 70%:
 ```
 ## HTML Table Row Height
  	 	 
-![Alt text](image-11.png)
+![Alt text](images/image-11.png)
  	 	 
 To set the height of a specific row, add the `style` attribute on a table row element:
 
-Example
 Set the height of the second row to 200 pixels:
 ```html
 <table style="width:100%">
@@ -87,25 +84,7 @@ Set the height of the second row to 200 pixels:
 </table>
 ```
 
-### Exercise:
-Use CSS styles to make the table 300 pixels wide.
-```html
-<table __________>
-  <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Points</th>
-  </tr>
-  <tr>
-    <td>Sumit</td>
-    <td>Yadav</td>
-    <td>50</td>
-  </tr>
-</table>
-```
-
-
-## `Rowspan` and `Colspan` Attributes
+# `Rowspan` and `Colspan` Attributes
 
 `Rowspan`: If you want a table cell to span multiple rows, you can use the rowspan attribute.
 ```html
@@ -120,7 +99,7 @@ Use CSS styles to make the table 300 pixels wide.
 
 ### Example for Colspan:
 ```html
-<table border="1">
+<table border>
   <tr>
     <td colspan="2">Merged Columns</td>
   </tr>
@@ -130,21 +109,10 @@ Use CSS styles to make the table 300 pixels wide.
   </tr>
 </table>
 ```
-
-<table border="1">
-  <tr>
-    <td colspan="2">Merged Columns</td>
-  </tr>
-  <tr>
-    <td>Column 1</td>
-    <td>Column 2</td>
-  </tr>
-</table>
-
 
 ### Example for Rowspan:
 ```html
-<table border="1">
+<table border>
   <tr>
     <td>Row 1, Column 1</td>
     <td rowspan="2">Merged Rows</td>
@@ -154,12 +122,3 @@ Use CSS styles to make the table 300 pixels wide.
   </tr>
 </table>
 ```
-<table border="1">
-  <tr>
-    <td>Row 1, Column 1</td>
-    <td rowspan="2">Merged Rows</td>
-  </tr>
-  <tr>
-    <td>Row 2, Column 1</td>
-  </tr>
-</table>

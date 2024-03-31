@@ -237,22 +237,4 @@ The `<link>` and `<script>` tags are crucial for linking external resources like
 
 > Tip: You can learn much more about CSS in our CSS Tutorial.
 
-### Exercise:
-Use CSS to set the background color of the document (body) to yellow.
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            ____{
-                ____________ :yellow;
-            }
-        </style>
-    </head>
-<body>
-
-    <h1>My Home Page</h1>
-
-</body>
-</html>
-```
+# [<<<Back](../09_Colors/01_colors.md) : [Next>>>](../11_Links/Links.md)

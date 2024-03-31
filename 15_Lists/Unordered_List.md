@@ -6,7 +6,6 @@ An unordered list starts with the `<ul>` tag. Each list item starts with the `<l
 
 The list items will be marked with bullets (small black circles) by default:
 
-#Example
 ```html
 <ul>
   <li>Coffee</li>
@@ -22,7 +21,8 @@ The CSS list-style-type property is used to define the style of the list item ma
 - circle	Sets the list item marker to a circle
 - square	Sets the list item marker to a square
 - none	The list items will not be marked
-### Example - Disc
+
+### Disc: `list-style-type:disc;`
 ```html
 <ul style="list-style-type:disc;">
   <li>Coffee</li>
@@ -30,7 +30,7 @@ The CSS list-style-type property is used to define the style of the list item ma
   <li>Milk</li>
 </ul>
 ```
-### Example - Circle
+### Circle: `list-style-type:circle;`
 ```html
 <ul style="list-style-type:circle;">
   <li>Coffee</li>
@@ -38,7 +38,7 @@ The CSS list-style-type property is used to define the style of the list item ma
   <li>Milk</li>
 </ul>
 ```
-### Example - Square
+### Square: `list-style-type:square;`
 ```html
 <ul style="list-style-type:square;">
   <li>Coffee</li>
@@ -46,7 +46,7 @@ The CSS list-style-type property is used to define the style of the list item ma
   <li>Milk</li>
 </ul>
 ```
-### Example - None
+### None: `list-style-type:none;`
 ```html
 <ul style="list-style-type:none;">
   <li>Coffee</li>
@@ -57,7 +57,6 @@ The CSS list-style-type property is used to define the style of the list item ma
 ## Nested HTML Lists
 Lists can be nested (list inside list):
 
-### Example
 ```html
 <ul>
   <li>Coffee</li>
@@ -122,19 +121,3 @@ li a:hover {
 ```
 > Tip: You can learn much more about CSS in our CSS Tutorial.
 
-## Chapter Summary
-
--Use the HTML `<ul>` element to define an unordered list
--Use the CSS list-style-type property to define the list item marker
--Use the HTML `<li>` element to define a list item
--Lists can be nested
--List items can contain other HTML elements
--Use the CSS property float:left to display a list horizontally
-
-### Exercise:
-Finish the HTML code to make an unordered list.
-```html
-<li>Coffee</li>
-<li>Tea</li>
-<li>Milk</li>
-```

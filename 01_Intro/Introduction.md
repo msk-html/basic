@@ -12,7 +12,7 @@ HTML is the standard markup language for creating Web pages.
 -  HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
 
 A Simple HTML Document
-### Example [Try Now](index.html)
+### Example [Try](index.html)
 
 ```html
 <!DOCTYPE html>
@@ -75,7 +75,7 @@ Below is a visualization of an HTML page structure:
 </head>
 <body>
     <h1>MSK Institute</h1>
-    <p>MSK Institute is the best for computer courses and coding classes.</p>
+    <p>MSK Institute is the best for learn Computer Courses and Coding Classes.</p>
 </body>
 </html>
 ```
@@ -100,3 +100,6 @@ Since the early days of the World Wide Web, there have been many versions of HTM
 | 2016 | HTML 5.1 |
 | 2017 | HTML5.1 2nd Edition |
 | 2017 | HTML5.2 |
+
+
+# [Next>>>](../02_SetUp/SetUp.md)

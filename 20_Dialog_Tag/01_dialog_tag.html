@@ -28,7 +28,7 @@
         }
 
         dialog::backdrop {
-            background-color: hsl(250, 100%, 50%, 0.25);
+            background-color: hsla(80, 100%, 43%, 0.25);
         }
     </style>
 </head>
@@ -48,21 +48,16 @@
             <button type="submit">Submit</button>
         </form>
     </dialog>
-
-
+    
     <script>
-        const openDialogpreview = document.querySelector("[open-modal-preview]")
-        const previewModal = document.querySelector("[data-modal-preview]")
-        // openDialogpreview.addEventListener("click", () => {
-        //     previewModal.showModal() // Opens a modal
-        // })
-
+        
         const openDialogLogin = document.querySelector("[open-modal-Login]")
         const LoginModal = document.querySelector("[data-modal-Login]")
         openDialogLogin.addEventListener("click", () => {
             LoginModal.showModal() // Opens a modal
         })
-
+        
+        const previewModal = document.querySelector("[data-modal-preview]")
         previewModal.addEventListener("click", e => {
             const dialogDimensions = previewModal.getBoundingClientRect()
             if (

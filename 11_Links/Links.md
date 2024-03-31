@@ -133,13 +133,4 @@ You can read more about file paths in the chapter HTML File Paths.
 - Use the `<img>` element (inside `<a>`) to use an image as a link
 - Use the `mailto:` scheme inside the `href` attribute to create a link that opens the user's email program
 
-
-For a complete list of all available HTML tags, visit our HTML Tag Reference.
-
-HTML Exercises
-Test Yourself With Exercises
-Exercise:
-Use the correct HTML to make the text below into a link to "default.html".
-
- 
->Visit our HTML tutorial.
+# [<<<Back](../10_Style_CSS/style_css.md) : [Next>>>](../12_images/image.md)

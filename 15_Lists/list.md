@@ -1,20 +1,18 @@
 # HTML Lists
 HTML lists allow web developers to group a set of related items in lists.
 
-### Example
-
 <h4>An Unordered HTML List</h4>
 <ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
+  <li>Sumit</li>
+  <li>Amit</li>
+  <li>Aryan</li>
 </ul>  
 
 <h4>An Ordered HTML List</h4>
 <ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
+  <li>Sumit</li>
+  <li>Amit</li>
+  <li>Aryan</li>
 </ol>
 
 ## Unordered HTML List
@@ -22,12 +20,11 @@ An unordered list starts with the `<ul>` tag. Each list item starts with the `<l
 
 The list items will be marked with bullets (small black circles) by default:
 
-### Example
 ```html
 <ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
+  <li>Sumit</li>
+  <li>Amit</li>
+  <li>Aryan</li>
 </ul>
 ```
 ## Ordered HTML List
@@ -35,51 +32,32 @@ An ordered list starts with the `<ol>` tag. Each list item starts with the `<li>
 
 The list items will be marked with numbers by default:
 
-### Example
 ```html
 <ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
+  <li>Sumit</li>
+  <li>Amit</li>
+  <li>Aryan</li>
 </ol>
 ```
 
 ## HTML Description Lists
-HTML also supports description lists.
 
 A description list is a list of terms, with a description of each term.
 
 <dl>
-  <dt>Coffee</dt>
-  <dd>- black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>- white cold drink</dd>
+  <dt>Sumit</dt>
+  <dd>- He is a python developer.</dd>
+  <dt>Aryan</dt>
+  <dd>- He is student of 3rd class.</dd>
 </dl>
 
 The `<dl>` tag defines the description list, the `<dt>` tag defines the term (name), and the `<dd>` tag describes each term:
 
-### Example
 ```html
 <dl>
-  <dt>Coffee</dt>
-  <dd>- black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>- white cold drink</dd>
+  <dt>Sumit</dt>
+  <dd>- He is a python developer.</dd>
+  <dt>Aryan</dt>
+  <dd>- He is student of 3rd class.</dd>
 </dl>
 ```
-
-## Exercise:
-Add a list item with the text "Coffee" inside the `<ul>` element.
-```html
-<ul>____ Coffee ____</ul>
-```
-
-### HTML List Tags
-Tag	Description
-
-- `<ul>` Defines an unordered list
-- `<ol>` Defines an ordered list
-- `<li>` Defines a list item
-- `<dl>` Defines a description list
-- `<dt>` Defines a term in a description list
-- `<dd>` Describes the term in a description list

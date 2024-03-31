@@ -2,20 +2,17 @@
 HTML tables can have borders of different styles and shapes.
 
 ## How To Add a Border
-To add a border, use the CSS border property on `table`, `th`, and `td` elements:
+![Alt text](images/image-1.png)
 
-<style>
-table, th, td {
-  border: 1px solid black;
-}
-</style>
-</head>
-<body>
+To add a border, use the `border` attribute in `<table>` element Or CSS border property on `table`, `th`, and `td` elements:
+### `border` : Attribute
+```html
+<table border>
+    content...
+</table>
+```
 
-![Alt text](image-1.png)
-
-### Example
-
+### Using CSS
 ```css
 table, th, td {
   border: 1px solid black;
@@ -27,7 +24,7 @@ To avoid having double borders like in the example above, set the CSS `border-co
 
 This will make the borders collapse into a single border:
 
-![Alt text](image-2.png)
+![Alt text](images/image-2.png)
 
 ### Example
 ```css
@@ -40,7 +37,7 @@ table, th, td {
 
 If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border:
 
-![Alt text](image-3.png)
+![Alt text](images/image-3.png)
 
 ### Example
 ```css
@@ -56,7 +53,7 @@ th, td {
 ## Round Table Borders
 With the `border-radius` property, the borders get rounded corners:
 
-![Alt text](image-4.png)	 
+![Alt text](images/image-4.png)	 
  	 	 
 Example
 ```css
@@ -67,7 +64,7 @@ table, th, td {
 ```
 Skip the border around the table by leaving out `table` from the css selector:
 
-![Alt text](image-5.png)
+![Alt text](images/image-5.png)
  	 	 
 Example
 ```css
@@ -79,11 +76,11 @@ th, td {
 ## Dotted Table Borders
 With the `border-style` property, you can set the appearance of the border.
 
-![Alt text](image-6.png)
+![Alt text](images/image-6.png)
 
 The following values are allowed:
 
-![Alt text](image-7.png)
+![Alt text](images/image-7.png)
 
 ### Example
 ```css
@@ -95,7 +92,7 @@ th, td {
 
 With the `border-color` property, you can set the color of the border.
 
-![Alt text](image-8.png)
+![Alt text](images/image-8.png)
 
 ### Example
 ```css
@@ -103,12 +100,3 @@ th, td {
   border-color: #96D4D4;
 }
 ```
-HTML Exercises
-Test Yourself With Exercises
-Exercise:
-Use the correct CSS border values to create a solid black 3 pixels border on a table element.
-
-table, th, td {
-  border: 
-;
-}

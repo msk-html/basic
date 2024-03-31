@@ -35,3 +35,5 @@ For example:
 <img src="image.png" alt="Image Description" width="300" height="100" />
 ```
 > NOTE: This method was used earlier. The styling is now handled by CSS. We can style our image using CSS properties. We can give height, width, border, alignment, etc. to our images. To learn more about styling check our CSS tutorial.
+
+# [<<<Back](../11_Links/Links.md) : [Next>>>](../13_Favicon/favicon.md)
