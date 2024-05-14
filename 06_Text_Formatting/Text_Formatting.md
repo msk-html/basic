@@ -86,6 +86,7 @@ The HTML `<sub>` element defines subscript textSubscript text appears half a cha
 
 ```html
 <p>This is <sub>subscripted</sub> text.</p>
+K<sub>2</sub> SO<sub>4</sub>. Al <sub>2</sub> (SO<sub>4</sub>)3.24H<sub>2</sub>O
 ```
 
 ### `<sup>` Tag
@@ -93,6 +94,7 @@ The HTML `<sup>` element defines superscript textSuperscript text appears half a
 
 ```html
 <p>This is <sup>superscripted</sup> text.</p>
+(a+b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>
 ```
 
 # [<<<Back](../05_Element_&_Attributes/02_Attributes.md) : [Next>>>](../07_Quotation_and_Citation/Quotation_and_Citation.md)

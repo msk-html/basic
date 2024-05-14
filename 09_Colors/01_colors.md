@@ -88,9 +88,5 @@ The following two `<div>` elements have their background color set with RGBA and
 <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">MSK</h1>
 ```
 
-## Exercise:
 
-Insert the correct property to make the text color violet.
-```html
-<p style="____: violet">This is a paragraph.</p>
-```
+# [<<<Back](../08_Comments/comment.md) : [Next>>>](../10_Style_CSS/style_css.md)

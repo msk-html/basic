@@ -65,14 +65,5 @@ Hide a part of a paragaph:
 ```html
 <p>This <!-- great text --> is a paragraph.</p>
 ```
-## HTML Exercises
-Test Yourself With Exercises
-### Exercise:
 
-Use the HTML comment tag to make a comment out of the "This is a comment" text.
-```html
-<h1>This is a heading</h1>
-  This is a comment  
-<p>This is a paragraph.</p>
-```
 # [<<<Back](../07_Quotation_and_Citation/Quotation_and_Citation.md) : [Next>>>](../09_Colors/01_colors.md)

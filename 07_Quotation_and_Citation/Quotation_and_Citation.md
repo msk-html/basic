@@ -62,19 +62,6 @@ USA
 </address>
 ```
 
-## `<cite>` for Work Title
-
-The HTML `<cite>` tag defines the title of a creative work (e.ga book, a poem, a song, a movie, a painting, a sculpture, etc.).
-
-**Note:** A person's name is not the title of a work.
-
-The text in the `<cite>` element usually renders in italic.
-
-### Example
-```html
-<p><cite>The Scream</cite> by Edvard MunchPainted in 1893.</p>
-```
-
 ## `<bdo>` for Bi-Directional Override
 
 BDO stands for Bi-Directional Override.
