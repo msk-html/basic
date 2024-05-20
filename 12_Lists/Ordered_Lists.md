@@ -23,20 +23,19 @@ The list items will be marked with numbers by default:
 The type attribute of the `<ol>` tag, defines the type of the list item marker:
 
 ### Type	Description
-- `type="1"`	The list items will be numbered with numbers (default)
-- `type="A"`	The list items will be numbered with uppercase letters
-- `type="a"`	The list items will be numbered with lowercase letters
-- `type="I"`	The list items will be numbered with uppercase roman numbers
-- `type="i"`	The list items will be numbered with lowercase roman numbers
+1. [type="1"](#)
+1. [type="A"](#)
+1. [type="a"](#)
+1. [type="I"](#)
+1. [type="i"](#)
 
-### Numbers:
+### numbers
 <ol type="1">
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
 </ol>
 
-
 ```html
 <ol type="1">
   <li>Coffee</li>
@@ -44,13 +43,13 @@ The type attribute of the `<ol>` tag, defines the type of the list item marker:
   <li>Milk</li>
 </ol>
 ```
-### Uppercase Letters:
+
+### uppercase
 <ol type="A">
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
 </ol>
-
 
 ```html
 <ol type="A">
@@ -59,13 +58,13 @@ The type attribute of the `<ol>` tag, defines the type of the list item marker:
   <li>Milk</li>
 </ol>
 ```
-### Lowercase Letters:
+
+### lowercase
 <ol type="a">
   <li>Coffee</li>
   <li>Tea</li>
   <li>Milk</li>
 </ol>
-
 
 ```html
 <ol type="a">
@@ -74,7 +73,8 @@ The type attribute of the `<ol>` tag, defines the type of the list item marker:
   <li>Milk</li>
 </ol>
 ```
-### Uppercase Roman Numbers:
+
+### uppercase roman numbers:
 <ol type="I">
   <li>Coffee</li>
   <li>Tea</li>
@@ -151,3 +151,6 @@ Lists can be nested (list inside list):
 </ol>
 ```
 >Note: A list item (`<li>`) can contain a new list, and other HTML elements, like images and links, etc.
+
+
+# [<<< Back](list.md)

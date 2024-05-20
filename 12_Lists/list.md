@@ -15,7 +15,7 @@ HTML lists allow web developers to group a set of related items in lists.
   <li>Aryan</li>
 </ol>
 
-## Unordered HTML List
+## Unordered ([more](Unordered_List.md))
 An unordered list starts with the `<ul>` tag. Each list item starts with the `<li>` tag.
 
 The list items will be marked with bullets (small black circles) by default:
@@ -27,7 +27,7 @@ The list items will be marked with bullets (small black circles) by default:
   <li>Aryan</li>
 </ul>
 ```
-## Ordered HTML List
+## Ordered ([more](Ordered_Lists.md))
 An ordered list starts with the `<ol>` tag. Each list item starts with the `<li>` tag.
 
 The list items will be marked with numbers by default:
@@ -58,6 +58,6 @@ The `<dl>` tag defines the description list, the `<dt>` tag defines the term (na
   <dt>Sumit</dt>
   <dd>- He is a python developer.</dd>
   <dt>Aryan</dt>
-  <dd>- He is student of 3rd class.</dd>
+  <dd>- He is student of MSK Institute.</dd>
 </dl>
 ```
