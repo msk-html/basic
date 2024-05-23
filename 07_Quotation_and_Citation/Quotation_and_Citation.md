@@ -12,13 +12,10 @@ Browsers usually indent `<blockquote>` elements.
 ### [Example](example1.html)
 
 ```html
-<p>Here is a quote from WWF's website:</p>
-<blockquote cite="http://www.worldwildlife.org/who/index.html">
-For 50 years, WWF has been protecting the future of nature.
-The world's leading conservation organization,
-WWF works in 100 countries and is supported by
-1.2 million members in the United States and
-close to 5 million globally.
+<p>Non harum eos ea fuga sint veritatis, id unde animi voluptates porro doloribus nesciunt ad delectus amet recusandae debitis dolores! Repellat quo hic eligendi placeat. Ea?</p>
+
+<blockquote>
+    Officiis distinctio voluptates soluta assumenda doloremque deleniti libero molestias rem nostrum voluptatum dolores, velit quibusdam recusandae placeat, tenetur provident rerum cupiditate ad, fuga consequatur excepturi! Sit!
 </blockquote>
 ```
 
@@ -29,7 +26,7 @@ Browsers normally insert quotation marks around the quotation.
 
 ### Example
 ```html
-<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+<p>MSK Institute is the <q>Best for learn Coding & Computer Courses in Shikohabad</q> </p>
 ```
 
 ## `<abbr>` for Abbreviations
@@ -40,7 +37,7 @@ Tip: Use the global title attribute to show the description for the abbreviation
 
 ### Example
 ```html
-<p>The <abbr title="Mr Sumit Kumar">MSK</abbr> was founded in 2023.</p>
+<p>The <abbr title="MSK Institute">MSK</abbr> was founded in 2023.</p>
 ```
 
 ## `<address>` for Contact Information
@@ -54,11 +51,10 @@ The text in the `<address>` element usually renders in italic, and browsers will
 
 ```html
 <address>
-Written by John Doe.<br>
-Visit us at:<br>
-Example.com<br>
-Box 564, Disneyland<br>
-USA
+    Written by: Sumit Kumar.<br>
+    Visit at: MSK Institute<br>
+    Website: mskinstitute.com<br>
+    Address: Near Subhash Park, Shikohabad, Firozabad (UP)
 </address>
 ```
 
@@ -69,6 +65,11 @@ The HTML `<bdo>` tag is used to override the current text direction:
 
 ### Example
 ```html
-<bdo dir="rtl">This text will be written from right to left</bdo>
+<bdo dir="rtl">Best for learn Coding & Computer Courses in Shikohabad</bdo>
 ```
+
+```html
+<marquee direction="left">MSK Institute</marquee>
+```
+
 # [<<<Back](../06_Text_Formatting/Text_Formatting.md) : [Next>>>](../08_Comments/comment.md)

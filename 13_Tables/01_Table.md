@@ -186,4 +186,4 @@ Here is an example HTML table with all the important elements:
 </table>
 ```
 
-# [<<<Back](../13_Favicon/favicon.md) : [Next>>>](../15_Lists/list.md)
+# [<<<Back](../13_Favicon/favicon.md) : [Next>>>](02_Table_Borders.md)
