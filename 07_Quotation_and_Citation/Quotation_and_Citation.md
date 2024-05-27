@@ -9,7 +9,7 @@ Here is a quote from WWF's website:
 The `<blockquote>` element defines a section that is quoted from another source.
 
 Browsers usually indent `<blockquote>` elements.
-### [Example](example1.html)
+### [Example](index.html)
 
 ```html
 <p>Non harum eos ea fuga sint veritatis, id unde animi voluptates porro doloribus nesciunt ad delectus amet recusandae debitis dolores! Repellat quo hic eligendi placeat. Ea?</p>

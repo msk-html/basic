@@ -5,7 +5,7 @@ HTML comments are not displayed in the browser, but they can help document your 
 ## HTML Comment Tag
 You can add comments to your HTML source by using the following syntax:
 
-### [Example](comment.html)
+### [Example](index.html)
 ```html
 <!-- Write your comments here -->
 ```
