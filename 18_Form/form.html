@@ -1,86 +1,47 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
-    <title>Div Box</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
 
     <style>
-        .mainBox{
-            border: 5px solid yellow;
-            height: 260px;
-            width: 260px;
-            padding: 10px;
+        input {
+            width: 300px;
         }
-        .topBox{
-            border: 5px solid red;
-            height: 120px;
-            display: flex;
-        }
-        .bottomBox{
-            border: 5px solid red;
-            height: 120px;
-            display: flex;
-
-        }
-
-        .left{
-            border: 5px solid green;
-            height: 100px;
-            width: 100px;
-            margin: auto;
-        }
-        .right{
-            border: 5px solid blue;
-            height: 100px;
-            width: 100px;
-            margin: auto;
-        }
-
     </style>
 
 </head>
-
 <body>
-    <form>
-        Name: <input type="text" /> <br />
-        Country:
+    <h1 style="font-size: 40px;">Contact Form</h1>
 
-        <!-- This select tag with optgroup tag -->
-        <select>
-            <optgroup label="first">
-                <option>US</option>
-                <option>India</option>
-            </optgroup>
-            <optgroup label="Sec">
-                <option>US1</option>
-                <option>India2</option>
-            </optgroup>
+    <form action="">
+        <input type="text" placeholder="Enter Your Name Here:" >
+        <br><br>
+        
+        <input type="number" placeholder="Enter Your Mobile Number">
+        <br><br>
+
+        <input type="password" placeholder="Password">
+        <br><br>
+
+        <select name="" id="">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Bootstrap" >Bootstrap</option>
+            <option value="Python">Python</option>
+            <option value="Other" selected>Other</option>
         </select>
 
-        <!-- This select tag without optgroup tag -->
-        <select>
-            <option>US</option>
-            <option>India</option>
-            <option>US1</option>
-            <option>India2</option>
-        </select>
+        <br><br>
 
-        <br> <br>
+        <input type="submit">
 
-        <div class="mainBox">
-            <div class="topBox">
-                <div class="left"> Div 1</div>
-                <div class="right"> Div 2</div>
-            </div>
-            <div class="bottomBox">
-                <div class="left"> Div 3</div>
-                <div class="right"> Div 4 </div>
-            </div>
-        </div>
+        <br><br>
+        <input type="reset">
 
+        <button>Save</button>
     </form>
 </body>
-
 </html>

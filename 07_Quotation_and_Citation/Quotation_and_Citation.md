@@ -72,4 +72,15 @@ The HTML `<bdo>` tag is used to override the current text direction:
 <marquee direction="left">MSK Institute</marquee>
 ```
 
+```html
+<!-- Scroll behavior -->
+<marquee behavior="scroll" direction="left">Scrolling text</marquee>
+
+<!-- Slide behavior -->
+<marquee behavior="slide" direction="right">Sliding text</marquee>
+
+<!-- Alternate behavior -->
+<marquee behavior="alternate" direction="left">Bouncing text</marquee>
+```
+
 # [<<<Back](../06_Text_Formatting/Text_Formatting.md) : [Next>>>](../08_Comments/comment.md)
