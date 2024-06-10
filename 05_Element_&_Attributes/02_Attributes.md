@@ -24,7 +24,7 @@ The `<img>` tag is used to embed an image in an HTML page. The `src` attribute s
 
 ### Example
 ```html
-<img src="hello.png">
+<img src="https://mskinstitute.github.io/assets/img/hello.png" width="100px">
 ```
 
 There are two ways to specify the URL in the `src` attribute:
