@@ -43,20 +43,27 @@
     <button open-modal-Login>Login</button>
     <dialog data-modal-Login class="Login">
         <form>
-            <input type="text" />
+            <h1>Log In Form:</h1>
+            <label for="name">User Name:</label>
+            <input type="text" id="name">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <br>
+            <input type="reset">
             <button formmethod="dialog" type="submit">Cancel</button>
             <button type="submit">Submit</button>
         </form>
     </dialog>
-    
+
     <script>
-        
+
         const openDialogLogin = document.querySelector("[open-modal-Login]")
         const LoginModal = document.querySelector("[data-modal-Login]")
         openDialogLogin.addEventListener("click", () => {
             LoginModal.showModal() // Opens a modal
         })
-        
+
         const previewModal = document.querySelector("[data-modal-preview]")
         previewModal.addEventListener("click", e => {
             const dialogDimensions = previewModal.getBoundingClientRect()

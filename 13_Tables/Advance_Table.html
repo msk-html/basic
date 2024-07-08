@@ -1,18 +1,20 @@
 <style>
     caption {
         border: 1px solid;
+        height: 50;
+        border-radius: 15px;
     }
     tr {
-        height: 40px;
+        height: 100px;
     }
     th, td {
-        width: 100px;
+        width: 600px;
         text-align: center;
+        border-radius: 15px;
     }
 </style>
 
-
-<table border="1">
+<table border style="border-radius: 15px;">
     <!-- Caption -->
     <caption>Employee Information</caption>
 
@@ -34,7 +36,7 @@
             <td>Manager</td>
             <td>90,000</td>
         </tr>
-        <tr>
+        <tr style="height: 250px;">
             <td>2</td>
             <td>Amit</td>
             <td>Developer</td>
@@ -51,8 +53,8 @@
     <!-- Table Footer -->
     <tfoot>
         <tr>
-            <td colspan="3">Total Employees</td>
-            <td>3</td>
+            <th colspan="3">Total Employees</th>
+            <th>3</th>
         </tr>
     </tfoot>
 </table>

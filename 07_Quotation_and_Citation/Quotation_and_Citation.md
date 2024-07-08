@@ -83,4 +83,8 @@ The HTML `<bdo>` tag is used to override the current text direction:
 <marquee behavior="alternate" direction="left">Bouncing text</marquee>
 ```
 
+```html
+<meter value="0.6">60%</meter>
+```
+
 # [<<<Back](../06_Text_Formatting/Text_Formatting.md) : [Next>>>](../08_Comments/comment.md)

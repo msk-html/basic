@@ -1,8 +1,8 @@
-# HTML Paragraphs
-___
-A paragraph always starts on a new line, and is usually a block of text.
+># HTML Paragraphs
 
-## `<p>` Tag
+## `<p>` Element
+
+A paragraph always starts on a new line, and is usually a block of text.
 The HTML `<p>` element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
 
 ## [Example](paragraph.html)

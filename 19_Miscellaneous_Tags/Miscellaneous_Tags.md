@@ -208,7 +208,7 @@ Here are some reasons:
 -   **Special Symbols**: For symbols like ©, ®, or mathematical symbols.
 -   **Non-Breaking Spaces**: To create white spaces that won't break into a new line.
 
-## Common HTML Entities
+## Common HTML [Entities](https://www.freeformatter.com/html-entities.html)
 
 ```html
 &lt;  for <
@@ -286,76 +286,3 @@ Used to underline text.
 <u>This text will be underlined</u>
 ```
 
-## Modern Alternatives
-
-It's better to use CSS for styling and layout as it separates content from presentation.
-
-### Replacing `<font>`
-
-```html
-<span style="color:red; font-size:16px; font-family:verdana;">This is some text</span>
-```
-
-### Replacing `<center>`
-
-```html
-<div style="text-align:center;">This text will be centered</div>
-```
-
-### Replacing `<u>`
-
-```html
-<span style="text-decoration:underline;">This text will be underlined</span>
-```
-
-## Conclusion
-
-Understanding obsolete HTML tags is not just a trip down memory lane; it also emphasizes the importance of keeping up to date with the latest web standards. Always opt for modern, semantic HTML and CSS for styling to ensure your websites are future-proof.
-
-<br><br>
-
-# `Character` Sets
-
-Character sets are an essential concept in HTML, influencing how textual content is displayed and interpreted by the browser. This blog aims to elucidate what character sets are, why they matter, and how to specify them in HTML.
-
-## What is a Character Set?
-
-A character set is a set of symbols and characters that a computer uses to represent text. In HTML, specifying the correct character set ensures that text is displayed properly across different browsers and platforms.
-
-## Why is it Important?
-
-Using the correct character set is crucial for:
-
--   **Accurate Rendering**: To ensure that browsers correctly display your text.
--   **Multi-language Support**: To display text in various languages and alphabets.
--   **Data Integrity**: To make sure the data sent and received remains consistent.
-
-## Specifying Character Set in HTML
-
-The character set is generally specified using the `<meta>` tag within the `<head>` section of an HTML document
-
-```html
-<meta charset="UTF-8">
-```
-
-## Common Character Sets
-
-Here are some commonly used character sets:
-
--   **UTF-8**: Universal Character Set, 8-bit. It can represent any character in the Unicode standard.
--   **ISO-8859-1**: Western Alphabet.
--   **ASCII**: American Standard Code for Information Interchange.
-
-## Examples
-
-### Using UTF-8
-
-```html
-<meta charset="UTF-8">
-```
-
-### Using ISO-8859-1
-
-```html
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-```

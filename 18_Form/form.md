@@ -192,6 +192,24 @@ The select element creates a dropdown menu for the user. It is useful when you h
       <option value="cherry">Cherry</option>
 </select>
 ```
+```html
+<!-- This select tag with optgroup tag -->
+<select>
+<optgroup label="Web">
+      <option>HTML</option>
+      <option>CSS</option>
+      <option>JavaScript</option>
+</optgroup>
+<optgroup label="Software">
+      <option>Python</option>
+      <option>C/C++</option>
+      <option>Java</option>
+</optgroup>
+</select>
+```
+
+
+
 Each option inside the select tag represents an item in the dropdown list.
 
 Combining Textarea and Select
