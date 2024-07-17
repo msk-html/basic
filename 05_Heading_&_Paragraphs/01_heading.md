@@ -20,4 +20,4 @@ ___
 
 > **Note:** Use HTML headings for headings only Don't use headings to make text **BIG** or **bold**.
 
-# [<<<Back](../01_Intro/SetUp.md) : [Next>>>](../04_Paragraphs/Paragraphs.md)
+# [<<<Back](../04_Attributes/01_Attributes.md) : [Next>>>](./02_Paragraph.md)

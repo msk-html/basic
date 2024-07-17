@@ -1,11 +1,9 @@
 ># HTML Elements
 
 >## What is an HTML Element?
->An HTML element is defined by a `start tag`, some `content`, and an `end tag`:
->```html
-><tagname> Content goes here..</tagname>
->```
->![alt text](5ddb3628578bab4af7287c97_1_ZxkdCMWhlO0R576HsR61Nw.png) 
+>An HTML element is defined by a `Opening tag`, some `content`, and an `Closing tag`:
+>
+>![alt text](./html_element.png) 
 >
 >```html
 ><h1>MSK Institute</h1>
@@ -18,7 +16,7 @@
 >| `<p>` | MSK Institute is the best | `</p>` |
 >| `<br>` | No Content | No Closing Tag  |
 >
->**Note:** Some HTML elements have `no content` (like: `<br>` element) These elements are called `empty` elements. Empty elements do not have an `closing tag`!
+> >**Note:** Some HTML elements have `no content` (like: `<br>` element) These elements are called `empty` elements. Empty elements do not have an closing `</>` tag!
 >
 >---
 
@@ -30,16 +28,15 @@
 >
 >The following example contains four HTML elements (`<html>`, `<body>`, `<h1>` and `<p>`):
 >
->### Example
 >```html
 ><!DOCTYPE html>  
 ><html>  
-><body>  
->  
-><h1>MSK !nstitute</h1>  
-><p>Best for learn coding</p>  
->  
-></body>  
+>
+>   <body>  
+>       <h1>MSK !nstitute</h1>  
+>       <p>Best for learn coding</p>
+>   </body>  
+>
 ></html>
 >```
 >
@@ -85,7 +82,7 @@
 
 <br>
 
->## Never Skip the End Tag
+># Never Skip the End `</>` Tag
 >
 >Some HTML elements will display correctly, even if you forget the end tag:
 >
@@ -109,7 +106,6 @@
 >
 >The `<br>` tag defines a line break, and is an empty element without a closing tag:
 >
->### Example
 >```html
 ><p>This is a <br> paragraph with a line break.</p>
 >```
@@ -119,9 +115,8 @@
 
 >## HTML is Not Case Sensitive
 >
->HTML tags are not case sensitive: `<P>` means the same as `<p>`.
->
->The HTML standard does not require lowercase tags, but we are **recommends** lowercase in HTML
+> - HTML tags are not case sensitive: `<P>` means the same as `<p>`.
+> - The HTML standard does not require lowercase tags, but we are recommends lowercase in HTML
 >---
 
-# [<<<Back](../04_Paragraphs/Paragraphs.md) : [Next>>>](../05_Element_&_Attributes/02_Attributes.md)
+# [<<<Back](../02_SetUp/SetUp.md) : [Next>>>](../04_Attributes/01_Attributes.md)

@@ -12,29 +12,52 @@
                 <span class="time">10:10 Am</span>
                 <div class="icons"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-half"></i></div>
             </header>
-            <span class="result">23424</span>
+            <span class="result" id="result">0</span>
         </div>
         <div class="bottom-container">
-            <div class="box bg1">AC</div>
-            <div class="box bg1">+/-</div>
-            <div class="box bg1">%</div>
-            <div class="box bg2">/</div>
-            <div class="box">7</div>
-            <div class="box">8</div>
-            <div class="box">9</div>
-            <div class="box bg2">x</div>
-            <div class="box">4</div>
-            <div class="box">5</div>
-            <div class="box">6</div>
-            <div class="box bg2">-</div>
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-            <div class="box bg2">+</div>
-            <div class="box wd">0</div>
-            <div class="box">.</div>
-            <div class="box bg2">=</div>
+            <div onclick="clearResult()" class="box bg1">AC</div>
+            <div onclick="addValueInResult('')" class="box bg1">+/-</div>
+            <div onclick="addValueInResult('%')" class="box bg1">%</div>
+            <div onclick="addValueInResult('/')" class="box bg2">/</div>
+            <div onclick="addValueInResult('7')" class="box">7</div>
+            <div onclick="addValueInResult('8')" class="box">8</div>
+            <div onclick="addValueInResult('9')" class="box">9</div>
+            <div onclick="addValueInResult('*')" class="box bg2">x</div>
+            <div onclick="addValueInResult('4')" class="box">4</div>
+            <div onclick="addValueInResult('5')" class="box">5</div>
+            <div onclick="addValueInResult('6')" class="box">6</div>
+            <div onclick="addValueInResult('-')" class="box bg2">-</div>
+            <div onclick="addValueInResult('1')" class="box">1</div>
+            <div onclick="addValueInResult('2')" class="box">2</div>
+            <div onclick="addValueInResult('3')" class="box">3</div>
+            <div onclick="addValueInResult('+')" class="box bg2">+</div>
+            <div onclick="addValueInResult('0')" class="box wd">0</div>
+            <div onclick="addValueInResult('.')" class="box">.</div>
+            <div onclick="cal_Result()" class="box bg2">=</div>
         </div>
     </div>
+
+
+    <script>
+
+        function clearResult() {
+            document.getElementById('result').innerText = "0";
+        }
+
+        function addValueInResult(NKey) {
+            let r = document.getElementById('result').innerText;
+            if (r == 0) {
+                document.getElementById('result').innerText = NKey;
+            }
+            else {
+                document.getElementById('result').innerText = r + NKey;
+            }
+        }
+
+        function cal_Result() {
+            let r = document.getElementById('result').innerText;
+            document.getElementById('result').innerText = eval(r);
+        }
+    </script>
 </body>
 </html>

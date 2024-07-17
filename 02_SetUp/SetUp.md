@@ -23,24 +23,7 @@ We will install and set up HTML to optimize its utility for creating web pages. 
 -   Search for "Visual Studio Code download" on Google
 -   Download [Visual Studio Code](https://code.visualstudio.com/download) for your Operating System. I am using Windows so I will install it for Windows
 
-Here is a quick video showing VS Code Installation:
-
 <video style="width: 581px; height: 362px;" autoplay="autoplay" loop="loop" muted="" controls="controls" width="581" height="362"> <source src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-prerequisite/download-vscode.mp4" type="video/mp4">Your browser does not support the video tag.</video>
 
-Your browser does not support the video tag.
 
-## Live Server Extension
-
-In addition, we'll be installing the Live Server extension in our Visual Studio Code editor to view live reload pages.
-
-The Live Server extension is used to launch a local development server with a live reload feature for HTML pages.
-
-Here is a quick video showing the installation of the VS Code 'Live Server' extension:
-
-<video style="width: 578px; height: 308px;" autoplay="autoplay" loop="loop" muted="" controls="controls" width="578" height="308"> <source src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-prerequisite/live-server-installation.mp4" type="video/mp4">Your browser does not support the video tag.</video>
-
-Your browser does not support the video tag.
-
-In the next lesson, we will start writing some code and review the document structure of HTML pages.
-
-# [<<<Back](../01_Intro/Introduction.md) : [Next>>>](../03_Heading/heading.md)
+# [<<<Back](../01_Intro/Introduction.md) : [Next>>>](../03_Element/01_Element.md)

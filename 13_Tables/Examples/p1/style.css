@@ -38,7 +38,7 @@
 
 .container>.top-container>.result {
     color: white;
-    display: inline-block;
+    float: right;
     font-size: 50px;
     margin-top: 200px;
     margin-left: 260px;
@@ -64,6 +64,7 @@
     font-weight: bold;
     border-radius: 50%;
     color: white;
+    cursor: pointer;
 }
 .container>.bottom-container>.wd{
     border-radius: 50px;
@@ -76,5 +77,10 @@
 }
 .container>.bottom-container>.bg2{
     background-color: orange;
+    color: black;
+}
+
+.container>.bottom-container>.box:hover{
+    background-color: white;
     color: black;
 }
