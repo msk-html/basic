@@ -20,7 +20,7 @@ To represent HTML pages beautifully and to explain content, we use images for th
 >
 >**1. Absolute URL** - Links to an external image that is hosted on another website. 
 >
->    `src="https://www.mskinstitute.com/images/hello.png"`.
+>    `src="https://github.com/mskinstitute/html/blob/main/assets/img/hello.png?raw=true"`.
 >
 >**Notes:** External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
 >

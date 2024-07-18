@@ -1,6 +1,6 @@
 ![Alt text](image.png)
 
-# HTML Block Elements
+# Block Elements
 You already know about HTML inline elements. All HTML tags have specific display behavior: they are either block-level elements or inline elements.
 
 ### What are Block-level Elements?
@@ -46,7 +46,7 @@ Can contain other block-level as well as inline elements.
 - `<table>` - Table
 - `<video>` - Video content
 
-# HTML Inline Elements
+# Inline Elements
 Inline Elements don't start on a new line. It only takes the width required to cover the content.
 
 HTML elements are generally divided into two categories: Block-level and Inline elements.
@@ -86,3 +86,6 @@ You can use CSS to style inline elements. However, some properties like width an
 - `<sub>`
 - `<sup>`
 - `<textarea>`
+
+
+# [<<< Back](../13_Tables/01_Table.md) :: [Next >>>](../15_Media/Media.md)
