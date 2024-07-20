@@ -9,26 +9,30 @@ The fundamental structure of an HTML form is encapsulated within the `<form>` ta
 
 ```html
 <form action="/submit" method="post">
-    <!-- Text input for username -->
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-    <br><br>
+      <!-- Text input for username -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <br><br>
 
-    <!-- Password input -->
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    <br><br>
+      <!-- Password input -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br><br>
 
-    <!-- Radio buttons for gender -->
-    <label>Gender:</label>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label>
-    <br><br>
+      <!-- Radio buttons for gender -->
+      <label for="gender">Gender:</label>
 
-    <!-- Submit button -->
-    <input type="submit" value="Submit">
+      <br>
+
+      <label for="male">Male</label>
+      <input type="radio" id="male" name="gender" value="male">
+
+      <label for="female">Female</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <br><br>
+
+      <!-- Submit button -->
+      <input type="submit" value="Submit">
 </form>
 ```
 

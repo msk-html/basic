@@ -1,7 +1,8 @@
 > # HTML Headings
 
 HTML headings are titles or subtitles that you want to display on a webpage.
-### [Example](heading.html)
+### [Example](./01_heading.html)
+
 ```html
 <h1> MSK Institute </h1>
 <h2> MSK Institute </h2>

@@ -63,30 +63,5 @@ You can set the color of borders:
 <h1 style="border:2px solid Violet;">MSK Institute</h1>
 ```
 
-## Color Values
-
-In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.
-
-The following three `<div>` elements have their background color set with RGB, HEX, and HSL values:
-
-<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
-<h1 style="background-color:#ff6347;">#ff6347</h1>
-<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
-
-The following two `<div>` elements have their background color set with RGBA and HSLA values, which add an Alpha channel to the color (here we have 50% transparency):
-
-<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
-<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
-
-### Example
-```html
-<h1 style="background-color:rgb(255, 99, 71);">MSK</h1>
-<h1 style="background-color:#ff6347;">MSK</h1>
-<h1 style="background-color:hsl(9, 100%, 64%);">MSK</h1>
-
-<h1 style="background-color:rgba(255, 99, 71, 0.5);">MSK</h1>
-<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">MSK</h1>
-```
-
 
 # [<<<Back](../08_Comments/comment.md) : [Next>>>](../10_Style_CSS/style_css.md)

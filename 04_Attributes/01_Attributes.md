@@ -2,7 +2,7 @@
 >
 >-   All HTML elements can have **attributes**
 >-   Attributes provide **additional information** about elements
->-   Attributes are always specified in **the start tag**
+>-   Attributes are always specified in **Opening `<>` tag**
 >-   Attributes usually come in name/value pairs like: **name="value"**
 >---
 
@@ -26,7 +26,7 @@
 >The `<img>` tag is used to embed an image in an HTML page. The `src` attribute specifies the path to the image to be displayed:
 >
 >```html
-><img src="https://github.com/mskinstitute/html/blob/main/assets/img/hello.png?raw=true">
+><img src="https://github.com/mskinstitute/html/blob/main/assets/img/hello.png?raw=true" >
 >```
 >---
 

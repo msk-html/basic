@@ -3,23 +3,10 @@
 HTML contains several elements for defining text with a special meaning.
 
 ### [Example](Text_Formatting.html)
-
+```html
 <p>This text is <b>bold</b> </p>
 <p>This text is <i>italic</i> </p>
-<p>This is <sub>subscript</sub> and <sup>superscript</sup> </p>
-
-## HTML Formatting Elements
-Formatting elements were designed to display special types of text:
-- `<b>` - Bold text
-- `<strong>` - Important text
-- `<i>` - Italic text
-- `<em>` - Emphasized text
-- `<mark>` - Marked text
-- `<small>` - Smaller text
-- `<del>` - Deleted text
-- `<ins>` - Inserted text
-- `<sub>` - Subscript text
-- `<sup>` - Superscript text
+```
 
 ## `<b>` and `<strong>` Elements
 The HTML `<b>` element defines bold text, without any extra importance.
@@ -97,4 +84,4 @@ The HTML `<sup>` element defines superscript textSuperscript text appears half a
 (a+b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>
 ```
 
-# [<<<Back](../05_Element_&_Attributes/02_Attributes.md) : [Next>>>](../07_Quotation_and_Citation/Quotation_and_Citation.md)
+# [<<<Back](../05_Heading_&_Paragraphs/02_Paragraph.md) : [Next>>>](../07_Quotation_and_Citation/Quotation_and_Citation.md)

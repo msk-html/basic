@@ -9,7 +9,7 @@ o add a favicon to your website, either save your favicon image to the root dire
 
 Next, add a `<link`> element to your `"index.html"` file, after the `<title>` element, like this:
 
-[Example:](examle.html)
+[Example:](favicon.html)
 
 ```html
 <!DOCTYPE html>

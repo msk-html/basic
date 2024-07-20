@@ -1,5 +1,5 @@
 # HTML Styles - CSS
-CSS stands for Cascading Style Sheets.
+CSS stands for `Cascading Style Sheets`.
 
 CSS saves a lot of work. It can control the layout of multiple web pages all at once.
 
@@ -16,7 +16,7 @@ With CSS, you can control the color, font, the size of text, the spacing between
 ## Using CSS
 CSS can be added to HTML documents in 3 ways:
 
-- **Inline** - by using the `style` attribute inside HTML elements
+- **Inline** - by using the `style` attribute inside opening `<h1 style=''>` elements
 - **Internal** - by using a `<style>` element in the `<head>` section
 - **External** - by using a `<link>` element to link to an external CSS file in the `<head>` section
 
