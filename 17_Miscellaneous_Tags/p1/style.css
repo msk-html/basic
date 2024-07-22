@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    background-color: lightgray;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: lightcoral;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    background-color: lightgreen;
+    margin-bottom: 10px;
+}
+
+aside {
+    width: 29%;
+    height: 650px;
+    font-size: 40px;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+main {
+    width: 70%;
+    height: 650px;
+    background-color: lightblue;
+    float: right;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+main>article {
+    width: 100%;
+    height: 78%;
+    background-color: lightskyblue;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+main>article>figure {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(232, 211, 181);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>article>p {
+    width: 100%;
+    height: 40%;
+    background-color: lightyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>section {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(36, 100, 173);
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(129, 50, 129);
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+}
