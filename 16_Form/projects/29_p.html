@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Course Registration Form</title>
+</head>
+<body>
+    <h2>Online Course Registration</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="course">Select Course:</label></td>
+                <td>
+                    <select id="course" name="course" required>
+                        <option value="python">Python Programming</option>
+                        <option value="java">Java Programming</option>
+                        <option value="webdev">Web Development</option>
+                        <option value="datascience">Data Science</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="startdate">Start Date:</label></td>
+                <td><input type="date" id="startdate" name="startdate" required></td>
+            </tr>
+            <tr>
+                <td><label for="level">Skill Level:</label></td>
+                <td>
+                    <input type="radio" id="beginner" name="level" value="beginner" required>
+                    <label for="beginner">Beginner</label><br>
+                    <input type="radio" id="intermediate" name="level" value="intermediate" required>
+                    <label for="intermediate">Intermediate</label><br>
+                    <input type="radio" id="advanced" name="level" value="advanced" required>
+                    <label for="advanced">Advanced</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

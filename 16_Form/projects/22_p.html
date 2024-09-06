@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Volunteer Sign-Up Form</title>
+</head>
+<body>
+    <h2>Volunteer Sign-Up</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="availability">Availability:</label></td>
+                <td>
+                    <select id="availability" name="availability" required>
+                        <option value="weekdays">Weekdays</option>
+                        <option value="weekends">Weekends</option>
+                        <option value="both">Both</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="skills">Skills:</label></td>
+                <td>
+                    <textarea id="skills" name="skills" rows="4" cols="50" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Sign Up"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

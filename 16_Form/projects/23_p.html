@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gym Membership Form</title>
+</head>
+<body>
+    <h2>Gym Membership</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="membership">Membership Type:</label></td>
+                <td>
+                    <select id="membership" name="membership" required>
+                        <option value="monthly">Monthly</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="startdate">Start Date:</label></td>
+                <td><input type="date" id="startdate" name="startdate" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Join"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Survey Form</title>
+</head>
+<body>
+    <h2>Feedback Survey</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="experience">Overall Experience:</label></td>
+                <td>
+                    <input type="radio" id="excellent" name="experience" value="excellent" required>
+                    <label for="excellent">Excellent</label><br>
+                    <input type="radio" id="good" name="experience" value="good" required>
+                    <label for="good">Good</label><br>
+                    <input type="radio" id="average" name="experience" value="average" required>
+                    <label for="average">Average</label><br>
+                    <input type="radio" id="poor" name="experience" value="poor" required>
+                    <label for="poor">Poor</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="improvements">Suggestions for Improvement:</label></td>
+                <td>
+                    <textarea id="improvements" name="improvements" rows="4" cols="50"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="rating">Rate our Service (1-10):</label></td>
+                <td><input type="number" id="rating" name="rating" min="1" max="10" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit Feedback"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

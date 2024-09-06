@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Booking Form</title>
+</head>
+<body>
+    <h2>Travel Booking</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="destination">Destination:</label></td>
+                <td>
+                    <select id="destination" name="destination" required>
+                        <option value="paris">Paris</option>
+                        <option value="newyork">New York</option>
+                        <option value="tokyo">Tokyo</option>
+                        <option value="sydney">Sydney</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="date">Travel Date:</label></td>
+                <td><input type="date" id="date" name="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="preferences">Preferences:</label></td>
+                <td>
+                    <input type="checkbox" id="window_seat" name="preferences" value="window_seat">
+                    <label for="window_seat">Window Seat</label><br>
+                    <input type="checkbox" id="aisle_seat" name="preferences" value="aisle_seat">
+                    <label for="aisle_seat">Aisle Seat</label><br>
+                    <input type="checkbox" id="vegetarian_meal" name="preferences" value="vegetarian_meal">
+                    <label for="vegetarian_meal">Vegetarian Meal</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Book Travel"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

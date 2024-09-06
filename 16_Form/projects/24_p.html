@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Feedback Form</title>
+</head>
+<body>
+    <h2>Customer Feedback</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="rating">Rating:</label></td>
+                <td>
+                    <input type="radio" id="excellent" name="rating" value="excellent" required>
+                    <label for="excellent">Excellent</label><br>
+                    <input type="radio" id="good" name="rating" value="good" required>
+                    <label for="good">Good</label><br>
+                    <input type="radio" id="average" name="rating" value="average" required>
+                    <label for="average">Average</label><br>
+                    <input type="radio" id="poor" name="rating" value="poor" required>
+                    <label for="poor">Poor</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comments">Comments:</label></td>
+                <td>
+                    <textarea id="comments" name="comments" rows="4" cols="50" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit Feedback"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

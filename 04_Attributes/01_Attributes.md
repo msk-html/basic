@@ -157,6 +157,7 @@
 ></body>
 ></html>
 >```
+> All `lang` Code list here 👉 [here](https://www.w3schools.com/tags/ref_language_codes.asp)
 >---
 
 <br>

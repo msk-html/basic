@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Reservation Form</title>
+</head>
+<body>
+    <h2>Hotel Reservation</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="checkin">Check-in Date:</label></td>
+                <td><input type="date" id="checkin" name="checkin" required></td>
+            </tr>
+            <tr>
+                <td><label for="checkout">Check-out Date:</label></td>
+                <td><input type="date" id="checkout" name="checkout" required></td>
+            </tr>
+            <tr>
+                <td><label for="roomtype">Room Type:</label></td>
+                <td>
+                    <select id="roomtype" name="roomtype" required>
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="suite">Suite</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="specialrequests">Special Requests:</label></td>
+                <td>
+                    <textarea id="specialrequests" name="specialrequests" rows="4" cols="50"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Reserve"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

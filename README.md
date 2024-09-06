@@ -18,7 +18,25 @@ By the end of this course, you will have the knowledge and practical experience 
 
 ## Course Curriculum 📑
 
-[Include the detailed course curriculum as previously mentioned]
+01. [Intro](./01_Intro/Introduction.md)
+02. [SetUp](./02_SetUp/SetUp.md)
+03. [Element](./03_Element/01_Element.md)
+04. [Attributes](./04_Attributes/01_Attributes.md)
+05. [Heading_&_Paragraphs](./05_Heading_&_Paragraphs/01_heading.md)
+06. [Text_Formatting](./06_Text_Formatting/Text_Formatting.md)
+07. [Quotation_and_Citation](./07_Quotation_and_Citation/Quotation_and_Citation.md)
+08. [Comments](./08_Comments/comment.md)
+09. [Colors](./09_Colors/01_colors.md)
+10. [Style_CSS](./10_How_to_add_CSS_&_JS/style_css.md)
+11. [Links](./11_Links/Links.md)
+12. [Lists](./12_Lists/01_list.md)
+13. [Tables](./13_Tables/01_Table.md)
+14. [Block_&_Inline](./14_Block_&_Inline/inline_&_block_elements.md)
+15. [Media](./15_Media/Media.md)
+16. [Form](./16_Form/form.md)
+17. [Semantic_Tags](./17_Semantic/Semantic.md)
+18. [Dialog_Tag](./18_Dialog_Tag/)
+19. [File_path](./19_File_path/)
 
 ## Prerequisites 🚀
 
@@ -35,7 +53,7 @@ Enrolling in the "HTML for Beginners to Advance" course is easy:
 
 ## Instructor 🎓
 
-This course is taught by our experienced instructor, [Instructor Name], who has [years of experience/credentials] in web development and teaching. [Instructor Name] is committed to providing engaging and effective learning experiences for all students.
+This course is taught by our experienced instructor, Mr Sumit Kumar, who has 3 years of experience in web development and teaching. Mr Sumit Kumar is committed to providing engaging and effective learning experiences for all students.
 
 ## Course Benefits 🌟
 
@@ -49,10 +67,9 @@ By enrolling in our HTML course, you'll benefit from:
 
 ## Resources 📚
 
-- [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
 - [MDN Web Docs HTML Guide](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
 - [HTML5 Doctor](https://html5doctor.com/)
-- [Codecademy HTML Course](https://www.codecademy.com/learn/learn-html)
 
 Explore these additional resources to supplement your learning and deepen your understanding of HTML concepts.
 
@@ -72,3 +89,4 @@ A: You can get started with a simple text editor like Notepad or use code editor
 We're excited to have you join us on this journey into the world of web development with HTML! Whether you're looking to start a career in web development or enhance your existing skills, this course will equip you with the knowledge and practical experience you need to succeed.
 
 Happy coding! 🚀✨
+# [Next>>>](./01_Intro/Introduction.md)

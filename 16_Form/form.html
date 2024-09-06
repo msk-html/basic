@@ -2,48 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Admission Form</title>
 </head>
 
 <body>
-
-    <h1>Contact Form</h1>
+    <h1>MSK Institute : Admission Form</h1>
 
     <form>
-        <label for="name">Your Name: </label>
-        <input type="text" id="name" placeholder="Sumit">
+        <label for="s_name">Student Name: </label>
+        <input type="text" id="s_name" placeholder="sumit">
 
         <br><br>
 
-        <label for="password">Your Password:</label>
-        <input type="password" id="password" placeholder="SKr@423">
+        <label for="f_name">Father's Name: </label>
+        <input type="text" id="f_name" placeholder="enter your father's name">
+
 
         <br><br>
-        
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" placeholder="example@gmail.com">
-        
-        <br><br>
 
-        <!-- Radio buttons for gender -->
         <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male">Male 
+        <input type="radio" name="gender" value="female">Female 
+
+        <br><br>
+
+        <label for="contact">Mobile Number: </label>
+        <input type="number" id="contact" placeholder="1234567890">
+
+        <br><br>
+
+        <label for="course">Course: </label>
+        <select name="course" id="course" >
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+        </select>
+
+        <br><br>
+
+        <label for="address">Address:</label> <br>
+        <textarea name="address" id="address" cols="30" rows="6" placeholder="Near Subhash Park, Station Road, Shikohabad"></textarea>
 
         <br>
-        
-        <label for="male">Male</label>
-        <input type="radio" id="male" name="gender" value="male">
-        
-        <label for="female">Female</label>
-        <input type="radio" id="female" name="gender" value="female">
+
+        <input type="checkbox">Ball
+        <input type="checkbox">cricket
+
+
         <br><br>
 
         <input type="submit">
         <input type="reset">
 
-    </form>
 
+    </form>
 </body>
 
 </html>
