@@ -67,3 +67,5 @@ Insert the correct RGB color values to make the background color completely blue
 ```html
 <p style="background-color:rgb(___, ___, ___)">This is a paragraph.</p>
 ```
+
+# [<<<Back](./01_colors.md) : [Next>>>](./03_HEX_Colors.md)

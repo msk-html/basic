@@ -64,4 +64,4 @@ You can set the color of borders:
 ```
 
 
-# [<<<Back](../08_Comments/comment.md) : [Next>>>](../10_Style_CSS/style_css.md)
+# [<<<Back](../08_Comments/comment.md) : [Next>>>](./02_RGB_and_RGBA.md)

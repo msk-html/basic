@@ -91,3 +91,5 @@ Insert the HSLA value to make a color with no hue, 100% saturation, 50% lightnes
 ```html
 <p style="color:____(___, ___, ___)">This is a paragraph.</p>
 ```
+
+# [<<<Back](./03_HEX_Colors.md) : [Next>>>](../10_How_to_add_CSS_&_JS/style_css.md)
