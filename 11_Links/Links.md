@@ -134,4 +134,4 @@ You can read more about file paths in the chapter HTML File Paths.
 - Use the `<img>` element (inside `<a>`) to use an image as a link
 - Use the `mailto:` scheme inside the `href` attribute to create a link that opens the user's email program
 
-# [<<<Back](../10_Style_CSS/style_css.md) : [Next>>>](../12_Lists/list.md)
+# [<<<Back](../10_Style_CSS/style_css.md) : [Next>>>](../12_Lists/01_list.md)

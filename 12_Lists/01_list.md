@@ -1,6 +1,13 @@
 # HTML Lists
 HTML lists allow web developers to group a set of related items in lists.
 
+<h4>An Ordered HTML List</h4>
+<ol>
+  <li>Sumit</li>
+  <li>Amit</li>
+  <li>Aryan</li>
+</ol>
+
 <h4>An Unordered HTML List</h4>
 <ul>
   <li>Sumit</li>
@@ -8,12 +15,19 @@ HTML lists allow web developers to group a set of related items in lists.
   <li>Aryan</li>
 </ul>  
 
-<h4>An Ordered HTML List</h4>
+## Ordered ([more](03_Ordered_Lists.md))
+An ordered list starts with the `<ol>` tag. Each list item starts with the `<li>` tag.
+
+The list items will be marked with numbers by default:
+
+```html
 <ol>
   <li>Sumit</li>
   <li>Amit</li>
   <li>Aryan</li>
 </ol>
+```
+
 
 ## Unordered ([more](02_Unordered_List.md))
 
@@ -28,18 +42,9 @@ The list items will be marked with bullets (small black circles) by default:
   <li>Aryan</li>
 </ul>
 ```
-## Ordered ([more](03_Ordered_Lists.md))
-An ordered list starts with the `<ol>` tag. Each list item starts with the `<li>` tag.
 
-The list items will be marked with numbers by default:
+![alt text](list.png)
 
-```html
-<ol>
-  <li>Sumit</li>
-  <li>Amit</li>
-  <li>Aryan</li>
-</ol>
-```
 
 ## HTML Description Lists
 
@@ -62,3 +67,6 @@ The `<dl>` tag defines the description list, the `<dt>` tag defines the term (na
   <dd>- He is student of MSK Institute.</dd>
 </dl>
 ```
+
+
+# [<<<Back](../11_Links/Links.md) : [Next>>>](../13_Tables/01_Table.md)
