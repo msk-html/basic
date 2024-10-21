@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/tutorial.css">
+    <script src="/assets/js/prism.js"></script>
+
+</head>
+
+
+<body>
+
+    <aside>
+        Hello
+    </aside>
+
+
+    <main>
+
+
+
+
+        <h1>RGB and RGBA Colors</h1>
+
+        <h2>RGB Color Values</h2>
+        <p>An RGB color value represents RED, GREEN, and BLUE light sources.</p>
+        <p>In HTML, a color can be specified as an RGB value, using this formula:</p>
+        <p><strong>rgb(red, green, blue)</strong></p>
+        <p>Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255. This
+            means that there are 256 x 256 x 256 = 16,777,216 possible colors!</p>
+        <p>For example:</p>
+        <ul>
+            <li><code>rgb(255, 0, 0)</code> is displayed as red, because red is set to its highest value (255), and the
+                other two (green and blue) are set to 0.</li>
+            <li><code>rgb(0, 255, 0)</code> is displayed as green, because green is set to its highest value (255), and
+                the other two (red and blue) are set to 0.</li>
+            <li><code>rgb(0, 0, 0)</code> displays black, as all color parameters are 0.</li>
+            <li><code>rgb(255, 255, 255)</code> displays white, as all color parameters are set to 255.</li>
+        </ul>
+
+        <h3>Examples</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;p style=&quot;background-color:rgb(255, 0, 0);&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgb(0, 0, 255);&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgb(60, 179, 113);&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgb(238, 130, 238);&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgb(255, 165, 0);&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgb(106, 90, 205);&quot;&gt; MSK &lt;/p&gt;
+</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <h2>Shades of Gray</h2>
+        <p>Shades of gray are often defined using equal values for all three parameters:</p>
+
+        <h3>Examples</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;p style=&quot;background-color:rgb(60, 60, 60); color:white;&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgb(100, 100, 100); color:white;&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgb(140, 140, 140); color:white;&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgb(180, 180, 180); &quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgb(200, 200, 200); &quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgb(240, 240, 240); &quot;&gt; MSK &lt;/p&gt;
+</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <h2>RGBA Color Values</h2>
+        <p>RGBA color values are an extension of RGB color values with an Alpha channel, which specifies the opacity for
+            a color.</p>
+        <p>An RGBA color value is specified with:</p>
+        <p><strong>rgba(red, green, blue, alpha)</strong></p>
+        <p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).</p>
+        <p>Experiment by mixing the RGBA values below:</p>
+
+        <h3>Examples</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;p style=&quot;background-color:rgba(255, 99, 71, 0);&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgba(255, 99, 71, 0.2);&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgba(255, 99, 71, 0.4);&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgba(255, 99, 71, 0.6);&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgba(255, 99, 71, 0.8);&quot;&gt; MSK &lt;/p&gt;
+&lt;p style=&quot;background-color:rgba(255, 99, 71, 1);&quot;&gt; MSK &lt;/p&gt;
+</code></pre>
+            <div class="preview"></div>
+        </div>
+
+
+
+
+        <div class="navigation">
+            <a href="./02_HEX_Colors.html" class="back-button">&lt;&lt;&lt; Back</a>
+            <a href="../09_Links/Links.html" class="next-button">Next &gt;&gt;&gt;</a>
+        </div>
+
+
+    </main>
+
+    <script src="/assets/js/tutorial.js"></script>
+
+
+</body>
+
+</html>

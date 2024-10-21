@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Text Formatting</title>
+
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/tutorial.css">
+    <script src="/assets/js/prism.js"></script>
+
+</head>
+
+<body>
+
+    <aside>
+        Welcome to HTML Text Formatting Tutorial
+    </aside>
+
+    <main>
+
+        <h1>HTML Comments</h1>
+        <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+
+        <h2>HTML Comment Tag</h2>
+        <p>You can add comments to your HTML source by using the following syntax:</p>
+
+        <h3><a href="index.html">Example</a></h3>
+        <div class="editor">
+            <pre><code class="lang-html">&lt;!-- Write your comments here --&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <p>Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
+
+        > Note: Comments are not displayed by the browser, but they can help document your HTML source code.
+
+        <h2>Add Comments</h2>
+        <p>With comments, you can place notifications and reminders in your HTML code:</p>
+        <h3>Example</h3>
+        <div class="editor">
+            <pre><code class="lang-html">&lt;!-- This is a comment --&gt;
+
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;!-- Remember to add more information here --&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <h2>Hide Content</h2>
+        <p>Comments can be used to hide content. This can be helpful if you want to hide content temporarily:</p>
+        <h3>Example</h3>
+        <div class="editor">
+            <pre><code class="lang-html">&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;!-- &lt;p&gt;This is another paragraph &lt;/p&gt; --&gt;
+
+&lt;p&gt;This is a paragraph too.&lt;/p&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <p>You can also hide more than one line. Everything between the <code>&lt;!--</code> and <code>&lt;--&gt;</code>
+            will be
+            hidden from the display.</p>
+
+        <h3>Example</h3>
+        <p>Hide a section of HTML code:</p>
+        <div class="editor">
+            <pre><code class="lang-html">&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;!--
+&lt;p&gt;Look at this cool image:&lt;/p&gt;
+&lt;img border=&quot;0&quot; src=&quot;pic_trulli.jpg&quot; alt=&quot;Trulli&quot;&gt;
+--&gt;
+&lt;p&gt;This is a paragraph too.&lt;/p&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <p>Comments are also great for debugging HTML because you can comment out HTML lines of code, one at a time, to
+            search
+            for errors.</p>
+
+        <h2>Hide Inline Content</h2>
+        <p>Comments can be used to hide parts in the middle of the HTML code.</p>
+        <h3>Example</h3>
+        <div class="editor">
+            <pre><code class="lang-html">&lt;p&gt;This &lt;!-- great text --&gt; is a paragraph.&lt;/p&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+
+
+
+        <div class="navigation">
+            <a href="../06_Text_Formatting/Text_Formatting.html" class="back-button"> <<< Back</a>
+            <a href="../08_Colors/01_colors.html" class="next-button">Next >>></a>
+        </div>
+
+    </main>
+    <script src="/assets/js/tutorial.js"></script>
+
+</body>
+
+</html>

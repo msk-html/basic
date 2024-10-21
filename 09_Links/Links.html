@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/tutorial.css">
+    <script src="/assets/js/prism.js"></script>
+
+</head>
+
+
+<body>
+
+    <aside>
+        Hello
+    </aside>
+
+
+    <main>
+
+
+        <h1>Links - Hyperlinks</h1>
+        <p>links are hyperlinks that allow you to jump to another document when clicked.</p>
+        <p>When you move the mouse over a link, the mouse cursor will change to a little hand.</p>
+        <p><strong>Note:</strong> A link does not have to be text; it can be an image or any other HTML element!</p>
+
+        <br>
+        <hr><br>
+
+        <h2><code class="lang-html">&lt;a&gt;</code> Tag</h2>
+        <p>The HTML <code class="code">&lt;a&gt;</code> tag defines a hyperlink. It has the following syntax:</p>
+
+        <pre><code class="lang-html">&lt;a href=&quot;url&quot;&gt;link text&lt;/a&gt;</code></pre>
+
+        <p>The most important attribute of the <code class="code">&lt;a&gt;</code> element is the <code class="code mark">href</code> attribute, which
+            indicates the link's destination.</p>
+        <p>The link text is the part that will be visible to the reader. Clicking on the link text will send the
+            reader to the specified URL address.</p>
+
+        <h3>Example</h3>
+        <p>This example shows how to create a link to "MSK Institute" web site:</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;a href=&quot;https://mskinstitute.github.io/&quot;&gt;MSK Institute&lt;/a&gt;
+</code></pre>
+            <div class="preview"></div>
+        </div>
+
+
+        <br>
+        <hr><br>
+
+        <h2>Absolute URLs vs. Relative URLs</h2>
+        <p>Both examples above use an <strong>absolute URL</strong> (a full address) in the <code>href</code> attribute.
+        </p>
+        <p>A local link (to a page within the same website) is specified with a <strong>relative URL</strong> (without
+            using <code class="code">https://www</code> ):</p>
+
+        <h3>Examples</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;p&gt;Absolute URLs&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.google.com/&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Relative URLs&lt;/p&gt;
+&lt;a href=&quot;../assets/img/youtube_logo.png&quot;&gt;Youtube Logo&lt;/a&gt;
+</code></pre>
+            <div class="preview"></div>
+        </div>
+
+
+        <br>
+        <hr><br>
+
+        <h2><code class="lang-html">mailto:</code> Email Link</h2>
+        <p>Use <code class="code">mailto:</code> inside the <code class="code">href</code> attribute to create a link that opens the user's email program:</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;a href=&quot;mailto:mrsumitcontact@gmail.com&quot;&gt;Send email&lt;/a&gt;
+</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <br>
+
+        <h2><code class="lang-html">tel:</code>Call Link</h2>
+        <p>Use <code class="code">tel:</code> inside the <code class="code">href</code> attribute to create a clickable phone number link:</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;a href=&quot;tel: +918393042166&quot;&gt;Call Us&lt;/a&gt;
+</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <h2>Use an Image as a Link</h2>
+        <p>To use an image as a link, place the <code class="code">&lt;img&gt;</code> tag inside the <code class="code">&lt;a&gt;</code> tag:</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;!-- Link Youtube --&gt;
+&lt;a href=&quot;https://youtube.com&quot; title='Open Youtube' target=&quot;_blank&quot;&gt;
+    &lt;img src=&quot;../assets/img/youtube.png&quot; width=&quot;80px&quot;&gt;
+&lt;/a&gt;
+
+&lt;!-- Link Mail --&gt;
+&lt;a href="mailto:mrsumitcontact@gmail.com"&gt;
+    &lt;img src="../assets/img/gmail.png" title='Send Mail' width="90px"&gt;
+&lt;/a&gt;
+
+&lt;!-- Link Tel --&gt;
+&lt;a href="tel: +918393042166"&gt;
+    &lt;img src="../assets/img/call.jpg" title='Call Now' width="55px"&gt;
+&lt;/a&gt;
+</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <h2>Button as a Link</h2>
+        <p>To use an HTML button as a link, add some JavaScript code:</p>
+        <pre><code class="lang-html">&lt;button onclick="document.location='https://www.google.com/'" &gt;Google&lt;/button&gt;</code></pre>
+
+        <br>
+        <hr><br>
+
+        <h2>Link Attributes</h2>
+
+        <br>
+
+        <h3>Target</h3>
+        <p>By default, the linked page will open in the current browser window. To change this behavior, specify the
+            <code>target</code> attribute.
+        </p>
+        <p>The <code>target</code> attribute can have one of the following values:</p>
+        <ul>
+            <li><code>_self</code> - Default. Opens the document in the same window/tab.</li>
+            <li><code>_blank</code> - Opens the document in a new window or tab.</li>
+        </ul>
+
+        <h3>Example</h3>
+        <p>Use <code>target="_blank"</code> to open the linked document in a new tab:</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;a href=&quot;https://mskinstitute.github.io/&quot; target=&quot;_blank&quot;&gt;Visit MSK Institute&lt;/a&gt;
+</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <h3>Title</h3>
+        <p>The <code>title</code> attribute specifies extra information about an element, typically shown as a tooltip
+            text when the mouse hovers over the element:</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;a href=&quot;mskinstitute.github.io/html/&quot; title=&quot;Go to MSK Institute Admission Form&quot;&gt;Admission at MSK Institute&lt;/a&gt;
+</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <h3>Download</h3>
+        <p>The <code>download</code> attribute is used to indicate that the target will be downloaded when a user clicks
+            on the link. You can specify a value that will be the name of the downloaded file.</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;a href=&quot;/files/msk-brochure.pdf&quot; download=&quot;MSK_Brochure.pdf&quot;&gt;Download Brochure&lt;/a&gt;
+</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <h2>Link to a Page Section</h2>
+        <p>To link to a particular section of a webpage:</p>
+        <ul>
+            <li>Use the name or id attribute.</li>
+            <li>Use a hyperlink with <code>#</code> followed by the section name.</li>
+        </ul>
+
+        <br>
+        <hr><br>
+
+        <h3>Link Colors</h3>
+        <p>There are three types of links:</p>
+        <ul>
+            <li><strong>Active:</strong> Red with an underline.</li>
+            <li><strong>Visited:</strong> Purple with an underline.</li>
+            <li><strong>Unvisited:</strong> Blue with an underline.</li>
+        </ul>
+        <p><strong>Note:</strong> Link colors can be changed using CSS.</p>
+        <p><strong>Tip:</strong> Links can be styled with CSS for a different appearance!</p>
+
+        <br>
+        <hr><br>
+
+
+        <div class="navigation">
+            <a href="../08_Colors/01_colors.html" class="back-button">&lt;&lt;&lt; Back</a>
+            <a href="../10_Lists/List.html" class="next-button">Next &gt;&gt;&gt;</a>
+        </div>
+
+
+    </main>
+
+    <script src="/assets/js/tutorial.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+
+<button onclick='document.querySelector("[data-modal-preview]").showModal()'>Login</button>
+
+<dialog data-modal-preview>
+    <h1>Log In Form:</h1>
+    <form >
+        <label for="name">User Name:</label>
+        <input type="text" id="name">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <button onclick='document.querySelector("[data-modal-preview]").close()'>Cancel</button>
+</dialog>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes</title>
+
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/tutorial.css">
+    <script src="/assets/js/prism.js"></script>
+
+</head>
+
+
+<body>
+
+    <aside>
+        Hello
+    </aside>
+
+
+    <main>
+
+
+
+        <h1>HTML Ordered Lists</h1>
+        <p>The HTML <code class="code">&lt;ol&gt;</code> tag defines an ordered list. An ordered list can be numerical or alphabetical.</p>
+        <p>An ordered list starts with the <code class="code">&lt;ol&gt;</code> tag. Each list item starts with the <code class="code">&lt;li&gt;</code> tag.</p>
+        <p>The list items will be marked with numbers by default:</p>
+        
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;ol&gt;
+    &lt;li&gt;Coffee&lt;/li&gt;
+    &lt;li&gt;Tea&lt;/li&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <br>
+        <hr><br>
+
+        <h2>Type Attribute</h2>
+        <p>The type attribute of the <code>&lt;ol&gt;</code> tag defines the type of the list item marker:</p>
+        <ul>
+            <li><code>type="1"</code> - Numbers</li>
+            <li><code>type="A"</code> - Uppercase letters</li>
+            <li><code>type="a"</code> - Lowercase letters</li>
+            <li><code>type="I"</code> - Uppercase Roman numerals</li>
+            <li><code>type="i"</code> - Lowercase Roman numerals</li>
+        </ul>
+
+        <hr>
+
+        <h3>1. <code>type="1"</code> (numbers)</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;ol type="1"&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+    </code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h3>2. <code>type="A"</code> (uppercase)</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;ol type="A"&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+    </code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h3>3. <code>type="a"</code> (lowercase)</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;ol type="a"&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+    </code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h3>4. <code>type="I"</code> (uppercase Roman numbers)</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;ol type="I"&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+    </code></pre>
+            <div class="preview pl33"></div>
+        </div>
+
+        <hr>
+
+        <h3>5. <code>type="i"</code> (lowercase Roman numbers)</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;ol type="i"&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+    </code></pre>
+            <div class="preview pl33"></div>
+        </div>
+
+        <hr>
+
+        <h2>Control List Counting</h2>
+        <p>By default, an ordered list will start counting from 1. If you want to start counting from a specified
+            number, you can use the <code>start</code> attribute:</p>
+
+        <h3><code>start="50"</code></h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;ol start="50"&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+  &lt;li&gt;Mango&lt;/li&gt;
+&lt;/ol&gt;
+    </code></pre>
+            <div class="preview pl33"></div>
+        </div>
+
+        <h3><code>type="A" start="3"</code></h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;ol type="A" start="3"&gt;
+  &lt;li&gt;Pen&lt;/li&gt;
+  &lt;li&gt;Pencil&lt;/li&gt;
+&lt;/ol&gt;
+    </code></pre>
+            <div class="preview pl33"></div>
+        </div>
+
+        <hr>
+
+        <h2>Nested HTML Lists</h2>
+        <p>Lists can be nested (a list inside another list):</p>
+        <h3>Example</h3>
+            <pre><code class="lang-html">&lt;ol&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea
+    &lt;ol&gt;
+      &lt;li&gt;Black tea&lt;/li&gt;
+      &lt;li&gt;Green tea&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </div>
+        <p>Note: A list item (<code>&lt;li&gt;</code>) can contain a new list and other HTML elements, like images and
+            links, etc.</p>
+
+
+        <hr>
+        <div class="navigation">
+            <a href="./List.html" class="back-button">&lt;&lt;&lt; Back</a>
+            <a href="./Unordered_List.html" class="next-button">Next &gt;&gt;&gt;</a>
+        </div>
+
+
+    </main>
+
+    <script src="/assets/js/tutorial.js"></script>
+
+
+</body>
+
+</html>

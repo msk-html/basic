@@ -2,15 +2,76 @@
 <html lang="en">
 
 <head>
-    <title>Paragraph</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/tutorial.css">
+    <script src="/assets/js/prism.js"></script>
+
 </head>
 
 <body>
 
-    <p>MSK Institute is best for coding classes</p>
-    <p>And Computer Courses</p>
+    <aside>
+        Hello
+    </aside>
 
-    <pre> 
+    <main>
+
+        <h1>HTML Elements</h1>
+
+        <h2>Paragraphs &lt;p&gt;</h2>
+        <p>A paragraph always starts on a new line, and is usually a block of text.</p>
+        <p>The &lt;p&gt; element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (margin) before and after a paragraph.</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;p&gt;MSK Institute is best for coding classes&lt;/p&gt;
+&lt;p&gt;And Computer Courses&lt;/p&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <hr>
+
+        <h2>Horizontal Rules &lt;hr&gt;</h2>
+        <p>The &lt;hr&gt; tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
+        <p>The &lt;hr&gt; element is used to separate content (or define a change) in an HTML page:</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;h1&gt;This is heading 1&lt;/h1&gt;
+&lt;p&gt;This is some text.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;p&gt;This is some other text.&lt;/p&gt;
+&lt;hr&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+        <p>The &lt;hr&gt; tag is an empty tag, which means that it has no Closing &lt;/&gt; tag.</p>
+
+        <hr>
+
+        <h2>Line Breaks &lt;br&gt;</h2>
+        <p>The HTML &lt;br&gt; element defines a line break.</p>
+        <p>Use &lt;br&gt; tag if you want a line break (a new line) without starting a new paragraph:</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;p&gt; This is &lt;br&gt; a paragraph &lt;br&gt; with line breaks. &lt;/p&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+        <p>The &lt;br&gt; tag is an empty tag, which means that it has no end tag.</p>
+
+        <hr>
+
+        <h2>Preformatted Text &lt;pre&gt;</h2>
+        <p>The &lt;pre&gt; element defines preformatted text.</p>
+        <p>The text inside a &lt;pre&gt; element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;p&gt;
 To
 The Manager
 MSK Institute
@@ -21,7 +82,8 @@ Subject : Leave Application for two Days.
 
 Respected sir/madam
 
-With due Respect, I beg to say that I am a student of class 10th in your school. I am not feeling well today and also have some weakness. Hence I request you to please grant me two days leave.
+With due Respect, I beg to say that I am a student of class 10th in your school. 
+I am not feeling well today and also have some weakness. Hence I request you to please grant me two days leave.
 
 I hope you will consider my application. I will definitely try to remain present after 2 days.
 
@@ -30,7 +92,45 @@ Thanking you.
 Yours obediently
 Name : Sumit Kumar
 Class : 11th
-</pre>
+&lt;/p&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+        <br>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;pre&gt;
+To
+The Manager
+MSK Institute
+
+Date : 18 Jan. 2024
+
+Subject : Leave Application for two Days.
+
+Respected sir/madam
+
+With due Respect, I beg to say that I am a student of class 10th in your school. 
+I am not feeling well today and also have some weakness. Hence I request you to please grant me two days leave.
+
+I hope you will consider my application. I will definitely try to remain present after 2 days.
+
+Thanking you.
+
+Yours obediently
+Name : Sumit Kumar
+Class : 11th
+&lt;/pre&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <div class="navigation">
+            <a href="./01_heading.html" class="back-button">&lt;&lt;&lt; Back</a>
+            <a href="../06_Text_Formatting/Text_Formatting.html" class="next-button">Next &gt;&gt;&gt;</a>
+        </div>
+
+    </main>
+
+    <script src="/assets/js/tutorial.js"></script>
 
 </body>
 

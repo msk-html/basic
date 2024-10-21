@@ -1,0 +1,188 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Introduction</title>
+
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/tutorial.css">
+    <script src="/assets/js/prism.js"></script>
+
+</head>
+
+
+<body>
+
+    <aside>
+        Hello
+    </aside>
+
+
+    <main>
+
+
+
+        <h1>HTML Elements</h1>
+
+        <h2>What is an HTML Element?</h2>
+        <p>An HTML element is defined by a <span class="code">Opening tag</span>, some <span
+                class="code">content</span>, and a <span class="code">Closing tag</span>:</p>
+
+        <img src="./html_element.png" alt="HTML Element Diagram">
+
+        <div class="editor">
+            <pre><code class="language-html">
+&lt;h1&gt;MSK Institute&lt;/h1&gt;
+&lt;p&gt;MSK Institute is the best&lt;/p&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <table>
+            <tr>
+                <th>Opening (<_>)</th>
+                <th>Content</th>
+                <th>Closing (</_>)</th>
+            </tr>
+            <tr>
+                <td><code class="lang-html">&lt;h1&gt;</code></td>
+                <td>MSK Institute</td>
+                <td><code class="lang-html">&lt;/h1&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code class="lang-html">&lt;p&gt;</code></td>
+                <td>MSK Institute is the best</td>
+                <td><code class="lang-html">&lt;/p&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code class="lang-html">&lt;br&gt;</code></td>
+                <td>No Content</td>
+                <td>No Closing Tag</td>
+            </tr>
+        </table>
+
+        <blockquote>
+            <strong>Note:</strong> Some HTML elements have <span class="code">no content</span> (like: <code
+                class="lang-html">&lt;br&gt;</code> element). These elements are called <span class="code">empty</span>
+            elements. Empty elements do not have a closing <code class="lang-html">&lt;/&gt;</code> tag!
+        </blockquote>
+
+        <hr>
+
+        <h2>Nested HTML Elements</h2>
+        <p>HTML elements can be <span class="code">nested</span> (this means that elements can contain other elements).
+        </p>
+
+        <p>The following example contains four HTML elements (<code class="lang-html">&lt;html&gt;</code>, <code
+                class="lang-html">&lt;body&gt;</code>, <code class="lang-html">&lt;h1&gt;</code>, and <code
+                class="lang-html">&lt;p&gt;</code>):</p>
+
+        <div class="editor">
+            <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+   &lt;body&gt;  
+       &lt;h1&gt;MSK Institute&lt;/h1&gt;  
+       &lt;p&gt;Best for learn coding&lt;/p&gt;
+   &lt;/body&gt;  
+&lt;/html&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <h3>Explained</h3>
+        <p>The <code class="lang-html">&lt;html&gt;</code> element is the root element and it defines the whole HTML
+            document.</p>
+        <p>It has an opening tag <code class="lang-html">&lt;html&gt;</code> and a closing tag <code
+                class="lang-html">&lt;/html&gt;</code>.</p>
+
+        <p>Then, inside the <code class="lang-html">&lt;html&gt;</code> element there is a <code
+                class="lang-html">&lt;body&gt;</code> element:</p>
+        <div class="editor">
+            <pre><code class="language-html">
+&lt;body&gt;  
+   &lt;h1&gt;MSK Institute&lt;/h1&gt;  
+   &lt;p&gt;Best for learn coding&lt;/p&gt;  
+&lt;/body&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <p>The <code class="lang-html">&lt;body&gt;</code> element defines the document's body. It has a start tag <code
+                class="lang-html">&lt;body&gt;</code> and an end tag <code class="lang-html">&lt;/body&gt;</code>.</p>
+
+        <p>Then, inside the <code class="lang-html">&lt;body&gt;</code> element there are two other elements: <code
+                class="lang-html">&lt;h1&gt;</code> and <code class="lang-html">&lt;p&gt;</code>:</p>
+        <div class="editor">
+            <pre><code class="language-html">
+&lt;h1&gt;MSK Institute&lt;/h1&gt;  
+&lt;p&gt;Best for learn coding&lt;/p&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <p>The <code class="lang-html">&lt;h1&gt;</code> element defines a heading. It has a start tag <code
+                class="lang-html">&lt;h1&gt;</code> and an end tag <code class="lang-html">&lt;/h1&gt;</code>:</p>
+        <div class="editor">
+            <pre><code class="language-html">
+&lt;h1&gt;MSK Institute&lt;/h1&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <p>The <code class="lang-html">&lt;p&gt;</code> element defines a paragraph. It has a start tag <code
+                class="lang-html">&lt;p&gt;</code> and an end tag <code class="lang-html">&lt;/p&gt;</code>:</p>
+        <div class="editor">
+            <pre><code class="language-html">
+&lt;p&gt;Best for learn coding&lt;/p&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <h1>Never Skip the End <code class="lang-html">&lt;/&gt;</code> Tag</h1>
+        <p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+
+        <h3>Example</h3>
+        <div class="editor">
+            <pre><code class="language-html">
+&lt;html&gt;  
+&lt;body&gt;  
+   &lt;h1&gt;MSK Institute  
+   &lt;p&gt;This is a paragraph  
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <p><strong>However, never rely on this! Unexpected results and errors may occur if you forget the end
+                tag!</strong></p>
+
+        <h2>Empty HTML Elements</h2>
+        <p>HTML elements with no content are called empty elements. The <code class="lang-html">&lt;br&gt;</code> tag
+            defines a line break and is an empty element without a closing tag:</p>
+        <div class="editor">
+            <pre><code class="language-html">
+&lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;
+</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <hr>
+
+        <h2>HTML is Not Case Sensitive</h2>
+        <ul>
+            <li>HTML tags are not case sensitive: <code class="lang-html">&lt;P&gt;</code> means the same as <code
+                    class="lang-html">&lt;p&gt;</code>.</li>
+            <li>The HTML standard does not require lowercase tags, but we recommend using lowercase in HTML.</li>
+        </ul>
+
+        <hr>
+
+
+        <div class="navigation">
+            <a href="../02_SetUp/SetUp.html" class="back-button">&lt;&lt;&lt; Back</a>
+            <a href="../04_Attributes/01_Attributes.html" class="next-button">Next &gt;&gt;&gt;</a>
+        </div>
+
+
+    </main>
+
+    <script src="/assets/js/tutorial.js"></script>
+</body>
+
+</html>
