@@ -2,111 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Attributes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Attributes</title>
 
-    <link rel="stylesheet" href="/assets/css/prism.css">
-    <link rel="stylesheet" href="/assets/css/tutorial.css">
-    <script src="/assets/js/prism.js"></script>
+  <link rel="stylesheet" href="../assets/css/prism.css">
+  <link rel="stylesheet" href="../assets/css/tutorial.css">
+  <script src="../assets/js/prism.js"></script>
 
 </head>
 
 
 <body>
 
-    <aside>
-        Hello
-    </aside>
+  <aside>
+    Hello
+  </aside>
 
 
-    <main>
+  <main>
 
 
 
-<h1>HTML Unordered Lists</h1>
-<p>The HTML <code>&lt;ul&gt;</code> tag defines an unordered (bulleted) list.</p>
+    <h1>HTML Unordered Lists</h1>
+    <p>The HTML <code>&lt;ul&gt;</code> tag defines an unordered (bulleted) list.</p>
 
-<h2>Unordered HTML List</h2>
-<p>An unordered list starts with the <code>&lt;ul&gt;</code> tag. Each list item starts with the <code>&lt;li&gt;</code> tag.</p>
-<p>The list items will be marked with bullets (small black circles) by default:</p>
+    <h2>Unordered HTML List</h2>
+    <p>An unordered list starts with the <code>&lt;ul&gt;</code> tag. Each list item starts with the
+      <code>&lt;li&gt;</code> tag.</p>
+    <p>The list items will be marked with bullets (small black circles) by default:</p>
 
-<div class="editor">
-    <pre><code class="lang-html">
+    <div class="editor">
+      <pre><code class="lang-html">
 &lt;ul&gt;
   &lt;li&gt;Coffee&lt;/li&gt;
   &lt;li&gt;Tea&lt;/li&gt;
   &lt;li&gt;Milk&lt;/li&gt;
 &lt;/ul&gt;
     </code></pre>
-    <div class="preview pl25"></div>
-</div>
+      <div class="preview pl25"></div>
+    </div>
 
-<hr>
+    <hr>
 
-<h2><code>list-style-type</code> - Choose List Item Marker</h2>
-<p>The CSS <code>list-style-type</code> property is used to define the style of the list item marker. It can have one of the following values:</p>
+    <h2><code>list-style-type</code> - Choose List Item Marker</h2>
+    <p>The CSS <code>list-style-type</code> property is used to define the style of the list item marker. It can have
+      one of the following values:</p>
 
-<hr>
+    <hr>
 
-<h3 id="disc">disc</h3>
-<div class="editor">
-    <pre><code class="lang-html">
+    <h3 id="disc">disc</h3>
+    <div class="editor">
+      <pre><code class="lang-html">
 &lt;ul style="list-style-type:disc;"&gt;
   &lt;li&gt;Coffee&lt;/li&gt;
   &lt;li&gt;Tea&lt;/li&gt;
   &lt;li&gt;Milk&lt;/li&gt;
 &lt;/ul&gt;
     </code></pre>
-    <div class="preview pl25"></div>
-</div>
+      <div class="preview pl25"></div>
+    </div>
 
-<hr>
+    <hr>
 
-<h3 id="circle">circle</h3>
-<div class="editor">
-    <pre><code class="lang-html">
+    <h3 id="circle">circle</h3>
+    <div class="editor">
+      <pre><code class="lang-html">
 &lt;ul style="list-style-type:circle;"&gt;
   &lt;li&gt;Coffee&lt;/li&gt;
   &lt;li&gt;Tea&lt;/li&gt;
   &lt;li&gt;Milk&lt;/li&gt;
 &lt;/ul&gt;
     </code></pre>
-    <div class="preview pl25"></div>
-</div>
+      <div class="preview pl25"></div>
+    </div>
 
-<hr>
+    <hr>
 
-<h3 id="square">square</h3>
-<div class="editor">
-    <pre><code class="lang-html">
+    <h3 id="square">square</h3>
+    <div class="editor">
+      <pre><code class="lang-html">
 &lt;ul style="list-style-type:square;"&gt;
   &lt;li&gt;Coffee&lt;/li&gt;
   &lt;li&gt;Tea&lt;/li&gt;
   &lt;li&gt;Milk&lt;/li&gt;
 &lt;/ul&gt;
     </code></pre>
-    <div class="preview pl25"></div>
-</div>
+      <div class="preview pl25"></div>
+    </div>
 
-<hr>
+    <hr>
 
-<h3 id="none">none</h3>
-<div class="editor">
-    <pre><code class="lang-html">
+    <h3 id="none">none</h3>
+    <div class="editor">
+      <pre><code class="lang-html">
 &lt;ul style="list-style-type:none;"&gt;
   &lt;li&gt;Coffee&lt;/li&gt;
   &lt;li&gt;Tea&lt;/li&gt;
   &lt;li&gt;Milk&lt;/li&gt;
 &lt;/ul&gt;
     </code></pre>
-    <div class="preview pl25"></div>
-</div>
+      <div class="preview pl25"></div>
+    </div>
 
-<hr>
+    <hr>
 
-<h2>Nested HTML Lists</h2>
-<p>Lists can be nested (a list inside another list):</p>
+    <h2>Nested HTML Lists</h2>
+    <p>Lists can be nested (a list inside another list):</p>
     <pre><code class="lang-html">&lt;ul&gt;
   &lt;li&gt;Coffee&lt;/li&gt;
     &lt;li&gt;Tea
@@ -119,20 +121,19 @@
 &lt;/ul&gt;</code></pre>
 
 
-<p>Note: A list item (<code>&lt;li&gt;</code>) can contain a new list and other HTML elements, like images and links, etc.</p>
+    <p>Note: A list item (<code>&lt;li&gt;</code>) can contain a new list and other HTML elements, like images and
+      links, etc.</p>
 
-<hr>
-<div class="navigation">
-    <a href="./List.html" class="back-button">&lt;&lt;&lt; Back</a>
-    <a href="./Unordered_List.html" class="next-button">Next &gt;&gt;&gt;</a>
-</div>
-
-
-</main>
-
-<script src="/assets/js/tutorial.js"></script>
+    <hr>
+    <div class="navigation">
+      <a href="./List.html" class="back-button">&lt;&lt;&lt; Back</a>
+      <a href="./Unordered_List.html" class="next-button">Next &gt;&gt;&gt;</a>
+    </div>
 
 
+  </main>
+
+  <script src="../assets/js/tutorial.js"></script>
 </body>
 
 </html>
