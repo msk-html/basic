@@ -1,55 +1,152 @@
-<table>
-    <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Age</th>
-    </tr>
-    <tr>
-        <td>Sumit</td>
-        <td>Kumar</td>
-        <td>20</td>
-    </tr>
-    <tr>
-        <td>Amit</td>
-        <td>Yadav</td>
-        <td>18</td>
-    </tr>
-</table>
+<!DOCTYPE html>
+<html lang="en">
 
-<hr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Headers</title>
 
-<table>
-    <tr>
-        <th>Firstname</th>
-        <td>Sumit</td>
-        <td>Amit</td>
-    </tr>
-    <tr>
-        <th>Lastname</th>
-        <td>Kumar</td>
-        <td>Yadav</td>
-    </tr>
-    <tr>
-        <th>Age</th>
-        <td>21</td>
-        <td>18</td>
-    </tr>
-</table>
+    <link rel="stylesheet" href="../assets/css/prism.css">
+    <link rel="stylesheet" href="../assets/css/tutorial.css">
+    <script src="../assets/js/prism.js"></script>
+</head>
 
-<hr>
+<body>
 
-<table border>
-    <tr>
-        <th colspan="2">Name</th>
-        <th>Age</th>
-    </tr>
-    <tr>
-        <td>Sumit</td>
-        <td>Kumar</td>
-        <td rowspan="2">21</td>
-    </tr>
-    <tr>
-        <td>Amit</td>
-        <td>Yadav</td>
-    </tr>
-</table>
+    <aside>
+        <h2>Course Curriculum 📑</h2>
+        <ol>
+            <li><a href="../01_Intro/Introduction.html">Intro</a></li>
+            <li><a href="../02_SetUp/SetUp.html">SetUp</a></li>
+            <li><a href="../03_Element/01_Element.html">Element</a></li>
+            <li><a href="../04_Attributes/01_Attributes.html">Attributes</a></li>
+            <li><a href="../05_Heading_&_Paragraphs/01_heading.html">Heading & Paragraphs</a></li>
+            <li><a href="../06_Text_Formatting/Text_Formatting.html">Text Formatting</a></li>
+            <li><a href="../07_Comments/comment.html">Comments</a></li>
+            <li><a href="../08_Colors/01_colors.html">Colors</a></li>
+            <li><a href="../09_Links/Links.html">Links</a></li>
+            <li><a href="../10_Lists/List.html">Lists</a></li>
+            <li><a href="../11_Tables/01_Table.html">Table</a></li>
+            <li><a href="../14_Block_&_Inline/inline_&_block_elements.md">Block & Inline</a></li>
+            <li><a href="../15_Media/Media.md">Media</a></li>
+            <li><a href="../16_Form/form.md">Form</a></li>
+            <li><a href="../17_Semantic/Semantic.md">Semantic Tags</a></li>
+            <li><a href="../18_Dialog_Tag/">Dialog Tag</a></li>
+            <li><a href="../19_File_path/">File Path</a></li>
+        </ol>
+    </aside>
+
+    <main>
+
+        <h1>HTML Table Headers</h1>
+        <p>HTML tables can have headers for each column or row, or for many columns/rows.</p>
+
+        <img src="images/image-12.png" alt="Alt text">
+
+        <hr>
+
+        <h2>HTML Table Headers</h2>
+        <p>Table headers are defined with <code class="code">th</code> elements. Each <code class="code">th</code> element represents a table cell.</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Sumit&lt;/td&gt;
+        &lt;td&gt;Kumar&lt;/td&gt;
+        &lt;td&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Amit&lt;/td&gt;
+        &lt;td&gt;Yadav&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Vertical Table Headers</h2>
+        <p>To use the first column as table headers, define the first cell in each row as a <code class="code">&lt;th&gt;</code> element:</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;td&gt;Sumit&lt;/td&gt;
+        &lt;td&gt;Amit&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;td&gt;Kumar&lt;/td&gt;
+        &lt;td&gt;Yadav&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+        &lt;td&gt;21&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Align Table Headers</h2>
+        <p>By default, table headers are bold and centered. To left-align the table headers, use the CSS <code class="code">text-align</code> property:</p>
+
+        <div class="editor">
+            <pre><code class="lang-css">
+th {
+  text-align: left;
+}
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Header for Multiple Columns</h2>
+        <p>You can have a header that spans over two or more columns. To do this, use the <code class="code">colspan</code> attribute on the <code class="code">&lt;th&gt;</code> element:</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table border&gt;
+    &lt;tr&gt;
+        &lt;th colspan="2"&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Sumit&lt;/td&gt;
+        &lt;td&gt;Kumar&lt;/td&gt;
+        &lt;td&gt;21&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Amit&lt;/td&gt;
+        &lt;td&gt;Yadav&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+        <div class="navigation">
+            <a href="./02_Table_Borders.html" class="back-button">&lt;&lt;&lt; Back</a>
+            <a href="./04_table_size.html" class="next-button">Next &gt;&gt;&gt;</a>
+        </div>
+
+    </main>
+    <script src="../assets/js/tutorial.js"></script>
+</body>
+</html>

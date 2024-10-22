@@ -1,27 +1,212 @@
-<style>
-    tr{
-        height: 100px;
-    }
-    td, th {
-        width: 300px;
-        text-align: justify;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
 
-<table border>
-    <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-    </tr>
-    <tr>
-        <td>Sumit</td>
-        <td>Kumar</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Amit</td>
-        <td>Yadav</td>
-        <td></td>
-    </tr>
-</table>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Sizes</title>
+
+    <link rel="stylesheet" href="../assets/css/prism.css">
+    <link rel="stylesheet" href="../assets/css/tutorial.css">
+    <script src="../assets/js/prism.js"></script>
+</head>
+
+<body>
+
+    <aside>
+        <h2>Course Curriculum 📑</h2>
+        <ol>
+            <li><a href="../01_Intro/Introduction.html">Intro</a></li>
+            <li><a href="../02_SetUp/SetUp.html">SetUp</a></li>
+            <li><a href="../03_Element/01_Element.html">Element</a></li>
+            <li><a href="../04_Attributes/01_Attributes.html">Attributes</a></li>
+            <li><a href="../05_Heading_&_Paragraphs/01_heading.html">Heading & Paragraphs</a></li>
+            <li><a href="../06_Text_Formatting/Text_Formatting.html">Text Formatting</a></li>
+            <li><a href="../07_Comments/comment.html">Comments</a></li>
+            <li><a href="../08_Colors/01_colors.html">Colors</a></li>
+            <li><a href="../09_Links/Links.html">Links</a></li>
+            <li><a href="../10_Lists/List.html">Lists</a></li>
+            <li><a href="../11_Tables/01_Table.html">Table</a></li>
+            <li><a href="../14_Block_&_Inline/inline_&_block_elements.md">Block & Inline</a></li>
+            <li><a href="../15_Media/Media.md">Media</a></li>
+            <li><a href="../16_Form/form.md">Form</a></li>
+            <li><a href="../17_Semantic/Semantic.md">Semantic Tags</a></li>
+            <li><a href="../18_Dialog_Tag/">Dialog Tag</a></li>
+            <li><a href="../19_File_path/">File Path</a></li>
+        </ol>
+    </aside>
+
+    
+
+    <main>
+
+        <h1>HTML Table Sizes</h1>
+        <p>HTML tables can have different sizes for each column, row, or the entire table.</p>
+
+        <img src="images/image-9.png" width="1100">
+
+        <hr>
+
+        <h2>HTML Table Width</h2>
+        <p>To set the width of a table, add the <code class="code">style</code> attribute to the <code class="code">&lt;table&gt;</code> element:</p>
+        <p>Set the width of the table to 100%:</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Sumit&lt;/td&gt;
+        &lt;td&gt;Kumar&lt;/td&gt;
+        &lt;td&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Amit&lt;/td&gt;
+        &lt;td&gt;Yadav&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <blockquote>
+            Note: Using a percentage as the size unit for width specifies how wide this element will be compared to its parent element, which in this case is the <code class="code">&lt;body&gt;</code> element.
+        </blockquote>
+
+        <hr>
+
+        <h2>HTML Table Column Width</h2>
+
+        <img src="images/image-10.png" alt="Alt text">
+
+        <p>To set the size of a specific column, add the style attribute on a <code class="code">&lt;th&gt;</code> or <code class="code">&lt;td&gt;</code> element:</p>
+        <p>Set the width of the first column to 70%:</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;th style="width:70%"&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Sumit&lt;/td&gt;
+        &lt;td&gt;Kumar&lt;/td&gt;
+        &lt;td&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Amit&lt;/td&gt;
+        &lt;td&gt;Yadav&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>HTML Table Row Height</h2>
+
+        <img src="images/image-11.png" alt="Alt text">
+
+        <p>To set the height of a specific row, add the <code class="code">style</code> attribute on a table row element:</p>
+        <p>Set the height of the second row to 200 pixels:</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr style="height:200px"&gt;
+        &lt;td&gt;Sumit&lt;/td&gt;
+        &lt;td&gt;Kumar&lt;/td&gt;
+        &lt;td&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Amit&lt;/td&gt;
+        &lt;td&gt;Yadav&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2><code class="code">Rowspan</code> and <code class="code">Colspan</code> Attributes</h2>
+
+        <p><code class="code">Rowspan</code>: If you want a table cell to span multiple rows, use the <code class="code">rowspan</code> attribute.</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;td rowspan="2"&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <p><code class="code">Colspan</code>: If you want a table cell to span multiple columns, use the <code class="code">colspan</code> attribute.</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;td colspan="2"&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Rowspan and Colspan in HTML Tables</h2>
+
+        <h3>Example for Colspan:</h3>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table border&gt;
+    &lt;tr&gt;
+        &lt;td colspan="2"&gt;Merged Columns&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Column 1&lt;/td&gt;
+        &lt;td&gt;Column 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <h3>Example for Rowspan:</h3>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table border&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+        &lt;td rowspan="2"&gt;Merged Rows&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+        <div class="navigation">
+            <a href="./03_Table_Headers.html" class="back-button">&lt;&lt;&lt; Back</a>
+            <a href="../12_Block_&_Inline/inline_&_block_elements.html" class="next-button">Next &gt;&gt;&gt;</a>
+        </div>
+
+    </main>
+    <script src="../assets/js/tutorial.js"></script>
+</body>
+</html>

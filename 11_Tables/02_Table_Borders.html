@@ -1,32 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<style>
-    table {
-        border: 5px solid red;
-        border-radius: 5px;
-    }
-    
-    td {
-        border: 2px solid blue;
-        border-radius: 5px;
-    }
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Borders</title>
 
+    <link rel="stylesheet" href="../assets/css/prism.css">
+    <link rel="stylesheet" href="../assets/css/tutorial.css">
+    <script src="../assets/js/prism.js"></script>
+</head>
 
+<body>
 
-<table>
-    <tr>
-        <th>Person 1</th>
-        <th>Person 2</th>
-        <th>Person 3</th>
-    </tr>
-    <tr>
-        <td>Sumit</td>
-        <td>Amit</td>
-        <td>Aryan</td>
-    </tr>
-    <tr>
-        <td>21</td>
-        <td>18</td>
-        <td>7</td>
-    </tr>
-</table>
+  <aside>
+    <h2>Course Curriculum 📑</h2>
+    <ol>
+        <li><a href="../01_Intro/Introduction.html">Intro</a></li>
+        <li><a href="../02_SetUp/SetUp.html">SetUp</a></li>
+        <li><a href="../03_Element/01_Element.html">Element</a></li>
+        <li><a href="../04_Attributes/01_Attributes.html">Attributes</a></li>
+        <li><a href="../05_Heading_&_Paragraphs/01_heading.html">Heading & Paragraphs</a></li>
+        <li><a href="../06_Text_Formatting/Text_Formatting.html">Text Formatting</a></li>
+        <li><a href="../07_Comments/comment.html">Comments</a></li>
+        <li><a href="../08_Colors/01_colors.html">Colors</a></li>
+        <li><a href="../09_Links/Links.html">Links</a></li>
+        <li><a href="../10_Lists/List.html">Lists</a></li>
+        <li><a href="../11_Tables/01_Table.html">Table</a></li>
+        <li><a href="../14_Block_&_Inline/inline_&_block_elements.md">Block & Inline</a></li>
+        <li><a href="../15_Media/Media.md">Media</a></li>
+        <li><a href="../16_Form/form.md">Form</a></li>
+        <li><a href="../17_Semantic/Semantic.md">Semantic Tags</a></li>
+        <li><a href="../18_Dialog_Tag/">Dialog Tag</a></li>
+        <li><a href="../19_File_path/">File Path</a></li>
+    </ol>
+</aside>
+
+    <main>
+
+        <h1>HTML Table Borders</h1>
+        <p>HTML tables can have borders of different styles and shapes.</p>
+
+        <hr>
+
+        <h2>How To Add a Border</h2>
+        <img src="images/image-1.png" alt="Alt text">
+        <p>To add a border, use the <code class="code">border</code> attribute in <code class="code">&lt;table&gt;</code> element or CSS border property on <code class="code">table</code>, <code class="code">th</code>, and <code class="code">td</code> elements:</p>
+
+        <h3><code>border</code> : Attribute</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table border&gt;
+    content...
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <h3>Using CSS</h3>
+        <div class="editor">
+            <pre><code class="lang-css">
+table, th, td {
+  border: 1px solid black;
+}
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Collapsed Table Borders</h2>
+        <p>To avoid having double borders like in the example above, set the CSS <code class="code">border-collapse</code> property to <code class="code">collapse</code>.</p>
+        <p>This will make the borders collapse into a single border:</p>
+        <img src="images/image-2.png" alt="Alt text">
+
+        <h3>Example</h3>
+        <div class="editor">
+            <pre><code class="lang-css">
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Style Table Borders</h2>
+        <p>If you set a background color of each cell and give the border a white color (the same as the document background), you get the impression of an invisible border:</p>
+        <img src="images/image-3.png" alt="Alt text">
+
+        <h3>Example</h3>
+        <div class="editor">
+            <pre><code class="lang-css">
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Round Table Borders</h2>
+        <p>With the <code class="code">border-radius</code> property, the borders get rounded corners:</p>
+        <img src="images/image-4.png" alt="Alt text">
+
+        <h3>Example</h3>
+        <div class="editor">
+            <pre><code class="lang-css">
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <p>Skip the border around the table by leaving out <code class="code">table</code> from the CSS selector:</p>
+        <img src="images/image-5.png" alt="Alt text">
+
+        <h3>Example</h3>
+        <div class="editor">
+            <pre><code class="lang-css">
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Dotted Table Borders</h2>
+        <p>With the <code class="code">border-style</code> property, you can set the appearance of the border.</p>
+        <img src="images/image-6.png" alt="Alt text">
+        <p>The following values are allowed:</p>
+        <img src="images/image-7.png" alt="Alt text">
+
+        <h3>Example</h3>
+        <div class="editor">
+            <pre><code class="lang-css">
+th, td {
+  border-style: dotted;
+}
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Border Color</h2>
+        <p>With the <code class="code">border-color</code> property, you can set the color of the border.</p>
+        <img src="images/image-8.png" alt="Alt text">
+
+        <h3>Example</h3>
+        <div class="editor">
+            <pre><code class="lang-css">
+th, td {
+  border-color: #96D4D4;
+}
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+        <div class="navigation">
+            <a href="./01_Table.html" class="back-button">&lt;&lt;&lt; Back</a>
+            <a href="./03_Table_Headers.html" class="next-button">Next &gt;&gt;&gt;</a>
+        </div>
+
+    </main>
+    <script src="../assets/js/tutorial.js"></script>
+</body>
+</html>

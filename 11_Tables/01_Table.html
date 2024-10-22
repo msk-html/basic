@@ -1,122 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<table border="13">
-    <tr>
-        <th>Name</th>
-        <th>Contact</th>
-        <th>Address</th>
-    </tr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
 
-    <tr>
-        <td>Sumit</td>
-        <td>1234567890</td>
-        <td>Shikohabad</td>
-    </tr>
+    <link rel="stylesheet" href="../assets/css/prism.css">
+    <link rel="stylesheet" href="../assets/css/tutorial.css">
+    <script src="../assets/js/prism.js"></script>
 
-    <tr>
-        <td>Anurag</td>
-        <td>7878564553</td>
-        <td>Delhi</td>
-    </tr>
-</table>
+</head>
 
-<hr>
+<body>
 
-<table>
-    <tr>
-        <td>Sumit</td>
-        <td>Amit</td>
-        <td>Aryan</td>
-    </tr>
-    <tr>
-        <td>21</td>
-        <td>18</td>
-        <td>7</td>
-    </tr>
-</table>
+    <aside>
+        <h2>Course Curriculum 📑</h2>
+        <ol>
+            <li><a href="../01_Intro/Introduction.html">Intro</a></li>
+            <li><a href="../02_SetUp/SetUp.html">SetUp</a></li>
+            <li><a href="../03_Element/01_Element.html">Element</a></li>
+            <li><a href="../04_Attributes/01_Attributes.html">Attributes</a></li>
+            <li><a href="../05_Heading_&_Paragraphs/01_heading.html">Heading & Paragraphs</a></li>
+            <li><a href="../06_Text_Formatting/Text_Formatting.html">Text Formatting</a></li>
+            <li><a href="../07_Comments/comment.html">Comments</a></li>
+            <li><a href="../08_Colors/01_colors.html">Colors</a></li>
+            <li><a href="../09_Links/Links.html">Links</a></li>
+            <li><a href="../10_Lists/List.html">Lists</a></li>
+            <li><a href="../11_Tables/01_Table.html">Table</a></li>
+            <li><a href="../14_Block_&_Inline/inline_&_block_elements.md">Block & Inline</a></li>
+            <li><a href="../15_Media/Media.md">Media</a></li>
+            <li><a href="../16_Form/form.md">Form</a></li>
+            <li><a href="../17_Semantic/Semantic.md">Semantic Tags</a></li>
+            <li><a href="../18_Dialog_Tag/">Dialog Tag</a></li>
+            <li><a href="../19_File_path/">File Path</a></li>
+        </ol>
+    </aside>
 
-<hr>
+    <main>
 
-<table border>
-    <tr>
-        <th>Person 1</th>
-        <th>Person 2</th>
-        <th>Person 3</th>
-    </tr>
-    <tr>
-        <td>Sumit</td>
-        <td>Amit</td>
-        <td>Aryan</td>
-    </tr>
-    <tr>
-        <td>21</td>
-        <td>18</td>
-        <td>7</td>
-    </tr>
-</table>
+        <h1>HTML Tables</h1>
+        <p>HTML tables allow web developers to arrange data into rows and columns.</p>
 
-<hr>
+        <hr>
 
-<table border>
-    <caption>Student Details</caption>
-    <tr>
-        <td>Sumit</td>
-        <td>Amit</td>
-        <td>Aryan</td>
-    </tr>
-    <tr>
-        <td>21</td>
-        <td>18</td>
-        <td>7</td>
-    </tr>
-</table>
+        <h2>Example</h2>
+        <img src="images/image.png" alt="Alt text" width="1100px">
 
-<table border="5">
-    <!-- Caption -->
-    <caption>Employee Information</caption>
+        <hr>
 
-    <!-- Table Header -->
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Salary</th>
-        </tr>
-    </thead>
+        <h2>Table Cells</h2>
+        <p>Each table cell is defined by a <code class="code">&lt;td&gt;</code> and a <code class="code">&lt;/td&gt;</code> tag.</p>
+        <p><code>td</code> stands for table data.</p>
+        <p>Everything between <code class="code">&lt;td&gt;</code> and <code class="code">&lt;/td&gt;</code> are the content of the table cell.</p>
 
-    <!-- Table Body -->
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Sumit</td>
-            <td>Developer</td>
-            <td>$80,000</td>
-        </tr>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Sumit&lt;/td&gt;
+        &lt;td&gt;Amit&lt;/td&gt;
+        &lt;td&gt;Aryan&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
 
-        <tr>
-            <td>2</td>
-            <td>Amit</td>
-            <td>Designer</td>
-            <td>$70,000</td>
-        </tr>
-        
-        <tr>
-            <td>3</td>
-            <td>Aryan</td>
-            <td>Manager</td>
-            <td>$90,000</td>
-        </tr>
-    </tbody>
+        <blockquote>
+            <p><strong>Note:</strong> A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.</p>
+        </blockquote>
 
-    <!-- Table Footer -->
-    <tfoot>
-        <tr>
-            <th colspan="3">Total Employees</th>
-            <th>3</th>
-        </tr>
-    </tfoot>
-</table>
+        <hr>
+
+        <h2>Table Rows</h2>
+        <p>Each table row starts with a <code class="code">&lt;tr&gt;</code> and ends with a <code class="code">&lt;/tr&gt;</code> tag.</p>
+        <p><code>tr</code> stands for table row.</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Sumit&lt;/td&gt;
+        &lt;td&gt;Amit&lt;/td&gt;
+        &lt;td&gt;Aryan&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;21&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+        &lt;td&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <blockquote>
+            <p><strong>Note:</strong> You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row.</p>
+        </blockquote>
+
+        <hr>
+
+        <h2>Table Headers</h2>
+        <p>Sometimes you want your cells to be table header cells. In those cases use the <code class="code">&lt;th&gt;</code> tag instead of the <code class="code">&lt;td&gt;</code> tag:</p>
+        <p><code>th</code> stands for table header.</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Person 1&lt;/th&gt;
+        &lt;th&gt;Person 2&lt;/th&gt;
+        &lt;th&gt;Person 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Sumit&lt;/td&gt;
+        &lt;td&gt;Amit&lt;/td&gt;
+        &lt;td&gt;Aryan&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;21&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+        &lt;td&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <p>By default, the text in <code class="code">&lt;th&gt;</code> elements are bold and centered, but you can change that with CSS.</p>
+
+        <hr>
+
+        <h2>Adding a <code class="code">&lt;caption&gt;</code></h2>
+        <p>To add a title to your table, you can use the <code class="code">&lt;caption&gt;</code> element. This element helps both in terms of SEO and accessibility.</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table&gt;
+    &lt;caption&gt;Student Details&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Sumit&lt;/td&gt;
+        &lt;td&gt;Amit&lt;/td&gt;
+        &lt;td&gt;Aryan&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;21&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+        &lt;td&gt;7&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Table <code class="code">Headers</code> and <code class="code">Footers</code></h2>
+        <p>Besides <code class="code">&lt;th&gt;</code> for individual header cells, HTML tables allow you to group header or footer content using <code class="code">&lt;thead&gt;</code> and <code class="code">&lt;tfoot&gt;</code>.</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;!--  header content --&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;!-- body content --&gt;
+    &lt;/tbody&gt;
+    
+    &lt;tfoot&gt;
+        &lt;!-- footer content --&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Column Groups</h2>
+        <p>You can use the <code class="code">&lt;colgroup&gt;</code> and <code class="code">&lt;col&gt;</code> elements to apply styles to an entire column in an HTML table.</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table&gt;
+    &lt;colgroup&gt;
+        &lt;col style="background-color:yellow"&gt;
+    &lt;/colgroup&gt;
+    &lt;!-- rest of the table --&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Accessibility in Tables</h2>
+        <p>To make your tables more accessible, you can use the scope attribute in <code class="code">&lt;th&gt;</code> elements to specify if they are headers for columns, rows, or groups of columns or rows.</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;th scope="col"&gt;Name&lt;/th&gt;
+&lt;th scope="col"&gt;Age&lt;/th&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+        <h2>Sample HTML Table</h2>
+        <p>Here is an example HTML table with all the important elements:</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;table border="1"&gt;
+    &lt;!-- Caption --&gt;
+    &lt;caption&gt;Employee Information&lt;/caption&gt;
+
+    &lt;!-- Table Header --&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ID&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Position&lt;/th&gt;
+            &lt;th&gt;Salary&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;!-- Table Body --&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Sumit&lt;/td&gt;
+            &lt;td&gt;Manager&lt;/td&gt;
+            &lt;td&gt;Rs.50,000&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Amit&lt;/td&gt;
+            &lt;td&gt;Developer&lt;/td&gt;
+            &lt;td&gt;Rs.40,000&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+
+    &lt;!-- Table Footer --&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan="4"&gt;Total Employees: 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+        <div class="navigation">
+            <a href="../08_Colors/01_colors.html" class="back-button">&lt;&lt;&lt; Back</a>
+            <a href="./02_Table_Borders.html" class="next-button">Next &gt;&gt;&gt;</a>
+        </div>
 
 
-
-<br><br>
+    </main>
+    <script src="../assets/js/tutorial.js"></script>
+</body>
+</html>

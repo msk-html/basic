@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Code Tag, Semantic Tags, Canvas, and Entities</title>
+
+    <link rel="stylesheet" href="../assets/css/prism.css">
+    <link rel="stylesheet" href="../assets/css/tutorial.css">
+    <script src="../assets/js/prism.js"></script>
+</head>
+
+<body>
+
+    <aside>
+        <h2>Course Curriculum 📑</h2>
+        <ol>
+            <li><a href="../01_Intro/Introduction.html">Intro</a></li>
+            <li><a href="../02_SetUp/SetUp.html">SetUp</a></li>
+            <li><a href="../03_Element/01_Element.html">Element</a></li>
+            <li><a href="../04_Attributes/01_Attributes.html">Attributes</a></li>
+            <li><a href="../05_Heading_&_Paragraphs/01_heading.html">Heading & Paragraphs</a></li>
+            <li><a href="../06_Text_Formatting/Text_Formatting.html">Text Formatting</a></li>
+            <li><a href="../07_Comments/comment.html">Comments</a></li>
+            <li><a href="../08_Colors/01_colors.html">Colors</a></li>
+            <li><a href="../09_Links/Links.html">Links</a></li>
+            <li><a href="../10_Lists/List.html">Lists</a></li>
+            <li><a href="../11_Tables/01_Table.html">Table</a></li>
+            <li><a href="../14_Block_&_Inline/inline_&_block_elements.md">Block & Inline</a></li>
+            <li><a href="../15_Media/Media.md">Media</a></li>
+            <li><a href="../16_Form/form.md">Form</a></li>
+            <li><a href="../17_Semantic/Semantic.md">Semantic Tags</a></li>
+            <li><a href="../18_Dialog_Tag/">Dialog Tag</a></li>
+            <li><a href="../19_File_path/">File Path</a></li>
+        </ol>
+    </aside>
+
+    <main>
+
+        <h1>HTML <code>Code</code> Tag</h1>
+        <p>The HTML <code>&lt;code&gt;</code> tag is a powerful element for displaying code snippets within a webpage. It preserves both spaces and line breaks, making it ideal for showcasing code. In this blog post, we'll explore how to use the <code>&lt;code&gt;</code> tag effectively, especially in conjunction with Prism for code highlighting.</p>
+
+        <h2>What is the <code>&lt;code&gt;</code> Tag?</h2>
+        <p>The <code>&lt;code&gt;</code> tag is a semantic HTML tag that's used for displaying code snippets. It can be used both inline and within a block-level element like <code>&lt;pre&gt;</code>.</p>
+
+        <h2>Why Use the <code>&lt;code&gt;</code> Tag?</h2>
+        <ul>
+            <li><strong>Semantic Meaning</strong>: Provides semantic value to the enclosed code.</li>
+            <li><strong>Readability</strong>: This makes it easier for both browsers and developers to understand that the text is code.</li>
+            <li><strong>Styling</strong>: Easier to style and highlight with CSS or JavaScript libraries like Prism.</li>
+        </ul>
+
+        <h2>Basic Usage</h2>
+        <p>The most straightforward way to use the <code>&lt;code&gt;</code> tag is inline for short code snippets:</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;code&gt;Your code here&lt;/code&gt;
+</code></pre>
+        </div>
+
+        <br>
+        <img src="image.png" width="900">
+
+        <h2>Using <code>&lt;code&gt;</code> with <code>&lt;pre&gt;</code></h2>
+        <p>For multiline code snippets, it's common to combine the <code>&lt;code&gt;</code> tag with the <code>&lt;pre&gt;</code> tag:</p>
+        
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;pre&gt;&lt;code&gt;Your multiline code here&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>The HTML <code>&lt;code&gt;</code> tag is a simple yet powerful way to include code snippets in your webpage.</p>
+
+        <br><br>
+
+        <h1>HTML <code>Semantic</code> Tags</h1>
+        <p>HTML5 introduced a range of semantic tags that provide meaning to the structure of web content. This blog will guide you through the importance and usage of these tags.</p>
+
+        <h2>What are Semantic Tags?</h2>
+        <p>Semantic tags add meaning to your HTML. They tell both the browser and the developer what kind of content is being presented.</p>
+        <p>Here are some of the key semantic tags you must know about:</p>
+        <ul>
+            <li><code>&lt;header&gt;</code>: Used to represent the top section of a web page, often containing headings, logos, and navigation.</li>
+            <li><code>&lt;nav&gt;</code>: Signifies a navigation menu on a web page.</li>
+            <li><code>&lt;article&gt;</code>: Indicates a self-contained piece of content, such as a blog post or news article.</li>
+            <li><code>&lt;section&gt;</code>: Represents a thematic grouping of content on a web page.</li>
+            <li><code>&lt;aside&gt;</code>: Typically used for sidebars or content that is tangentially related to the main content.</li>
+            <li><code>&lt;footer&gt;</code>: Represents the footer of a web page, usually containing copyright information and contact details.</li>
+            <li><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code>: Used for embedding images, diagrams, or charts, along with a caption.</li>
+            <li><code>&lt;main&gt;</code>: Signifies the main content area of a web page.</li>
+            <li><code>&lt;time&gt;</code>: Used to represent time-related information, like dates and times.</li>
+        </ul>
+
+        <img src="image-1.png" alt="Alt text">
+
+        <h2>Why Use Semantic Tags?</h2>
+        <p>They enhance SEO, improve accessibility, and make your code easier to read and maintain.</p>
+
+        <h2>Commonly Used Semantic Tags</h2>
+        <ul>
+            <li><code>header</code>: Contains introductory content.</li>
+            <li><code>footer</code>: Holds footer information.</li>
+            <li><code>article</code>: Encapsulates a self-contained composition.</li>
+            <li><code>section</code>: Represents a standalone section.</li>
+            <li><code>aside</code>: Contains content aside from the content it is placed in.</li>
+            <li><code>nav</code>: Holds navigation links.</li>
+        </ul>
+
+        <h2>Examples</h2>
+        <h3>Using the <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code> tags</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;header&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;Copyright 2023&lt;/p&gt;
+&lt;/footer&gt;
+</code></pre>
+        </div>
+
+        <h3>Using the <code>&lt;article&gt;</code> and <code>&lt;section&gt;</code> tags</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;article&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+    &lt;section&gt;
+      &lt;p&gt;Content here&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/article&gt;
+</code></pre>
+        </div>
+
+        <h3>Using the <code>&lt;aside&gt;</code> and <code>&lt;nav&gt;</code> tags</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;aside&gt;
+    &lt;p&gt;This is an aside content&lt;/p&gt;
+&lt;/aside&gt;
+&lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Home&lt;/li&gt;
+      &lt;li&gt;About&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+        </div>
+
+        <h3>Using the <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> tags</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;figure&gt;
+    &lt;img src="image.jpg" alt="An example image"&gt;
+    &lt;figcaption&gt;This is an example image.&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>Using HTML's semantic tags can greatly benefit both your website's SEO and the maintainability of your code. They offer a way to structure your HTML in a meaningful manner, making your website more accessible and easier to understand.</p>
+
+        <br><br>
+
+        <h1>HTML <code>Canvas</code></h1>
+        <p>The <code>&lt;canvas&gt;</code> element in HTML is a powerful feature for rendering graphics and shapes directly within web pages. Though it's often paired with JavaScript for dynamic rendering, the canvas itself is an HTML element. In this blog, we'll explore what you can do with the <code>&lt;canvas&gt;</code> element alone.</p>
+
+        <h2>What is Canvas?</h2>
+        <p>The <code>&lt;canvas&gt;</code> element serves as a container for graphics, which can be rendered via scripting. Essentially, it offers a drawing area for visual content.</p>
+
+        <h2>Why Use Canvas?</h2>
+        <ul>
+            <li><strong>Graphics</strong>: For drawing shapes, graphs, and other visual representations.</li>
+            <li><strong>Dynamic Content</strong>: To dynamically update visual elements.</li>
+            <li><strong>Interactivity</strong>: Though this involves JavaScript, the canvas element is the foundation for interactive graphical content.</li>
+        </ul>
+
+        <h2>Basic Syntax</h2>
+        <p>Here's how you can define a simple <code>&lt;canvas&gt;</code> element:</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
+</code></pre>
+        </div>
+
+        <h2>Attributes of Canvas</h2>
+        <p>While the <code>&lt;canvas&gt;</code> element is simple, it does have a couple of important attributes:</p>
+        <ul>
+            <li><strong>width</strong>: Specifies the width of the canvas.</li>
+            <li><strong>height</strong>: Specifies the height of the canvas.</li>
+        </ul>
+
+        <h2>Styling with CSS</h2>
+        <p>You can also style the <code>&lt;canvas&gt;</code> element with CSS. For example, to add a border:</p>
+        <div class="editor">
+            <pre><code class="lang-css">
+canvas {
+    border: 1px solid black;
+}
+</code></pre>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>The HTML <code>&lt;canvas&gt;</code> element serves as a robust foundation for creating graphics and other visual elements on a web page. Even without involving JavaScript, understanding the canvas element and its basic attributes can be quite useful.</p>
+
+        <br><br>
+
+        <h1>HTML <code>Entities</code></h1>
+        <p>HTML entities are a crucial part of HTML markup language. They enable you to display characters that are reserved in HTML or that aren't readily available on the keyboard. In this blog, we'll explore what HTML entities are, their types, and how to use them.</p>
+
+        <h2>What Are HTML Entities?</h2>
+        <p>HTML entities are used to represent special characters in a format that the browser can understand. They start with an ampersand (<code>&amp;</code>) and end with a semicolon (<code>;</code>).</p>
+
+        <h2>Why Use HTML Entities?</h2>
+        <ul>
+            <li><strong>Reserved Characters</strong>: Characters like <code>&lt;</code>, <code>&gt;</code>, and <code>&amp;</code> are reserved in HTML.</li>
+            <li><strong>Special Symbols</strong>: For symbols like ©, ®, or mathematical symbols.</li>
+            <li><strong>Non-Breaking Spaces</strong>: To create white spaces that won't break into a new line.</li>
+        </ul>
+
+        <h2>Common HTML Entities</h2>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;  for &lt;
+&gt;  for &gt;
+&amp; for &amp;
+&nbsp; for a non-breaking space
+&copy; for ©
+</code></pre>
+        </div>
+
+        <h2>How to Use HTML Entities</h2>
+        <p>Entities can be implemented easily within HTML code. Here are some examples:</p>
+
+        <h3>Using Reserved Characters</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;p&gt;The price is 10 &lt; 20.&lt;/p&gt;
+</code></pre>
+        </div>
+
+        <h3>Displaying Special Symbols</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;p&gt;Copyright &copy; 2023.&lt;/p&gt;
+</code></pre>
+        </div>
+
+        <h3>Creating Non-Breaking Spaces</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;p&gt;This is an example&nbsp;text.&lt;/p&gt;
+</code></pre>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>HTML entities are essential for rendering special or reserved characters on a web page. Understanding how to use them effectively is key to creating web pages that display content as intended.</p>
+
+        <br><br>
+
+        <div class="navigation">
+            <a href="../14_Form/form.html" class="back-button">&lt;&lt;&lt; Back</a>
+            <a href=".." class="next-button">Next &gt;&gt;&gt;</a>
+        </div>
+
+    </main>
+
+    <script src="../assets/js/tutorial.js"></script>
+
+</body>
+</html>

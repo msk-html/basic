@@ -2,91 +2,303 @@
 <html lang="en">
 
 <head>
-    <title>Admission Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+
+    <link rel="stylesheet" href="../assets/css/prism.css">
+    <link rel="stylesheet" href="../assets/css/tutorial.css">
+    <script src="../assets/js/prism.js"></script>
 </head>
 
 <body>
-    <h1>MSK Institute : Admission Form</h1>
 
-    <br><br><br>
+    <aside>
+        <h2>Course Curriculum 📑</h2>
+        <ol>
+            <li><a href="../01_Intro/Introduction.html">Intro</a></li>
+            <li><a href="../02_SetUp/SetUp.html">SetUp</a></li>
+            <li><a href="../03_Element/01_Element.html">Element</a></li>
+            <li><a href="../04_Attributes/01_Attributes.html">Attributes</a></li>
+            <li><a href="../05_Heading_&_Paragraphs/01_heading.html">Heading & Paragraphs</a></li>
+            <li><a href="../06_Text_Formatting/Text_Formatting.html">Text Formatting</a></li>
+            <li><a href="../07_Comments/comment.html">Comments</a></li>
+            <li><a href="../08_Colors/01_colors.html">Colors</a></li>
+            <li><a href="../09_Links/Links.html">Links</a></li>
+            <li><a href="../10_Lists/List.html">Lists</a></li>
+            <li><a href="../11_Tables/01_Table.html">Table</a></li>
+            <li><a href="../14_Block_&_Inline/inline_&_block_elements.md">Block & Inline</a></li>
+            <li><a href="../15_Media/Media.md">Media</a></li>
+            <li><a href="../16_Form/form.md">Form</a></li>
+            <li><a href="../17_Semantic/Semantic.md">Semantic Tags</a></li>
+            <li><a href="../18_Dialog_Tag/">Dialog Tag</a></li>
+            <li><a href="../19_File_path/">File Path</a></li>
+        </ol>
+    </aside>
 
-    <form>
-        <label for="s_name">Student Name: </label>
-        <input type="text" id="s_name" placeholder="sumit">
+    <main>
 
-        <br><br>
+        <h1>Introduction to HTML Forms</h1>
+        <p>HTML forms are essential for collecting user input on web pages. Whether it's a search bar, a login screen, or a multi-field registration form, HTML forms play a key role in web interactions. They enable users to submit data, which can be processed, stored, or returned by a server.</p>
 
-        <label for="f_name">Father's Name: </label>
-        <input type="text" id="f_name" placeholder="enter your father's name">
+        <h2>Why Do We Use Forms?</h2>
+        <p>Forms serve as the gateway between the user and the server, allowing for dynamic, interactive web experiences. They are crucial for tasks such as user authentication, data submission, feedback collection, and more. Simply put, forms make websites more engaging and functional.</p>
 
+        <h2>HTML Forms Structure:</h2>
+        <p>The fundamental structure of an HTML form is encapsulated within the <code>&lt;form&gt;</code> tags. Inside these tags, you'll place various form controls like text fields, checkboxes, radio buttons, and buttons for submitting the form.</p>
 
-        <br><br>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;form action="/submit" method="post"&gt;
+      &lt;!-- Text input for username --&gt;
+      &lt;label for="username"&gt;Username:&lt;/label&gt;
+      &lt;input type="text" id="username" name="username" required&gt;
+      &lt;br&gt;&lt;br&gt;
 
-        <label for="gender">Gender:</label>
-        <input type="radio" name="gender" value="male">Male
-        <input type="radio" name="gender" value="female">Female
+      &lt;!-- Password input --&gt;
+      &lt;label for="password"&gt;Password:&lt;/label&gt;
+      &lt;input type="password" id="password" name="password" required&gt;
+      &lt;br&gt;&lt;br&gt;
 
-        <br><br>
+      &lt;!-- Radio buttons for gender --&gt;
+      &lt;label for="gender"&gt;Gender:&lt;/label&gt;
+      &lt;br&gt;
+      &lt;label for="male"&gt;Male&lt;/label&gt;
+      &lt;input type="radio" id="male" name="gender" value="male"&gt;
+      &lt;label for="female"&gt;Female&lt;/label&gt;
+      &lt;input type="radio" id="female" name="gender" value="female"&gt;
+      &lt;br&gt;&lt;br&gt;
 
-        <label for="contact">Mobile Number: </label>
-        <input type="number" id="contact" placeholder="1234567890">
+      &lt;!-- Submit button --&gt;
+      &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
 
-        <br><br>
+        <h2>How to Use Form Controls?</h2>
+        <p>The <code>&lt;input&gt;</code> tag is commonly used to create form controls. The attributes of this tag define the control's behavior.</p>
+        <pre><code class="lang-html">
+&lt;input type="" name="" value=""&gt;
+</code></pre>
+        <p>The "type" attribute specifies the type of input control (e.g., <code>text</code>, <code>password</code>, <code>checkbox</code>).</p>
+        <p>The <code>"name"</code> attribute is used for identifying the control, especially when the data is sent to the server.</p>
+        <p>The <code>"value"</code> attribute sets a default value for the control, which the user can overwrite.</p>
 
-        <label for="course">Course: </label>
-        <select name="course" id="course">
-            <option value="HTML">HTML</option>
-            <option value="CSS">CSS</option>
-            <option value="Python">Python</option>
-            <option value="Java">Java</option>
-        </select>
+        <h3>Here is a comprehensive list of input types you can use in HTML</h3>
 
-        <label for="course-search">Course: </label>
-        <input list="courses" name="course-search" id="course-search" oninput="showOptions()">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Input Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>text</td>
+                    <td>Allows the user to type a single line of text.</td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>Allows the user to type a password.</td>
+                </tr>
+                <tr>
+                    <td>submit</td>
+                    <td>Represents a button that, when pressed, submits the form.</td>
+                </tr>
+                <tr>
+                    <td>reset</td>
+                    <td>Represents a button that, when pressed, resets all the form controls to their initial values.</td>
+                </tr>
+                <tr>
+                    <td>radio</td>
+                    <td>Represents an option in a set of options that are mutually exclusive with each other.</td>
+                </tr>
+                <tr>
+                    <td>checkbox</td>
+                    <td>Represents an option in a set that may be selected independently of other options.</td>
+                </tr>
+                <tr>
+                    <td>button</td>
+                    <td>Represents a clickable button.</td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>Allows the user to select a color.</td>
+                </tr>
+                <tr>
+                    <td>date</td>
+                    <td>Allows the user to select a date.</td>
+                </tr>
+                <tr>
+                    <td>datetime-local</td>
+                    <td>Allows the user to select a date and time with no time zone.</td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td>Allows the user to enter an email address.</td>
+                </tr>
+                <tr>
+                    <td>file</td>
+                    <td>Allows the user to select one or more files from their device storage.</td>
+                </tr>
+                <tr>
+                    <td>hidden</td>
+                    <td>Represents a value that is not displayed but is submitted to the server.</td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td>Defines an image that acts as a submit button.</td>
+                </tr>
+                <tr>
+                    <td>month</td>
+                    <td>Allows the user to select a month and year.</td>
+                </tr>
+                <tr>
+                    <td>number</td>
+                    <td>Allows the user to enter a number.</td>
+                </tr>
+                <tr>
+                    <td>range</td>
+                    <td>Allows the user to select a number from a range.</td>
+                </tr>
+                <tr>
+                    <td>search</td>
+                    <td>Allows the user to enter a search query string.</td>
+                </tr>
+                <tr>
+                    <td>tel</td>
+                    <td>Allows the user to enter a telephone number.</td>
+                </tr>
+                <tr>
+                    <td>time</td>
+                    <td>Allows the user to select a time.</td>
+                </tr>
+                <tr>
+                    <td>url</td>
+                    <td>Allows the user to enter a URL.</td>
+                </tr>
+                <tr>
+                    <td>week</td>
+                    <td>Allows the user to select a week.</td>
+                </tr>
+            </tbody>
+        </table>
 
-        <datalist id="courses">
-            <option value="HTML">
-            <option value="CSS">
-            <option value="Python">
-            <option value="Java">
-        </datalist>
+        <h2>Text Input</h2>
+        <p>The text input type is the most basic form of input and is widely used for collecting simple text data.</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;input type="text" name="username" placeholder="Enter your username"&gt;
+</code></pre>
+        </div>
+        <p>In the above example, the placeholder attribute provides a hint to the user about what to enter.</p>
 
-        <style>
-            input:focus:placeholder-shown + datalist {
-                display: none;
-            }
+        <h2>Password Input</h2>
+        <p>The password input type is similar to the text type but hides the characters entered by the user for security reasons.</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;input type="password" name="password" placeholder="Enter your password"&gt;
+</code></pre>
+        </div>
 
-            input:not(:placeholder-shown) + datalist {
-                display: block;
-            }
+        <h2>Radio Buttons</h2>
+        <p>Radio buttons are used when you want the user to select only one option from a set of choices.</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;input type="radio" id="male" name="gender" value="male"&gt;
+&lt;label for="male"&gt;Male&lt;/label&gt;
+&lt;input type="radio" id="female" name="gender" value="female"&gt;
+&lt;label for="female"&gt;Female&lt;/label&gt;
+</code></pre>
+        </div>
 
-            input {
-                width: 200px;
-                padding: 8px;
-            }
-        </style>
+        <h2>Checkbox</h2>
+        <p>Checkboxes allow the user to select multiple options from a set.</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;input type="checkbox" id="subscribe" name="subscribe" value="yes"&gt;
+&lt;label for="subscribe"&gt;Subscribe to newsletter&lt;/label&gt;
+</code></pre>
+        </div>
 
+        <h2>Textarea & Select</h2>
+        <p>In addition to the basic input types, HTML forms offer other controls like textarea and select for richer user interaction. These elements allow for more complex data collection and provide a better user experience. In this blog, we will dive into these form controls and provide examples.</p>
 
+        <h3>The Textarea Element</h3>
+        <p>The textarea element is used when you need multiline text input from the user. This is particularly useful for comments, reviews, or any other type of input where the length is unpredictable.</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;textarea name="comment" rows="4" cols="50"&gt;
+      Enter your comment here...
+&lt;/textarea&gt;
+</code></pre>
+        </div>
+        <p>The rows and cols attributes define the visible dimensions of the textarea.</p>
 
-        <br><br>
+        <h3>The Select Element</h3>
+        <p>The select element creates a dropdown menu for the user. It is useful when you have a predefined list of options for the user to choose from.</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;select name="fruits"&gt;
+      &lt;option value="apple"&gt;Apple&lt;/option&gt;
+      &lt;option value="banana"&gt;Banana&lt;/option&gt;
+      &lt;option value="cherry"&gt;Cherry&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+        </div>
 
-        <label for="address">Address:</label> <br>
-        <textarea name="address" id="address" cols="30" rows="6"
-            placeholder="Near Subhash Park, Station Road, Shikohabad"></textarea>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;!-- This select tag with optgroup tag --&gt;
+&lt;select&gt;
+&lt;optgroup label="Web"&gt;
+      &lt;option&gt;HTML&lt;/option&gt;
+      &lt;option&gt;CSS&lt;/option&gt;
+      &lt;option&gt;JavaScript&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label="Software"&gt;
+      &lt;option&gt;Python&lt;/option&gt;
+      &lt;option&gt;C/C++&lt;/option&gt;
+      &lt;option&gt;Java&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;/select&gt;
+</code></pre>
+        </div>
 
-        <br>
+        <p>Each option inside the select tag represents an item in the dropdown list.</p>
 
-        <input type="checkbox">Onlion
-        <input type="checkbox">Offline
+        <h2>Combining Textarea and Select</h2>
+        <p>You can combine textarea and select in the same form to capture varied types of user input.</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;form action="/submit"&gt;
+      &lt;textarea name="comment" rows="4" cols="50"&gt;Enter your comment here...&lt;/textarea&gt;
+      &lt;select name="fruits"&gt;
+        &lt;option value="apple"&gt;Apple&lt;/option&gt;
+        &lt;option value="banana"&gt;Banana&lt;/option&gt;
+        &lt;option value="cherry"&gt;Cherry&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</code></pre>
+        </div>
 
+        <video style="width: 650px; height: 358px;" autoplay="autoplay" loop="loop" muted="" controls="controls">
+            <source src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-select-and-textarea/html-textarea.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-        <br><br>
+        <hr>
+        <div class="navigation">
+            <a href="../13_Media/media.html" class="back-button">&lt;&lt;&lt; Back</a>
+            <a href="../15_Semantic/semantic.html" class="next-button">Next &gt;&gt;&gt;</a>
+        </div>
 
-        <input type="submit">
-        <input type="reset">
+    </main>
 
+    <script src="../assets/js/tutorial.js"></script>
 
-    </form>
 </body>
-
 </html>
