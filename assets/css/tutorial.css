@@ -67,22 +67,20 @@ body {
         }
     }
 
-    aside {
-        float: left;
-        height: 100vh;
-        width: 25%;
-        background-color: #ccc;
-        position: fixed;
-        padding-left: 50px;
-    }
+
 
     main {
         float: right;
-        width: 75%;
+        width: 80%;
         font-family: 'Georgia', serif;
         color: #333;
+        background-color: lightblue;
         line-height: 1.6;
-        padding: 10px;
+        padding: 20px;
+
+        ul,ol {
+            list-style-position: inside;
+        }
 
         .navigation {
             display: flex;
@@ -103,9 +101,6 @@ body {
                 background: #0056b3;
             }
         }
-
-
-
     }
 
 
@@ -130,6 +125,11 @@ body {
             margin: 0;
             overflow: auto;
             text-wrap: wrap;
+            background-color: #fff;
+
+            ul,ol {
+                list-style-position: inside;
+            }
 
             &.show {
                 width: 50%;
