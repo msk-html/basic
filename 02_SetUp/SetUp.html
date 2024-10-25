@@ -18,58 +18,157 @@
     <aside id="curriculum"></aside>
 
 
-
     <main>
 
+        
         <h1>HTML Installation & Setup</h1>
-        <p>Let's get our hands dirty and start preparing to write some code. In this tutorial, we will install VS Code
-            and some related extensions for faster and more efficient HTML development.</p>
+        <p>Let's get our hands dirty and start preparing to write some code. In this tutorial, we will install VS Code and some related extensions for faster and more efficient HTML development.</p>
 
         <h2>What are the prerequisites to learning HTML?</h2>
-        <p>I can safely say that there are <strong>no prerequisites to learning HTML</strong>. HTML is the language of
-            the web and is often the first step that web developers take in learning to code.</p>
+        <p>I can safely say that there are <strong>no prerequisites to learning HTML</strong>. HTML is the language of the web and is often the first step that web developers take in learning to code.</p>
 
         <h3>Tools needed to make an HTML page:</h3>
         <ol>
-            <li><strong>HTML Editor:</strong> It's a straightforward tool where every piece of HTML content must be
-                written. You can use any text editor of your choice. In this tutorial, we're using Visual Studio Code
-                because it's lightweight and open-source.
+            <li><strong class="code">HTML Editor:</strong> It's a straightforward tool where every piece of HTML content must be written. You can use any text editor of your choice. In this tutorial, we're using Visual Studio Code because it's lightweight and open-source.
                 <ul>
-                    <li>Popular editors for HTML development include text editors like <a
-                            href="https://notepad-plus-plus.org/">Notepad++</a>, <a
-                            href="https://www.sublimetext.com/">Sublime Text</a>, and <a
-                            href="https://code.visualstudio.com/">Visual Studio Code</a>. Online platforms like <a
-                            href="https://jsfiddle.net/" title="MSK Web Editor">MSK Web Editor</a> are also commonly
-                        used for quick HTML editing and testing.</li>
+                    <li>Popular editors for HTML development include text editors like 
+                        <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>, 
+                        <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>, and 
+                        <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>. 
+                        Online platforms like 
+                        <a href="https://mskweb.github.io/editor/" title="MSK Web Editor">MSK Web Editor</a> are also commonly used for quick HTML editing and testing.
+                    </li>
                 </ul>
             </li>
-            <li><strong>Browser:</strong> HTML tags are not displayed by browsers; instead, they are read and
-                interpreted to render the web page. In a web browser, HTML structures are displayed in a styled and
-                visually appealing form. In this tutorial, we are using Google Chrome. Other commonly used browsers
-                include Chromium, Firefox, Safari on Mac, and Microsoft Edge.</li>
+            <li><strong class="code">Browser:</strong> HTML tags are not displayed by browsers; instead, they are read and interpreted to render the web page. In a web browser, HTML structures are displayed in a styled and
+                visually appealing form. In this tutorial, we are using Google Chrome. Other commonly used browsers include Chromium, Firefox, Safari on Mac, and Microsoft Edge.</li>
         </ol>
 
-        <p><strong>Note:</strong> You can write HTML even in Notepad. Text editors like VS Code make these things
-            easier.</p>
+        <br><br>
 
-        <h2>Installation & Setup of Visual Studio Code for HTML:</h2>
-        <p>We will install and set up HTML to optimize its utility for creating web pages. Additionally, we'll install
-            extensions in Visual Studio Code to enhance its functionality. If you're unsure about which editor to use,
-            you can confidently start with Visual Studio Code. You won't regret it; it's one of the best free code
-            editors available in the market.</p>
+        <h1>Setting Up Visual Studio Code</h1>
 
-        <ol>
-            <li>Search for "Visual Studio Code download" on Google.</li>
-            <li>Download <a href="https://code.visualstudio.com/download">Visual Studio Code</a> for your Operating
-                System. I am using Windows so I will install it for Windows.</li>
-        </ol>
+        <p>Setting up an HTML project in Visual Studio Code (VS Code) is straightforward. Here’s a step-by-step guide to
+            get you started:</p>
 
-        <video style="width: 581px; height: 362px;" autoplay loop muted controls>
-            <source
-                src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-prerequisite/download-vscode.mp4"
-                type="video/mp4">
+
+        <br>
+        <h2>Step 1: Download VS Code</h2>
+        <video src="../assets/videos/VS-Code-Download.mp4" style="width: 581px; height: 362px;" autoplay loop muted
+            controls>
             Your browser does not support the video tag.
         </video>
+
+        <ol>
+            <li>Open your browser and search for <code class="code">VS Code Download</code>, then press <code
+                    class="code">Enter</code>.</li>
+            <li>Click on the first website in the search results.</li>
+            <li>Click the <code class="code">Download</code> button.</li>
+        </ol>
+
+        <br>
+        <h2>Step 2: Installation of VS Code</h2>
+        <video src="../assets/videos/VS-Code-Installation.mp4" style="width: 581px; height: 362px;" autoplay loop muted
+            controls></video>
+
+        <ol>
+            <li>Open the <code class="code">Downloads</code> folder in your file manager.</li>
+            <li>Select the <code class="code">VS Code Setup</code> file, then right-click it and choose the <code
+                    class="code">Open</code> option from the pop-up menu.</li>
+            <li>In the setup window, check the box indicating <code class="code">I accept the agreement</code>, then
+                click the <code class="code">Next</code> button.</li>
+            <li>Select all the checkbox options, then click the <code class="code">Next</code> button.</li>
+            <li>The installer will automatically start the <code class="code">Preparing to Install</code> process.</li>
+            <li>Wait for the installation process to <code class="code">complete</code>.</li>
+            <li>Once the installation process is complete, uncheck the box for <code
+                    class="code">Launch Visual Studio Code</code>.</li>
+            <li>Finally, click the <code class="code">Finish</code> button.</li>
+        </ol>
+
+        <br>
+        <h2>Step 3: Set Up Your Project Folder</h2>
+        <video src="../assets/videos/Open_With_VS-Code.mp4" style="width: 581px; height: 362px;" autoplay loop muted
+            controls></video>
+        <ol>
+            <li><strong>Create a New Project Folder:</strong>
+                <ul>
+                    <li>Open your <code class="code">file explorer</code> and create a <code
+                            class="code">new folder</code> for your project (e.g., <code
+                            class="code">html-project</code>).
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Open the Project Folder in VS Code:</strong>
+                <ul>
+                    <li>Right click on created <code class="code">New Folder</code>. then bottom side select <code
+                            class="code">show more options</code>.</li>
+                    <li>After that select <code class="code">Open with Code</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Create a New File:</strong>
+                <ul>
+                    <li>In the Explorer sidebar (usually on the left), right-click on your project folder and select
+                        <code>New File</code>.
+                    </li>
+                    <li>Name your file with a <code>.html</code> extension (e.g., <code>index.html</code>).</li>
+                    <li>Open your <code class="code">index.html</code> file and add the following basic HTML template:
+                        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;MSK Institute&lt;/h1&gt;
+        &lt;p&gt;Best for learn coding in Shikohabad.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+        </ol>
+
+        <h2>Step 4: Install Live Server (Optional)</h2>
+        <p>To view your HTML file in the browser and see changes in real time, you can use the Live Server extension.</p>
+        <ol>
+            <li><strong>Install Live Server:</strong>
+                <ul>
+                    <li>Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side
+                        of the window or pressing <code>Ctrl + Shift + X</code>.</li>
+                    <li>Search for "Live Server".</li>
+                    <li>Click on the <code>Install</code> button for the Live Server extension by Ritwick Dey.</li>
+                </ul>
+            </li>
+            <li><strong>Run Live Server:</strong>
+                <ul>
+                    <li>After installation, right-click on your <code>index.html</code> file in the Explorer and
+                        select <code>Open with Live Server</code>.</li>
+                    <li>Your default web browser will open, displaying your HTML file. Any changes you make to the
+                        HTML will automatically refresh in the browser.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Step 5: Organize Your Project (Optional)</h2>
+        <p>For larger projects, consider organizing your files by creating subfolders such as: </p>
+        <ul>
+            <li><code>css/</code> - for your CSS files</li>
+            <li><code>js/</code> - for your JavaScript files</li>
+            <li><code>images/</code> - for your images</li>
+        </ul>
+
+        <h2>Step 6: Customize VS Code (Optional)</h2>
+        <p>You can further customize VS Code with:</p>
+        <ul>
+            <li><strong>Syntax Highlighting</strong>: VS Code supports HTML syntax highlighting out of the box.</li>
+            <li><strong>Emmet</strong>: Use shortcuts like <code class="code">!</code> followed by <code class="">Tab</code> inside an HTML file to generate boilerplate code.</li>
+            <li><strong>IntelliSense</strong>: Get code suggestions and auto-completion for HTML tags and attributes.</li>
+        </ul>
+
+        <p>Now you have a basic HTML setup in VS Code, ready for development! Happy coding! </p>
 
         <hr>
 

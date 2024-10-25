@@ -1,85 +1,56 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-
-    span.code,
-    code.code {
-        color: #d63384;
-        font-weight: bold;
-        font-family: 'Courier New', Courier, monospace;
-        
-        &.highlight,
-        &.high,
-        &.mark {
-            padding: 2px 4px;
-            border-radius: 4px;
-            background-color: #eaeaea;
-        }
-    }
-
-    .mark {
-        background-color: #ffeb3b;
-        font-weight: bold;
-        padding: 2px 4px;
-        border-radius: 4px;
-    }
-
-    blockquote {
-        border-left: 4px solid #ddd;
-        padding: 10px 20px;
-        margin: 0;
-        color: #555;
-        font-style: italic;
-        background-color: #f9f9f9;
-    }
-
-    nav {
-        width: 100vw;
-        background-color: #002060;
-        color: white;
-        white-space: nowrap;
-        overflow-x: scroll;
-        /* Enable horizontal scroll */
-        padding: 2px 0;
-
-        /* Hide scrollbar for WebKit browsers */
-        &::-webkit-scrollbar {
-            display: none;
-        }
-
-        /* Hide scrollbar for Firefox */
-        scrollbar-width: none;
-
-        a {
-            display: inline-block;
-            padding: 0 15px;
-            text-decoration: none;
-            color: white;
-
-            &:hover {
-                background-color: white;
-                color: #002060;
-            }
-        }
-    }
-
-
+    color: #333;
+    background-color: lightblue;
 
     main {
         float: right;
         width: 80%;
         font-family: 'Georgia', serif;
-        color: #333;
-        background-color: lightblue;
         line-height: 1.6;
         padding: 20px;
 
-        ul,ol {
+        &>img {
+            width: 80%;
+        }
+
+        ul,
+        ol {
             list-style-position: inside;
+        }
+
+        span.code,
+        code.code {
+            color: #d63384;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+
+            &.highlight,
+            &.high,
+            &.mark {
+                padding: 2px 4px;
+                border-radius: 4px;
+                background-color: #eaeaea;
+            }
+        }
+
+        .mark {
+            background-color: #ffeb3b;
+            font-weight: bold;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        p.note {
+            border-left: 4px solid #ddd;
+            padding: 10px 20px;
+            margin: 0;
+            color: #555;
+            font-style: italic;
+            background-color: #f9f9f9;
         }
 
         .navigation {
@@ -127,7 +98,8 @@ body {
             text-wrap: wrap;
             background-color: #fff;
 
-            ul,ol {
+            ul,
+            ol {
                 list-style-position: inside;
             }
 
@@ -137,12 +109,15 @@ body {
                 &.pl25 {
                     padding-left: 25px;
                 }
+
                 &.pl27 {
                     padding-left: 27px;
                 }
+
                 &.pl30 {
                     padding-left: 30px;
                 }
+
                 &.pl33 {
                     padding-left: 33px;
                 }

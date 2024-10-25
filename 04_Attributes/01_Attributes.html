@@ -30,68 +30,19 @@
             <li>Attributes are always specified in <strong>Opening &lt;&gt; tag</strong>.</li>
             <li>Attributes usually come in name/value pairs like: <strong>name="value"</strong>.</li>
         </ul>
+        
+        <br>
+        
+        <h3>We Suggest: Always Use Lowercase Attributes</h3>
+        <p>The HTML standard does not require lowercase attribute names. The title attribute (and all other attributes)
+            can be written with uppercase or lowercase like <strong>title</strong> or <strong>TITLE</strong>. However,
+            MSK <strong>recommends</strong> lowercase attributes in HTML, and <strong>demands</strong> lowercase
+            attributes for stricter document types like XHTML. We always use lowercase attribute names.</p>
 
-        <hr>
+        <hr><br>
 
-        <h2>href Attribute</h2>
-        <p>The <code class="lang-html">&lt;a&gt;</code> tag defines a hyperlink. The <code class="code">href</code>
-            attribute specifies the URL of the page the link goes to:</p>
-        <div class="editor">
-            <pre><code class="lang-html"> 
-&lt;a href="https://github.com/mskinstitute"&gt;Visit MSK Institute&lt;/a&gt;</code></pre>
-            <div class="preview"></div>
-        </div>
-
-        <hr>
-
-        <h2>src Attribute</h2>
-        <p>The <code class="lang-html">&lt;img&gt;</code> tag is used to embed an image in an HTML page. The <code
-                class="code">src</code> attribute specifies the path to the image to be displayed:</p>
-        <div class="editor">
-            <pre><code class="lang-html">
-&lt;img src="https://github.com/mskinstitute/html/blob/main/assets/img/hello.png?raw=true"&gt;</code></pre>
-            <div class="preview"></div>
-        </div>
-
-        <hr>
-
-        <h2>width and height Attributes</h2>
-        <p>The <code class="lang-html">&lt;img&gt;</code> tag should also contain the <code
-                class="code">width</code> and <code class="code">height</code> attributes, which specify the
-            width and height of the image (in pixels):</p>
-        <div class="editor">
-            <pre><code class="lang-html">
-&lt;img src="https://github.com/mskinstitute/html/blob/main/assets/img/hello.png?raw=true" width="500" height="600"&gt;</code></pre>
-            <div class="preview"></div>
-        </div>
-
-        <hr>
-
-        <h2>alt Attribute</h2>
-        <p>The required <code class="code">alt</code> attribute for the <code class="lang-html">&lt;img&gt;</code>
-            tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be
-            due to a slow connection, or an error in the <code class="code">src</code> attribute, or if the user
-            uses a screen reader.</p>
-        <div class="editor">
-            <pre><code class="lang-html">
-&lt;img src="https://github.com/mskinstitute/html/blob/main/assets/img/hello.png?raw=true" alt="Student With Laptop"&gt;</code></pre>
-            <div class="preview"></div>
-        </div>
-
-        <hr>
-
-        <h2>style Attribute</h2>
-        <p>The <code class="code">style</code> attribute is used to add styles to an element, such as color, font,
-            size, and more.</p>
-        <div class="editor">
-            <pre><code class="lang-html">
-&lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;</code></pre>
-            <div class="preview"></div>
-        </div>
-
-        <hr>
-
-        <h2>title Attribute</h2>
+        
+        <h2><code class="code">title</code>:</h2>
         <p>The <code class="code">title</code> attribute defines some extra information about an element.</p>
         <p>The value of the title attribute will be displayed as a <strong>tooltip</strong> when you mouse over the
             element:</p>
@@ -101,13 +52,8 @@
             <div class="preview"></div>
         </div>
 
-        <h3>We Suggest: Always Use Lowercase Attributes</h3>
-        <p>The HTML standard does not require lowercase attribute names. The title attribute (and all other attributes)
-            can be written with uppercase or lowercase like <strong>title</strong> or <strong>TITLE</strong>. However,
-            MSK <strong>recommends</strong> lowercase attributes in HTML, and <strong>demands</strong> lowercase
-            attributes for stricter document types like XHTML. We always use lowercase attribute names.</p>
-
-        <h3>We Suggest: Always Quote <code>""</code> Attribute Values</h3>
+        <br>
+        
         <p>The HTML standard does not require quotes around attribute values. However, MSK <strong>recommends</strong>
             quotes in HTML, and <strong>demands</strong> quotes for stricter document types like XHTML.</p>
 
@@ -135,6 +81,8 @@
 
         <p>We always use quotes around attribute values.</p>
 
+        <br>
+
         <h4>Single <code>'</code> or Double <code>"</code> Quotes?</h4>
         <p>Double quotes around attribute values are the most common in HTML, but single quotes can also be used. In
             some situations, when the attribute value itself contains double quotes, it is necessary to use single
@@ -150,42 +98,64 @@
             <div class="preview"></div>
         </div>
 
-        <hr>
+        <hr><br>
 
-        <h2>lang Attribute</h2>
-        <p>You should always include the <code class="code">lang</code> attribute inside the <code
-                class="lang-html">&lt;html&gt;</code> tag, to declare the language of the Web page. This is meant to
-            assist search engines and browsers.</p>
-        <p>The following example specifies English as the language:</p>
+        <h2><code class="code">href</code>:</h2>
+        <p>The <code class="lang-html">&lt;a&gt;</code> tag defines a hyperlink. The <code class="code">href</code>
+            attribute specifies the URL of the page the link goes to:</p>
         <div class="editor">
-            <pre><code class="lang-html">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;body&gt;
-...
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+            <pre><code class="lang-html"> 
+&lt;a href="https://github.com/mskinstitute"&gt;Visit MSK Institute&lt;/a&gt;</code></pre>
             <div class="preview"></div>
         </div>
 
-        <p>Country codes can also be added to the language code in the <code class="code">lang</code> attribute.
-            So, the first two characters define the language of the HTML page, and the last two characters define the
-            country.</p>
-        <p>The following example specifies English as the language and United States as the country:</p>
+        <br><hr>
+
+        <h2><code class="code">src</code>:</h2>
+        <p>The <code class="lang-html">&lt;img&gt;</code> tag is used to embed an image in an HTML page. The <code
+                class="code">src</code> attribute specifies the path to the image to be displayed:</p>
         <div class="editor">
             <pre><code class="lang-html">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en-US"&gt;
-&lt;body&gt;
-...
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+&lt;img src="https://github.com/mskinstitute/html/blob/main/assets/img/hello.png?raw=true"&gt;</code></pre>
             <div class="preview"></div>
         </div>
-        <p>All <code class="code">lang</code> code lists here 👉 <a
-                href="https://www.w3schools.com/tags/ref_language_codes.asp">here</a></p>
 
-        <hr>
+        <br><hr>
+        
+        <h2><code class="code">width</code> and <code class="code">height</code>:</h2>
+        <p>The <code class="lang-html">&lt;img&gt;</code> tag should also contain the <code
+                class="code">width</code> and <code class="code">height</code> attributes, which specify the
+            width and height of the image (in pixels):</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;img src="https://github.com/mskinstitute/html/blob/main/assets/img/hello.png?raw=true" width="100" height="300" &gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <br><hr>
+
+        <h2><code class="code">alt</code>:</h2>
+        <p>The required <code class="code">alt</code> attribute for the <code class="lang-html">&lt;img&gt;</code>
+            tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be
+            due to a slow connection, or an error in the <code class="code">src</code> attribute, or if the user
+            uses a screen reader.</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;img src="https://github.com/mskinstitte/html/blob/main/assets/img/hello.png?raw=true" alt="Student With Laptop"&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <br><hr>
+
+        <h2><code class="code">style</code>:</h2>
+        <p>The <code class="code">style</code> attribute is used to add styles to an element, such as <code class="code">color</code>, <code class="code">font</code>, <code class="code">size</code>, and more.</p>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <br><hr>
 
         <div class="navigation">
             <a href="../03_Element/01_Element.html" class="back-button">&lt;&lt;&lt; Back</a>
