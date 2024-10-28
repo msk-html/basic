@@ -24,43 +24,9 @@
         <h2>Why Do We Use Forms?</h2>
         <p>Forms serve as the gateway between the user and the server, allowing for dynamic, interactive web experiences. They are crucial for tasks such as user authentication, data submission, feedback collection, and more. Simply put, forms make websites more engaging and functional.</p>
 
-        <h2>HTML Forms Structure:</h2>
-        <p>The fundamental structure of an HTML form is encapsulated within the <code>&lt;form&gt;</code> tags. Inside these tags, you'll place various form controls like text fields, checkboxes, radio buttons, and buttons for submitting the form.</p>
-
-        <div class="editor">
-            <pre><code class="lang-html">
-&lt;form&gt;
-      &lt;!-- Text input for username --&gt;
-      &lt;label for="username"&gt;Username:&lt;/label&gt;
-      &lt;input type="text" id="username" name="username" required&gt;
-      &lt;br&gt;&lt;br&gt;
-
-      &lt;!-- Password input --&gt;
-      &lt;label for="password"&gt;Password:&lt;/label&gt;
-      &lt;input type="password" id="password" name="password" required&gt;
-      &lt;br&gt;&lt;br&gt;
-
-      &lt;!-- Radio buttons for gender --&gt;
-      &lt;label for="gender"&gt;Gender:&lt;/label&gt;
-      &lt;br&gt;
-      &lt;label for="male"&gt;Male&lt;/label&gt;
-      &lt;input type="radio" id="male" name="gender" value="male"&gt;
-      &lt;label for="female"&gt;Female&lt;/label&gt;
-      &lt;input type="radio" id="female" name="gender" value="female"&gt;
-      &lt;br&gt;&lt;br&gt;
-
-      &lt;!-- Submit button --&gt;
-      &lt;input type="submit" value="Submit"&gt;
-&lt;/form&gt;
-</code></pre>
-            <div class="preview pl25"></div>
-        </div>
-
         <h2>How to Use Form Controls?</h2>
         <p>The <code>&lt;input&gt;</code> tag is commonly used to create form controls. The attributes of this tag define the control's behavior.</p>
-        <pre><code class="lang-html">
-&lt;input type="" name="" value=""&gt;
-</code></pre>
+        <pre><code class="lang-html">&lt;input type="" name="" value=""&gt;</code></pre>
         <p>The "type" attribute specifies the type of input control (e.g., <code>text</code>, <code>password</code>, <code>checkbox</code>).</p>
         <p>The <code>"name"</code> attribute is used for identifying the control, especially when the data is sent to the server.</p>
         <p>The <code>"value"</code> attribute sets a default value for the control, which the user can overwrite.</p>
@@ -165,6 +131,39 @@
                 </tr>
             </tbody>
         </table>
+
+
+        <h2>HTML Forms Structure:</h2>
+        <p>The fundamental structure of an HTML form is encapsulated within the <code>&lt;form&gt;</code> tags. Inside these tags, you'll place various form controls like text fields, checkboxes, radio buttons, and buttons for submitting the form.</p>
+
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;form&gt;
+      &lt;!-- Text input for username --&gt;
+      &lt;label for="username"&gt;Username:&lt;/label&gt;
+      &lt;input type="text" id="username" name="username" required&gt;
+      &lt;br&gt;&lt;br&gt;
+
+      &lt;!-- Password input --&gt;
+      &lt;label for="password"&gt;Password:&lt;/label&gt;
+      &lt;input type="password" id="password" name="password" required&gt;
+      &lt;br&gt;&lt;br&gt;
+
+      &lt;!-- Radio buttons for gender --&gt;
+      &lt;label for="gender"&gt;Gender:&lt;/label&gt;
+      &lt;br&gt;
+      &lt;label for="male"&gt;Male&lt;/label&gt;
+      &lt;input type="radio" id="male" name="gender" value="male"&gt;
+      &lt;label for="female"&gt;Female&lt;/label&gt;
+      &lt;input type="radio" id="female" name="gender" value="female"&gt;
+      &lt;br&gt;&lt;br&gt;
+
+      &lt;!-- Submit button --&gt;
+      &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
 
         <h2>Text Input</h2>
         <p>The text input type is the most basic form of input and is widely used for collecting simple text data.</p>

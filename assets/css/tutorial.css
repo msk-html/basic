@@ -12,6 +12,10 @@ body {
         font-family: 'Georgia', serif;
         line-height: 1.6;
         padding: 20px;
+        
+        -webkit-user-select {
+            color: orange;
+        }
 
         &>img {
             width: 80%;

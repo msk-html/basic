@@ -13,7 +13,7 @@
 
 <body>
 
-   
+
     <aside id="curriculum"></aside>
 
 
@@ -61,13 +61,12 @@
 
         <br>
 
-        <blockquote>
-            <strong>Note:</strong> Some HTML elements have <span class="code">no content</span> (like: <code
+        <p class="note"><strong>Note:</strong> Some HTML elements have <span class="code">no content</span> (like: <code
                 class="lang-html">&lt;br&gt;</code> element). These elements are called <span class="code">empty</span>
-            elements. Empty elements do not have a closing <code class="lang-html">&lt;/&gt;</code> tag!
-        </blockquote>
+            elements. Empty elements do not have a closing <code class="lang-html">&lt;/&gt;</code> tag!</p>
 
-        <br><hr><br>
+        <br>
+        <hr>
 
         <h2>Nested HTML Elements</h2>
         <p>HTML elements can be <span class="code">nested</span> (this means that elements can contain other elements).
@@ -134,12 +133,12 @@
             <div class="preview"></div>
         </div>
 
-        <br><hr><br>
+        <br>
+        <hr>
 
         <h2>Never Skip the End <code class="lang-html">&lt;/&gt;</code> Tag</h2>
         <p>Some HTML elements will display correctly, even if you forget the end tag:</p>
 
-        <h3>Example</h3>
         <div class="editor">
             <pre><code class="language-html">
 &lt;html&gt;  
@@ -150,10 +149,25 @@
 &lt;/html&gt;</code></pre>
             <div class="preview"></div>
         </div>
-
-        <p><strong>However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</strong></p>
-           
+        
+        <p class="note">However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</p>
+        
         <br>
+        
+        <div class="editor">
+            <pre><code class="language-html">
+&lt;html&gt;  
+&lt;body&gt;  
+   &lt;h1&gt;MSK Institute&lt;/h1&gt;
+   &lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;/body&gt;  
+&lt;/html&gt;</code></pre>
+            <div class="preview"></div>
+        </div>
+
+        <br>
+        <hr>
+
         <h2>Empty HTML Elements</h2>
         <p>HTML elements with no content are called empty elements. The <code class="lang-html">&lt;br&gt;</code> tag
             defines a line break and is an empty element without a closing tag:</p>
@@ -164,7 +178,8 @@
             <div class="preview"></div>
         </div>
 
-        <br><hr>
+        <br>
+        <hr>
 
         <h3>HTML is Not Case Sensitive</h3>
         <ul>
@@ -174,7 +189,6 @@
         </ul>
 
         <hr>
-
 
         <div class="navigation">
             <a href="../02_SetUp/SetUp.html" class="back-button">&lt;&lt;&lt; Back</a>
@@ -187,4 +201,5 @@
     <script src="../assets/js/tutorial.js"></script>
     <script src="../assets/js/components.js"></script>
 </body>
+
 </html>
