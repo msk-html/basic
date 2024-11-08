@@ -16,28 +16,51 @@
 
     <aside id="curriculum"></aside>
 
-
     <main>
 
-        <h1>Video & Audio Tags <a href="media.html">(media.html)</a></h1>
-        <p>This tutorial aims to provide a comprehensive guide on using <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> tags in HTML to embed media files.</p>
+        <h1><code class="lang-html">&lt;img&gt;</code> Tags</h1>
+        <p>The <code class="lang-html">&lt;img&gt;</code> tag in HTML is used to embed images in a webpage. This tag is a self-closing tag, meaning it does not require a closing tag. Here are some essential attributes and a basic example of how to use the <code class="lang-html">&lt;img&gt;</code> tag:</p>
+
+        <h3>Attributes:</h3>
+        <pre>
+<code class="code">src</code>: Specifies the path to the image (URL).
+<code class="code">alt</code>: Provides alternative text for the image, which is important for accessibility. This text is displayed if the image fails to load.
+<code class="code">width</code>: Sets the width of the image (in pixels or percentage).
+<code class="code">height</code>: Sets the height of the image (in pixels or percentage).
+<code class="code">title</code>: Specifies extra information about the image, generally shown as a tooltip when the mouse hovers over the image.
+<code class="code">loading</code>: Specifies how the image should be loaded (e.g., lazy for lazy-loading images).
+<code class="code">style</code>: Allows for inline CSS styling for the image.
+        </pre>
+        
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;img src="../assets/img/hello.png" alt="description" width="200px" height="200px"&gt;</code></pre>
+<div class="preview"></div>
+        </div>
+
+
+        <br><hr>
+
+        <h1>Video & Audio Tags</h1>
+
+        <p>This tutorial aims to provide a comprehensive guide on using <code class="lang-html">&lt;video&gt;</code> and <code class="lang-html">&lt;audio&gt;</code> tags in HTML to embed media files.</p>
 
         <h2>Common Video Formats</h2>
-        <img src="image.png" alt="Alt text">
+
         <p>There are many video formats out there. The MP4, WebM, and Ogg formats are supported by HTML.</p>
         <p>The MP4 format is recommended by YouTube.</p>
 
-        <h2>The <code>&lt;video&gt;</code> Tag <a href="video.html">(video.html)</a></h2>
-        <p>The HTML <code>&lt;video&gt;</code> element is used to show a video on a web page.</p>
+        <h2><code class="lang-html">&lt;video&gt;</code> Tag</h2>
+        <p>The HTML <code class="lang-html">&lt;video&gt;</code> element is used to show a video on a web page.</p>
 
         <div class="editor">
             <pre><code class="lang-html">
-&lt;video src="video.mp4" controls&gt;&lt;/video&gt;
+&lt;video src="../assets/videos/mov_bbb.mp4" controls&gt;&lt;/video&gt;
 </code></pre>
-            <div class="preview pl25"></div>
+            <div class="preview"></div>
         </div>
 
-        <h3>Attributes for <code>&lt;video&gt;</code> Tag</h3>
+        <h3>Attributes:</h3>
         <ul>
             <li><strong>src</strong>: Specifies the path to the video file.</li>
             <li><strong>controls</strong>: Adds video controls, like play, pause, and volume.</li>
@@ -48,20 +71,20 @@
             <li><strong>width</strong> and <strong>height</strong>: Specifies the dimensions of the video.</li>
         </ul>
         <blockquote>
-            <p><strong>Note:</strong> Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.</p>
+            <p class="note">Note: Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.</p>
         </blockquote>
 
-        <h2>The <code>&lt;audio&gt;</code> Tag</h2>
-        <p>The <code>&lt;audio&gt;</code> tag is used to embed audio files in an HTML document. It also supports multiple attributes for control.</p>
+        <h2><code class="lang-html">&lt;audio&gt;</code> Tag</h2>
+        <p>The <code class="code">&lt;audio&gt;</code> tag is used to embed audio files in an HTML document. It also supports multiple attributes for control.</p>
 
         <div class="editor">
             <pre><code class="lang-html">
-&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;
+&lt;audio src="../assets/audio/flow-211881.mp3" controls&gt;&lt;/audio&gt;
 </code></pre>
-            <div class="preview pl25"></div>
+            <div class="preview"></div>
         </div>
 
-        <h3>Attributes for <code>&lt;audio&gt;</code> Tag</h3>
+        <h3>Attributes:</h3>
         <ul>
             <li><strong>src</strong>: Specifies the path to the audio file.</li>
             <li><strong>controls</strong>: Adds audio controls, like play, pause, and volume.</li>
@@ -70,43 +93,31 @@
             <li><strong>muted</strong>: Mutes the audio by default.</li>
             <li><strong>preload</strong>: Specifies if and how the audio should be loaded when the page loads ('auto', 'metadata', 'none').</li>
         </ul>
-        <blockquote>
-            <p><strong>Note:</strong> Only MP3, WAV, and Ogg audio are supported by the HTML standard.</p>
-        </blockquote>
+        
+        <p class="note"><strong>Note:</strong> Only MP3, WAV, and Ogg audio are supported by the HTML standard.</p>
 
         <hr>
 
-        <h1><code>iFrames</code> in HTML</h1>
-        <p>iFrames, or Inline Frames, are an integral part of modern web development. They allow you to embed another HTML page within your current page. In this blog, we'll delve into the utility of iFrames, their attributes, and some use-cases.</p>
-
-        <h2>What is an iFrame?</h2>
-        <p>An iFrame is an HTML element that enables an inline frame for the embedding of external content. Essentially, you can load another web page within a designated area of your current webpage.</p>
-
-        <h2>Why Use iFrames?</h2>
-        <p>iFrames offer a variety of use-cases:</p>
-        <ul>
-            <li><strong>Content Isolation</strong>: iFrames allow you to isolate third-party content, which can improve security.</li>
-            <li><strong>Modularity</strong>: Easily embed external plugins, widgets, or content.</li>
-            <li><strong>Resource Separation</strong>: Content within an iFrame can load separately from the rest of the page.</li>
-        </ul>
-
-        <h2>Basic Syntax</h2>
-        <p>The basic syntax of an iFrame is quite straightforward:</p>
+        <h1><code class="lang-html">&lt;iframe&gt;</code> Tag</h1>
+        <p>The <code class="code">&lt;iframe&gt;</code> tag in HTML is used to embed another HTML document within the current document. It essentially allows you to embed another webpage into your webpage. This can be useful for displaying content such as videos, maps, or other interactive content from third-party sites.</p>
 
         <div class="editor">
             <pre><code class="lang-html">
-&lt;iframe src="URL" width="width" height="height"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://www.wikipedia.org/" width="450px"&gt;&lt;/iframe&gt;
 </code></pre>
             <div class="preview pl25"></div>
         </div>
 
-        <h2>Attributes of iFrame</h2>
+        <h2>Attributes:</h2>
         <ul>
             <li><strong>src</strong>: Specifies the URL of the page to embed.</li>
-            <li><strong>height</strong> and <strong>width</strong>: Define the dimensions.</li>
-            <li><strong>frameborder</strong>: Indicates whether to display a border.</li>
-            <li><strong>scrolling</strong>: Controls the scrollbars.</li>
-            <li><strong>name</strong>: For targeting the iFrame in JavaScript.</li>
+            <li><strong>width</strong>: Defines the width of the iframe (in pixels or percentage).</li>
+            <li><strong>height</strong>: Defines the height of the iframe (in pixels or percentage).</li>
+            <li><strong>title</strong>: Provides a descriptive title for the iframe content, improving accessibility.</li>
+            <li><strong>frameborder</strong>: Determines whether to display a border around the iframe not commonly used in HTML5.</li>
+            <li><strong>allowfullscreen</strong>: Enables full-screen mode for the embedded content, commonly used for videos.</li>
+            <li><strong>sandbox</strong>: Applies extra restrictions on the iframe's content, such as disabling forms and scripts for security purposes.</li>
+            <li><strong>loading</strong>: Specifies if the iframe should load immediately or defer loading until it’s visible.</li>
         </ul>
 
         <h2>Practical Examples</h2>
@@ -114,7 +125,7 @@
         <h3>Embedding a YouTube Video</h3>
         <div class="editor">
             <pre><code class="lang-html">
-&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://www.youtube.com/embed/n4OFVR3V6G8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 </code></pre>
             <div class="preview pl25"></div>
         </div>
@@ -122,7 +133,7 @@
         <h3>Embedding Google Maps</h3>
         <div class="editor">
             <pre><code class="lang-html">
-&lt;iframe src="https://maps.google.com/maps?q=LOCATION&output=embed" frameborder="0"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24567.84702602105!2d78.59322432913909!3d27.08450541198498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39744bce0745fc55%3A0xaca626641b821c20!2sMSK%20Institute!5e1!3m2!1sen!2sin!4v1730269587243!5m2!1sen!2sin" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  frameborder="0"&gt;&lt;/iframe&gt;
 </code></pre>
             <div class="preview pl25"></div>
         </div>
@@ -155,7 +166,7 @@
         <h3>Example</h3>
         <div class="editor">
             <pre><code class="lang-html">
-&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"&gt;&lt;/iframe&gt;
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/n4OFVR3V6G8"&gt;&lt;/iframe&gt;
 </code></pre>
             <div class="preview pl25"></div>
         </div>
@@ -169,7 +180,7 @@
         <h3>YouTube - Autoplay + Muted</h3>
         <div class="editor">
             <pre><code class="lang-html">
-&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"&gt;&lt;/iframe&gt;
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/n4OFVR3V6G8?autoplay=1&mute=1"&gt;&lt;/iframe&gt;
 </code></pre>
             <div class="preview pl25"></div>
         </div>
@@ -187,7 +198,7 @@
         <h3>YouTube - Loop</h3>
         <div class="editor">
             <pre><code class="lang-html">
-&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"&gt;&lt;/iframe&gt;
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/AB4JZr9nWCY?playlist=PLbEif3LMBbrxFaXONS&loop=1"&gt;&lt;/iframe&gt;
 </code></pre>
             <div class="preview pl25"></div>
         </div>
@@ -202,7 +213,7 @@
         <h3>YouTube - Controls</h3>
         <div class="editor">
             <pre><code class="lang-html">
-&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"&gt;&lt;/iframe&gt;
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/n4OFVR3V6G8?controls=0"&gt;&lt;/iframe&gt;
 </code></pre>
             <div class="preview pl25"></div>
         </div>
@@ -219,6 +230,42 @@ allowfullscreen&gt;&lt;/iframe&gt;
 
         <hr>
 
+        
+        <h2>The <code>&lt;object&gt;</code> Element</h2>
+        <p>The <code>&lt;object&gt;</code> element is supported by all browsers. It defines an embedded object within an HTML document. It was designed to embed plug-ins (like Java applets, PDF readers, and Flash Players) in web pages, but can also be used to include HTML in HTML:</p>
+
+        <h3>Example</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;object width="100%" height="500px" data="https://mskinstitute.github.io/"&gt;&lt;/object&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <h3>Or Images if You Like</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;object data="audi.jpeg"&gt;&lt;/object&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <h2>The <code>&lt;embed&gt;</code> Element</h2>
+        <p>The <code>&lt;embed&gt;</code> element is supported in all major browsers. It defines an embedded object within an HTML document. Web browsers have supported the <code>&lt;embed&gt;</code> element for a long time. However, it has not been a part of the HTML specification before HTML5.</p>
+
+        <p>Note that the <code>&lt;embed&gt;</code> element does not have a closing tag. It cannot contain alternative text. The <code>&lt;embed&gt;</code> element can also be used to include HTML in HTML:</p>
+
+        <h3>Example</h3>
+        <div class="editor">
+            <pre><code class="lang-html">
+&lt;embed width="100%" height="500px" src="https://mskinstitute.github.io/"&gt;
+</code></pre>
+            <div class="preview pl25"></div>
+        </div>
+
+        <hr>
+
+
         <h1>HTML <code>SVG</code> Graphics</h1>
         <p>SVG defines vector-based graphics in XML format.</p>
 
@@ -226,7 +273,7 @@ allowfullscreen&gt;&lt;/iframe&gt;
         <ul>
             <li>SVG stands for Scalable Vector Graphics</li>
             <li>SVG is used to define graphics for the Web</li>
-            <li>SVG is a W3C recommendation</li>
+            <li>SVG is a MSK recommendation</li>
         </ul>
 
         <h2>Examples: <a href="photo_svg.svg">(svg)</a> v/s <a href="svg_Photo.jpg">(jpg)</a></h2>
@@ -297,70 +344,6 @@ allowfullscreen&gt;&lt;/iframe&gt;
   &lt;text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86"&gt;MSK&lt;/text&gt;
   Sorry, your browser does not support inline SVG.
 &lt;/svg&gt;
-</code></pre>
-            <div class="preview pl25"></div>
-        </div>
-
-        <hr>
-
-        <h1>HTML Plug-ins</h1>
-        <p>Plug-ins are computer programs that extend the standard functionality of the browser.</p>
-        <h2>Plug-ins</h2>
-        <p>Plug-ins were designed to be used for many different purposes:</p>
-        <ul>
-            <li>To run Java applets</li>
-            <li>To run Microsoft ActiveX controls</li>
-            <li>To display Flash movies</li>
-            <li>To display maps</li>
-            <li>To scan for viruses</li>
-            <li>To verify a bank id</li>
-        </ul>
-
-        <blockquote>
-            <p><strong>Warning!</strong></p>
-            <ul>
-                <li>Most browsers no longer support Java Applets and Plug-ins.</li>
-                <li>ActiveX controls are no longer supported in any browsers.</li>
-                <li>The support for Shockwave Flash has also been turned off in modern browsers.</li>
-            </ul>
-        </blockquote>
-
-        <h2>The <code>&lt;object&gt;</code> Element</h2>
-        <p>The <code>&lt;object&gt;</code> element is supported by all browsers. It defines an embedded object within an HTML document. It was designed to embed plug-ins (like Java applets, PDF readers, and Flash Players) in web pages, but can also be used to include HTML in HTML:</p>
-
-        <h3>Example</h3>
-        <div class="editor">
-            <pre><code class="lang-html">
-&lt;object width="100%" height="500px" data="https://www.w3schools.com/html/snippet.html"&gt;&lt;/object&gt;
-</code></pre>
-            <div class="preview pl25"></div>
-        </div>
-
-        <h3>Or Images if You Like</h3>
-        <div class="editor">
-            <pre><code class="lang-html">
-&lt;object data="audi.jpeg"&gt;&lt;/object&gt;
-</code></pre>
-            <div class="preview pl25"></div>
-        </div>
-
-        <h2>The <code>&lt;embed&gt;</code> Element</h2>
-        <p>The <code>&lt;embed&gt;</code> element is supported in all major browsers. It defines an embedded object within an HTML document. Web browsers have supported the <code>&lt;embed&gt;</code> element for a long time. However, it has not been a part of the HTML specification before HTML5.</p>
-
-        <h3>Example</h3>
-        <div class="editor">
-            <pre><code class="lang-html">
-&lt;embed src="audi.jpeg"&gt;
-</code></pre>
-            <div class="preview pl25"></div>
-        </div>
-
-        <p>Note that the <code>&lt;embed&gt;</code> element does not have a closing tag. It cannot contain alternative text. The <code>&lt;embed&gt;</code> element can also be used to include HTML in HTML:</p>
-
-        <h3>Example</h3>
-        <div class="editor">
-            <pre><code class="lang-html">
-&lt;embed width="100%" height="500px" src="snippet.html"&gt;
 </code></pre>
             <div class="preview pl25"></div>
         </div>
