@@ -1,0 +1,32 @@
+<style>
+    #header {
+        width: 100%;
+        margin: 0;
+        padding: 10px 20px;
+        color: white;
+        background-color: black;
+        position: fixed;
+        z-index: 2;
+
+        &>.container {
+            display: flex;
+            justify-content: space-between;
+            
+            &>#curriculum_open_btn {
+            display: none;
+
+            @media (width < 720px) {
+                display: inline;
+            }
+
+        }
+        }
+
+        
+    }
+</style>
+
+<div class="container">
+    <div class="brand">MSK Institute</div>
+    <button id="curriculum_open_btn" onclick="curriculum_open_btn()">📑</button>
+</div>

@@ -2,21 +2,35 @@
     aside {
         width: 20%;
         height: 100vh;
+        padding-top: 60px;
         background-color: #ccc;
         position: fixed;
         left: 0;
         top: 0;
         padding-left: 20px;
+        z-index: 1;
 
-        ol{
+        #close_btn {
+            display: none;
+        }
+
+        @media (width < 720px) {
+            display: none;
+
+            #close_btn {
+                display: inline;
+            }
+        }
+
+        ol {
             margin-top: 20px;
             list-style-position: inside;
 
-            a{
+            a {
                 color: black;
                 text-decoration: none;
-                
-                &:hover{
+
+                &:hover {
                     text-decoration: underline;
                     color: blue;
                 }
@@ -26,7 +40,7 @@
 </style>
 
 
-<h2>Curriculum 📑</h2>
+<h2>Curriculum 📑 <button id="close_btn" onclick="curriculum_close_aside()">❌</button></h2>
 <ol>
     <li><a href="../01_Introduction/Introduction.html">Introduction</a></li>
     <li><a href="../02_SetUp/SetUp.html">SetUp</a></li>

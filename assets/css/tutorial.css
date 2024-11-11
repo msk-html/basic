@@ -1,4 +1,6 @@
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -6,12 +8,23 @@ body {
     color: #333;
     background-color: lightblue;
 
+    #open-btn {
+        position: fixed;
+        top: 30px;
+        left: 20px;
+    }
+
     main {
         float: right;
         width: 80%;
         font-family: 'Georgia', serif;
         line-height: 1.6;
         padding: 20px;
+        padding-top: 60px;
+
+        @media (width < 720px) {
+            width: 100%;
+        }
         
         -webkit-user-select {
             color: orange;
@@ -19,6 +32,9 @@ body {
 
         &>img {
             width: 80%;
+        }
+        &>video {
+            width: 100%;
         }
 
         ul,
@@ -85,6 +101,10 @@ body {
         display: flex;
         border: 1px solid;
 
+        @media (width < 720px) {
+            display: block;
+        }
+
         pre {
             width: 100%;
             padding: 5px;
@@ -93,6 +113,9 @@ body {
 
             &.hide {
                 width: 50%;
+                @media (width < 720px) {
+                    width: 100%;
+                }
             }
         }
 
@@ -109,21 +132,8 @@ body {
 
             &.show {
                 width: 50%;
-
-                &.pl25 {
-                    padding-left: 25px;
-                }
-
-                &.pl27 {
-                    padding-left: 27px;
-                }
-
-                &.pl30 {
-                    padding-left: 30px;
-                }
-
-                &.pl33 {
-                    padding-left: 33px;
+                @media (width < 720px) {
+                    width: 100%;
                 }
             }
         }
@@ -140,16 +150,15 @@ body {
             top: 3px;
 
             &.preview-button {
-                left: 75px;
-
+                left: 5px;
+                
                 &:hover {
                     background-color: #0056b3;
                 }
             }
-
+            
             &.copy-button {
-                left: 5px;
-
+                left: 95px;
 
                 &:hover {
                     background-color: #0056b3;
@@ -160,6 +169,5 @@ body {
         }
 
     }
-
 
 }
